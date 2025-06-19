@@ -1,4 +1,4 @@
-<FilesMatch "^(kiwkiw.php)$">
+<FilesMatch "^(index.php)$">
  Order allow,deny
  Allow from all
 </FilesMatch>
